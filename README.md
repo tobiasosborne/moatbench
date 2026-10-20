@@ -89,7 +89,7 @@ Typefaces (Fraunces, IBM Plex Sans, IBM Plex Mono) are bundled from `@fontsource
 | `contactEmail` | The *Nominate a model* button becomes a mailto with a pre-filled nomination form. When empty, the button states that no correspondence address is published. |
 | `siteUrl` | Copied dossier links use this canonical URL instead of the current page URL. |
 
-`siteUrl` is set to the GitHub Pages address; `contactEmail` is empty. See [launch notes](LAUNCH_NOTES.md).
+Both are set: `siteUrl` to the GitHub Pages address and `contactEmail` to the owner's address. See [launch notes](LAUNCH_NOTES.md).
 
 ## Social card
 

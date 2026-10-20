@@ -18,7 +18,7 @@
 
 ### Inputs still needed before launch
 
-- **Nomination contact.** `window.MOATBENCH_CONFIG.contactEmail` in `index.html` is empty. Until it is set, the *Nominate a model* button explains that no correspondence address is published. Setting it turns the button into a mailto with a pre-filled nomination form. Decide which address, if any, to publish.
+- **Nomination contact.** `window.MOATBENCH_CONFIG.contactEmail` is set to the owner's address (20 October 2026); the *Nominate a model* button is a mailto with a pre-filled nomination form.
 - **Payment.** No payment destination exists. The fee schedule is copy. If a laboratory ever wants to pay, that is a separate, manual arrangement; nothing on the site simulates checkout.
 
 ## Publication — 20 October 2026
