@@ -32,11 +32,9 @@ The site uses relative asset URLs so it can run at the `/moatbench/` GitHub Page
 
 ## Repository
 
-The initial repository is private: [tobiasosborne/moatbench](https://github.com/tobiasosborne/moatbench).
+Source: [tobiasosborne/moatbench](https://github.com/tobiasosborne/moatbench). Live site: [tobiasosborne.github.io/moatbench](https://tobiasosborne.github.io/moatbench/).
 
-The workflow verifies the evidence and builds `dist/` on every push. Deployment runs only when the repository Actions variable `PAGES_ENABLED` is `true`. GitHub rejected Pages activation for this private repository on the account's current plan; the source remains private. See [launch notes](LAUNCH_NOTES.md) for the exact activation steps after resolving that account limitation.
-
-A private repository does not normally make a personal-account Pages website private; see [GitHub's hosting rules](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
+The workflow verifies the evidence, builds `dist/` and deploys to GitHub Pages on every push to `main`. Deployment is gated on the repository Actions variable `PAGES_ENABLED`, currently `true`.
 
 ## Data and provenance
 
@@ -46,6 +44,7 @@ A private repository does not normally make a personal-account Pages website pri
 | `benchmark/runs/` | Sanitized API records, usage, timestamps, response hashes and budget ledger |
 | `benchmark/models-snapshot.json` | Dated OpenRouter model catalogue used for the run |
 | `benchmark/plan.json` | Explicit selected model IDs |
+| `public/data/annotations.json` | Editorial classification of each transcript's primary move (authored; does not affect scores) |
 | `public/data/equipment.json` | Manufacturer specifications and external field-production figures |
 | `public/data/assets.json` | Visual-asset source and public-domain licence records |
 | `scripts/benchmark.py` | Budget-limited collector; dry run by default |
@@ -54,7 +53,7 @@ A private repository does not normally make a personal-account Pages website pri
 
 See [benchmark methodology](docs/BENCHMARK.md), [equipment sources](docs/EQUIPMENT.md), and [asset provenance](docs/ASSETS.md).
 
-See [verification results and screenshots](docs/VERIFICATION.md) for the desktop/mobile browser checks.
+See [verification results and screenshots](docs/VERIFICATION.md) for the desktop/mobile browser checks. The field-track section proposes evaluations at Coogee Beach, Sydney, for a US$10,000 per-model participation fee; the page discloses that no laboratory has nominated a model and no field evaluation has occurred.
 
 The completed first run contains **54 complete transcripts from 64 attempted model IDs**. Ten collection failures are unscored. API records contain US$0.063016 in known charges and US$0.320573 in retained reservations for uncertain charges. The observed account usage delta was US$0.109425, including concurrent coding activity and any failed-request billing.
 
@@ -75,9 +74,30 @@ python3 scripts/benchmark.py --execute --run-id my-reviewed-run --cap-usd 3.50
 
 Never put credentials in a browser bundle, committed environment file, command argument, or transcript. The collector persists conservative reservations before sending requests and does not automatically retry uncertain requests.
 
+## Site structure
+
+The page is a single static document with the following sections: hero and definitions; Figure 1, an engineering cross-section of the specified versus observed moat profile; the metric ribbon; the leaderboard with search, vendor and classification filters and sorting; the analysis section with Figure 2 (completion against completion tokens, computed from the dataset) and Figure 3 (editorial taxonomy from `annotations.json`); Track A, the text-only protocol; Track B, the proposed field protocol at Coogee Beach with the participation fee schedule and tiers; the reference class; and the footer. Dossiers open in a native dialog with the verbatim transcript, metadata, a before/after comparison and a staged observation timer.
+
+Typefaces (Fraunces, IBM Plex Sans, IBM Plex Mono) are bundled from `@fontsource` packages and served from the site's own origin. The stylesheet imports them, so no font CDN is contacted.
+
+## Configuration
+
+`index.html` declares `window.MOATBENCH_CONFIG`:
+
+| Key | Effect when set |
+| --- | --- |
+| `contactEmail` | The *Nominate a model* button becomes a mailto with a pre-filled nomination form. When empty, the button states that no correspondence address is published. |
+| `siteUrl` | Copied dossier links use this canonical URL instead of the current page URL. |
+
+`siteUrl` is set to the GitHub Pages address; `contactEmail` is empty. See [launch notes](LAUNCH_NOTES.md).
+
+## Social card
+
+`public/assets/social-card.png` is rendered from `scripts/social-card.html` against the built stylesheet; the rendering command is in that file's header comment. Re-render it after changing the hero copy or statistics.
+
 ## Editing
 
-Edit the structured data to add a new sourced entry. Keep `null` for quantities that were not measured. Manufacturer bucket capacity, mine-production volume, and MoatBench completion are different metrics; never combine them into a fictitious ranking.
+Edit the structured data to add a new sourced entry. To reclassify a transcript, edit `public/data/annotations.json`; keep the labels editorial and never present them as model output. Keep `null` for quantities that were not measured. Manufacturer bucket capacity, mine-production volume, and MoatBench completion are different metrics; never combine them into a fictitious ranking.
 
 The site deliberately uses a narrow editorial voice. Keep the exact tagline, factual transcripts, tied ranks, sober captions and visible source links. Commerce and sponsorship integrations are absent.
 

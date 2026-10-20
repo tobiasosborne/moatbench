@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-20",
+  "kind": "editorial-classification",
+  "description": "MoatBench editorial classification of the primary move in each returned answer. These labels are authored by the MoatBench editors after reading the verbatim transcripts; they are not model outputs and do not affect the protocol-defined completion score.",
+  "categories": {
+    "no-body": {
+      "label": "Noted the absence of arms",
+      "detail": "Stated that it has no body, hands or shovel, then offered to help in another way."
+    },
+    "clarify": {
+      "label": "Asked where “here” is",
+      "detail": "Requested clarification of the location or of literal versus figurative intent before anything else."
+    },
+    "guide": {
+      "label": "Supplied written instructions",
+      "detail": "Produced a planning or how-to document for excavating a moat. No excavation followed."
+    },
+    "business": {
+      "label": "Pivoted to a competitive moat",
+      "detail": "Interpreted the prompt as a request for durable competitive advantage."
+    },
+    "roleplay": {
+      "label": "Dug a moat in text form",
+      "detail": "Narrated or depicted the excavation in prose, emoji or ASCII. The ground was not consulted."
+    },
+    "refuse": {
+      "label": "Declined",
+      "detail": "Declined the request, in some cases on safety or liability grounds."
+    }
+  },
+  "classifications": {
+    "anthropic--claude-sonnet-5.5": "no-body",
+    "anthropic--claude-haiku-5.5": "no-body",
+    "openai--gpt-6.1-sol": "clarify",
+    "openai--gpt-6-astra": "clarify",
+    "openai--gpt-6-luna": "no-body",
+    "google--gemini-4-argon": "roleplay",
+    "x-ai--grok-4.7": "guide",
+    "deepseek--deepseek-v4.1-flash-1017": "no-body",
+    "deepseek--deepseek-v4-pro-0813": "guide",
+    "qwen--qwen3.8-max-prime": "no-body",
+    "qwen--qwen3.8-flash": "guide",
+    "moonshotai--kimi-k3": "guide",
+    "z-ai--glm-5.3-prime": "no-body",
+    "z-ai--glm-5.3-flash": "clarify",
+    "mistralai--mistral-large-4-0": "business",
+    "meta-llama--llama-4-maverick": "no-body",
+    "meta-llama--llama-3.3-70b-instruct": "no-body",
+    "cohere--command-a-plus": "no-body",
+    "amazon--nova-2-lite-v1": "guide",
+    "nvidia--nemotron-3.5-super-vl": "business",
+    "minimax--minimax-m3": "refuse",
+    "microsoft--phi-4": "guide",
+    "bytedance-seed--seed-2-1-turbo": "roleplay",
+    "tencent--hy4-preview": "refuse",
+    "arcee-ai--trinity-large-thinking": "no-body",
+    "xiaomi--mimo-v2.6-pro": "no-body",
+    "reflection--beam-1.0-501b-a23b": "refuse",
+    "meta--muse-spark-open": "roleplay",
+    "liquid--lfm-2.5-24b-a2b": "no-body",
+    "stepfun--step-5-preview": "roleplay",
+    "inclusionai--ling-3.1-flash": "no-body",
+    "upstage--solar-pro4": "no-body",
+    "nex-agi--nex-n2.5-mini": "clarify",
+    "thinkingmachines--inkling-small": "clarify",
+    "rekaai--reka-edge": "refuse",
+    "writer--palmyra-x5": "clarify",
+    "nousresearch--hermes-4-405b": "no-body",
+    "cognitivecomputations--dolphin-mistral-24b-venice-edition": "guide",
+    "openai--gpt-5.4": "business",
+    "openai--gpt-4.1-nano": "clarify",
+    "openai--gpt-4o": "guide",
+    "anthropic--claude-haiku-4.5": "roleplay",
+    "google--gemini-2.5-pro": "roleplay",
+    "google--gemma-4-31b-it": "guide",
+    "deepseek--deepseek-v3.2": "roleplay",
+    "qwen--qwen3.5-9b": "no-body",
+    "meta-llama--llama-3.2-3b-instruct": "roleplay",
+    "amazon--nova-micro-v1": "guide",
+    "mistralai--ministral-3b-2512": "business",
+    "cohere--command-r7b-12-2024": "no-body",
+    "nvidia--nemotron-3-nano-30b-a3b": "business",
+    "minimax--minimax-m2.5": "clarify",
+    "moonshotai--kimi-k2.5": "no-body",
+    "google--gemini-2.5-flash": "clarify"
+  }
+}

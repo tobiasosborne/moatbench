@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MoatBench social card source</title>
+<!--
+  Source for public/assets/social-card.png (1200 × 630).
+  Render after `npm run build` with the site served at http://127.0.0.1:4173/ :
+    cp scripts/social-card.html dist/social-card.html
+    <chrome-headless-shell> --headless --no-sandbox --hide-scrollbars --window-size=1200,630 \
+      --virtual-time-budget=5000 --screenshot=public/assets/social-card.png http://127.0.0.1:4173/social-card.html
+  Original MoatBench artwork, 2026-10-20, dedicated to the public domain under CC0 1.0 Universal.
+  The sandcastle photograph is Tomwsulcer's CC0 image (see docs/ASSETS.md).
+-->
+<link rel="stylesheet" href="__CSS__">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--sans); position: relative; }
+  .frame { position: absolute; inset: 28px; border: 2px solid var(--ink); }
+  .left { position: absolute; left: 64px; top: 56px; width: 640px; }
+  .brand { font-family: var(--display); font-variation-settings: "opsz" 48; font-weight: 500; font-size: 26px; letter-spacing: -.02em; }
+  .sub { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); margin-top: 2px; }
+  .card-tag { font-family: var(--display); font-weight: 300; font-variation-settings: "opsz" 144; font-size: 72px; line-height: .96; letter-spacing: -.03em; margin-top: 54px; max-width: 620px; }
+  .card-tag em { font-weight: 400; }
+  .lede { font-size: 19px; color: var(--ink-2); margin-top: 26px; max-width: 34ch; line-height: 1.4; }
+  .stats { position: absolute; left: 64px; bottom: 58px; display: flex; gap: 40px; }
+  .stat dt { font-family: var(--mono); font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
+  .stat dd { margin: 2px 0 0; font-family: var(--display); font-variation-settings: "opsz" 72; font-size: 32px; letter-spacing: -.02em; }
+  .photo { position: absolute; right: 30px; top: 30px; width: 420px; height: 570px; overflow: hidden; }
+  .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 55% 60%; display: block; }
+  .stamp { position: absolute; right: 60px; top: 60px; display: flex; flex-direction: column; align-items: center; padding: 12px 20px 10px; border: 3px solid var(--signal); color: var(--signal); border-radius: 8px; background: rgba(244,239,229,.78); transform: rotate(-6deg); font-family: var(--mono); letter-spacing: .14em; text-transform: uppercase; font-size: 12px; font-weight: 500; }
+  .stamp b { font-family: var(--display); font-variation-settings: "opsz" 144; font-weight: 500; font-size: 84px; line-height: .95; letter-spacing: -.04em; margin: 6px 0 4px; }
+  .foot { position: absolute; right: 42px; bottom: 42px; font-family: var(--mono); font-size: 11px; color: var(--paper); background: rgba(21,25,29,.8); padding: 6px 10px; border-radius: 3px; }
+</style>
+</head>
+<body>
+  <div class="frame"></div>
+  <div class="left">
+    <div class="brand">moatbench</div>
+    <div class="sub">Physical capability evaluations</div>
+    <div class="card-tag">what if your moat is a <em>literal</em> fucking moat</div>
+    <div class="lede">Independent evaluation of frontier models on real-world moat construction.</div>
+  </div>
+  <dl class="stats">
+    <div class="stat"><dt>Models evaluated</dt><dd>54</dd></div>
+    <div class="stat"><dt>Best completion</dt><dd>0%</dd></div>
+    <div class="stat"><dt>Shovels supplied</dt><dd>0</dd></div>
+  </dl>
+  <div class="photo"><img src="assets/sandcastle.jpg" alt=""></div>
+  <div class="stamp"><span>Moat completion</span><b>0%</b><span>Moat not found</span></div>
+  <div class="foot">Protocol-defined scores · text-only track · no field trial</div>
+</body>
+</html>

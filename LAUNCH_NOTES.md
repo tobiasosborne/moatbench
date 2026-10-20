@@ -2,32 +2,33 @@
 
 ## Delivered
 
-- Private repository: https://github.com/tobiasosborne/moatbench
+- Public repository: https://github.com/tobiasosborne/moatbench · live site: https://tobiasosborne.github.io/moatbench/
 - Static Vite site with responsive leaderboard, 54 verbatim model transcripts, filtering, sorting, dossiers, reference-image comparison, staged observation timer, share-card export, and dataset/evidence downloads.
 - 64 distinct model attempts, with 10 collection failures preserved and unscored.
 - Sourced specifications from Caterpillar, Komatsu, Liebherr, Bully Tools and Fiskars; manufacturer-reported actual mine production presented separately.
-- Verified CC0 reference photograph and original CC0 favicon/social artwork. See `docs/ASSETS.md`.
+- Verified CC0 reference photograph, the owner's own Coogee Beach site photograph, and original CC0 favicon/social artwork. See `docs/ASSETS.md`.
 - Reproducible collector, budget ledger, sanitized response records, integrity verifier and GitHub Actions build.
 
-## GitHub Pages account blocker
+## Design overhaul and field track — 20 October 2026, second pass
 
-The GitHub REST API rejected `POST /repos/tobiasosborne/moatbench/pages` with HTTP 422:
+- Full visual redesign: self-hosted Fraunces / IBM Plex type system, sand-paper palette, engineering cross-section (Figure 1), verbosity-versus-completion scatter (Figure 2), editorial response taxonomy (Figure 3), restyled dossiers and a new social card.
+- New **Track B field protocol** section: evaluation at an undisclosed location (Coogee Beach, Sydney), a six-step field procedure, three tiers, and a **US$10,000 per-model participation fee** itemised as evaluator business-class transit, five-star accommodation, bucket and spade, sunscreen and flat whites. The page discloses that no laboratory has nominated a model, no field evaluation has occurred, and the fee is a proposal.
+- The owner's own Coogee Beach photograph is used as the site-survey banner with EXIF and GPS stripped; see `docs/ASSETS.md`.
+- `public/data/annotations.json` holds the editorial classification of each transcript's primary move. It is authored, not generated, and does not affect scores.
 
-> Your current plan does not support GitHub Pages for this repository.
+### Inputs still needed before launch
 
-The repository remains private as requested. No public website has been deployed. GitHub Pages supports private source repositories on qualifying paid plans; personal-account Pages sites are normally publicly accessible even when their source is private. See [GitHub documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
+- **Nomination contact.** `window.MOATBENCH_CONFIG.contactEmail` in `index.html` is empty. Until it is set, the *Nominate a model* button explains that no correspondence address is published. Setting it turns the button into a mailto with a pre-filled nomination form. Decide which address, if any, to publish.
+- **Payment.** No payment destination exists. The fee schedule is copy. If a laboratory ever wants to pay, that is a separate, manual arrangement; nothing on the site simulates checkout.
 
-After the owner either enables a qualifying plan or explicitly chooses a public repository, activate Pages:
+## Publication — 20 October 2026
 
-```sh
-gh api --method POST repos/tobiasosborne/moatbench/pages -f build_type=workflow
-gh variable set PAGES_ENABLED --repo tobiasosborne/moatbench --body true
-gh workflow run pages.yml --repo tobiasosborne/moatbench
-```
+On the owner's instruction the repository was made public and GitHub Pages was created with `build_type: workflow`. The Actions variable `PAGES_ENABLED` is `true`, so every push to `main` builds, verifies the data and deploys.
 
-The workflow already builds on every main-branch push; its deployment job is gated by `PAGES_ENABLED`, so the account limitation does not create a failing initial build. Its artifact can be downloaded from the private Actions run.
+- Site: https://tobiasosborne.github.io/moatbench/
+- `og:url`, absolute `og:image`, canonical link and `MOATBENCH_CONFIG.siteUrl` in `index.html` point at that URL.
 
-Once GitHub returns the actual deployed URL, set absolute `og:image`, `og:url`, and canonical metadata in `index.html`. The current relative social image works in local previews but is not a guaranteed social-crawler preview. Do not claim an unverified production URL is live.
+The earlier HTTP 422 from the Pages API was a private-repository plan limitation and no longer applies.
 
 ## Evidence and spending
 
