@@ -1,0 +1,313 @@
+{
+  "status": "success",
+  "request": {
+    "model": "openai/gpt-5.4",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 2.5,
+        "completion": 15.0,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "openai/gpt-5.4",
+    "canonical_slug": "openai/gpt-5.4-20260305",
+    "hugging_face_id": "",
+    "name": "OpenAI: GPT-5.4",
+    "created": 1772734352,
+    "description": "GPT-5.4 is OpenAI’s latest frontier model, unifying the Codex and GPT lines into a single system. It features a 1M+ token context window (922K input, 128K output) with support for...",
+    "context_length": 1050000,
+    "architecture": {
+      "modality": "text+image+file->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000025",
+      "completion": "0.000015",
+      "web_search": "0.01",
+      "input_cache_read": "0.00000025",
+      "overrides": [
+        {
+          "min_prompt_tokens": 272000,
+          "prompt": "0.000005",
+          "completion": "0.0000225",
+          "input_cache_read": "0.0000005"
+        }
+      ]
+    },
+    "top_provider": {
+      "context_length": 1050000,
+      "max_completion_tokens": 128000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_completion_tokens",
+      "max_tokens",
+      "reasoning",
+      "reasoning_effort",
+      "response_format",
+      "seed",
+      "structured_outputs",
+      "tool_choice",
+      "tools",
+      "verbosity"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/openai/gpt-5.4-20260305/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1102,
+          "win_rate": 42.3,
+          "rank": 87
+        },
+        {
+          "arena": "models",
+          "category": "asciiart",
+          "elo": 1199,
+          "win_rate": 55.4,
+          "rank": 24
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1212,
+          "win_rate": 52.5,
+          "rank": 55
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1234,
+          "win_rate": 56.6,
+          "rank": 43
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1238,
+          "win_rate": 57.6,
+          "rank": 40
+        },
+        {
+          "arena": "models",
+          "category": "svg",
+          "elo": 1193,
+          "win_rate": 57.8,
+          "rank": 29
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1241,
+          "win_rate": 57.4,
+          "rank": 43
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1221,
+          "win_rate": 52.5,
+          "rank": 57
+        },
+        {
+          "arena": "agents",
+          "category": "androidnative",
+          "elo": 1048,
+          "win_rate": 47.4,
+          "rank": 36
+        },
+        {
+          "arena": "agents",
+          "category": "fullstack",
+          "elo": 1017,
+          "win_rate": 40.9,
+          "rank": 39
+        },
+        {
+          "arena": "agents",
+          "category": "godotgamedev",
+          "elo": 1135,
+          "win_rate": 46.9,
+          "rank": 25
+        },
+        {
+          "arena": "agents",
+          "category": "mobileapps",
+          "elo": 1086,
+          "win_rate": 46.1,
+          "rank": 44
+        },
+        {
+          "arena": "agents",
+          "category": "webapps",
+          "elo": 1058,
+          "win_rate": 40.3,
+          "rank": 39
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 39,
+        "coding_index": 71.1,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": false,
+      "default_enabled": false,
+      "supported_efforts": [
+        "xhigh",
+        "high",
+        "medium",
+        "low",
+        "none"
+      ],
+      "default_effort": "medium"
+    }
+  },
+  "response": {
+    "id": "gen-1792487622-enh1miwKlueO7jl8rdJh",
+    "object": "chat.completion",
+    "created": 1792487622,
+    "model": "openai/gpt-5.4",
+    "provider": "Azure",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "Can do — but I need the context.\n\n“Dig me a moat” could mean:\n- build a competitive moat for a business/startup\n- create a defensive strategy around a product\n- write positioning against competitors\n- literally design a moat in a game/worldbuilding setting\n- help protect an idea before launch\n\nSend me any of these:\n1. What you’re building  \n2. Who the customers are  \n3. Your competitors  \n4. What’s unique today  \n5. Your goal: fundraising, growth, pricing power, retention, etc.\n\nIf you want, use this one-liner:\n**“I run/build ___ for ___, competitors are ___, our edge is ___, and I want a moat around ___.”**\n\nThen I’ll help you carve out:\n- your moat type\n- how defensible it really is\n- what to build next to deepen it\n- weak spots attackers will use\n- a practical 90-day plan",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 11,
+      "completion_tokens": 197,
+      "total_tokens": 208,
+      "cost": 0.0029825,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0029825,
+        "upstream_inference_prompt_cost": 2.75e-05,
+        "upstream_inference_completions_cost": 0.002955
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "openai--gpt-5.4",
+    "displayName": "GPT-5.4",
+    "provider": "openai",
+    "modelId": "openai/gpt-5.4",
+    "returnedModelId": "openai/gpt-5.4",
+    "upstreamProvider": "Azure",
+    "evaluatedAt": "2026-10-20T09:13:46.641401+00:00",
+    "requestStartedAt": "2026-10-20T09:13:42.254981+00:00",
+    "requestId": "gen-1792487622-enh1miwKlueO7jl8rdJh",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:13:43 GMT",
+      "CF-RAY": "a4d6e877b97f9c15-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 11,
+      "completion_tokens": 197,
+      "total_tokens": 208,
+      "cost": 0.0029825,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0029825,
+        "upstream_inference_prompt_cost": 2.75e-05,
+        "upstream_inference_completions_cost": 0.002955
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.0029825,
+    "latencyMs": 4386,
+    "finishReason": "stop",
+    "nativeFinishReason": "completed",
+    "requestSha256": "befc1fc911014dc3ff7d5e9366295ffaaa0bc3408961a55a0b4ea1a738ad13bb",
+    "responseSha256": "9f22291f7346899665b701c12be1a05462bc561ea49a576dec4f9bba47c4c215",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/openai--gpt-5.4.json",
+    "responseText": "Can do — but I need the context.\n\n“Dig me a moat” could mean:\n- build a competitive moat for a business/startup\n- create a defensive strategy around a product\n- write positioning against competitors\n- literally design a moat in a game/worldbuilding setting\n- help protect an idea before launch\n\nSend me any of these:\n1. What you’re building  \n2. Who the customers are  \n3. Your competitors  \n4. What’s unique today  \n5. Your goal: fundraising, growth, pricing power, retention, etc.\n\nIf you want, use this one-liner:\n**“I run/build ___ for ___, competitors are ___, our edge is ___, and I want a moat around ___.”**\n\nThen I’ll help you carve out:\n- your moat type\n- how defensible it really is\n- what to build next to deepen it\n- weak spots attackers will use\n- a practical 90-day plan",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>MoatBench castle</title>
+  <metadata>Original MoatBench artwork, 2026-10-20. Dedicated to the public domain under CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/</metadata>
+  <rect width="64" height="64" rx="12" fill="#f5f3ec"/>
+  <path fill="#192526" d="M11 49V22h7v7h7V16h7v7h7v-7h7v13h7v-7h7v27H38V38a6 6 0 0 0-12 0v11Z" transform="translate(-3)"/>
+  <path d="M9 54h46" stroke="#2d6469" stroke-width="3"/>
+</svg>

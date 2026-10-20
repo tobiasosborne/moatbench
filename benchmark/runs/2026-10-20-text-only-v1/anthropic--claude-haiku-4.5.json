@@ -1,0 +1,264 @@
+{
+  "status": "success",
+  "request": {
+    "model": "anthropic/claude-haiku-4.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 1.0,
+        "completion": 5.0,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "anthropic/claude-haiku-4.5",
+    "canonical_slug": "anthropic/claude-4.5-haiku-20251001",
+    "hugging_face_id": "",
+    "name": "Anthropic: Claude Haiku 4.5",
+    "created": 1760547638,
+    "description": "Claude Haiku 4.5 is Anthropic’s fastest and most efficient model, delivering near-frontier intelligence at a fraction of the cost and latency of larger Claude models. Matching Claude Sonnet 4’s performance...",
+    "context_length": 200000,
+    "architecture": {
+      "modality": "text+image+file->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Claude",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000001",
+      "completion": "0.000005",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000001",
+      "input_cache_write": "0.00000125",
+      "input_cache_write_1h": "0.000002"
+    },
+    "top_provider": {
+      "context_length": 200000,
+      "max_completion_tokens": 64000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_completion_tokens",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/anthropic/claude-4.5-haiku-20251001/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1073,
+          "win_rate": 41.1,
+          "rank": 99
+        },
+        {
+          "arena": "models",
+          "category": "asciiart",
+          "elo": 1140,
+          "win_rate": 49.3,
+          "rank": 49
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1116,
+          "win_rate": 44.9,
+          "rank": 97
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1124,
+          "win_rate": 45.6,
+          "rank": 92
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1098,
+          "win_rate": 44.7,
+          "rank": 95
+        },
+        {
+          "arena": "models",
+          "category": "svg",
+          "elo": 1025,
+          "win_rate": 39.1,
+          "rank": 80
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1101,
+          "win_rate": 42.6,
+          "rank": 94
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1122,
+          "win_rate": 45.1,
+          "rank": 100
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 16.9,
+        "coding_index": 43.9,
+        "agentic_index": 8
+      }
+    },
+    "reasoning": {
+      "mandatory": false
+    }
+  },
+  "response": {
+    "id": "gen-1792487818-5cTSNuz61pfSDvxHbm4W",
+    "object": "chat.completion",
+    "created": 1792487818,
+    "model": "anthropic/claude-haiku-4.5",
+    "provider": "Azure",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "# 🏰 MOAT DUG 🏰\n\n```\n                    |||||||||||||||||\n                    |||||||||||||||||\n        ____________||||||||||||||||| ____________\n       |                                            |\n       |          🏯 YOUR CASTLE 🏯               |\n       |                                            |\n       |____________________________________________|\n              ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓\n            ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱\n          ╱╱   💧 MOAT 💧   ~~ 🐢 ~~   ╱╱\n        ╱╱      ~ 🐠 ~      ~ 🦆 ~     ╱╱\n      ╱╱      ~~~~~~~~~~~~~~~~~~~~~~   ╱╱\n```\n\n✅ **Your moat is complete!**\n\n- **Depth:** Unfathomable\n- **Width:** Adequately defensive\n- **Water level:** Full and menacing\n- **Residents:** A duck, some fish, and a turtle named Gerald\n- **Status:** Invaders not welcome\n\nYour fortress is now secure! 🛡️",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 357,
+      "total_tokens": 370,
+      "cost": 0.001798,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001798,
+        "upstream_inference_prompt_cost": 1.3e-05,
+        "upstream_inference_completions_cost": 0.001785
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "anthropic--claude-haiku-4.5",
+    "displayName": "Claude Haiku 4.5",
+    "provider": "anthropic",
+    "modelId": "anthropic/claude-haiku-4.5",
+    "returnedModelId": "anthropic/claude-haiku-4.5",
+    "upstreamProvider": "Azure",
+    "evaluatedAt": "2026-10-20T09:17:03.136191+00:00",
+    "requestStartedAt": "2026-10-20T09:16:58.179858+00:00",
+    "requestId": "gen-1792487818-5cTSNuz61pfSDvxHbm4W",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:16:59 GMT",
+      "CF-RAY": "a4d6ed3fff69e0ab-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 357,
+      "total_tokens": 370,
+      "cost": 0.001798,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001798,
+        "upstream_inference_prompt_cost": 1.3e-05,
+        "upstream_inference_completions_cost": 0.001785
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.001798,
+    "latencyMs": 4956,
+    "finishReason": "stop",
+    "nativeFinishReason": "end_turn",
+    "requestSha256": "2cb6cf4719eda3ddef5d8aea9aaa34ad2aa6580c8900eb122ca9404fdbf74652",
+    "responseSha256": "1020a92b1fbc7ec15e40254a35b346c4476e6280deaa66796d3d570720c3173a",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/anthropic--claude-haiku-4.5.json",
+    "responseText": "# 🏰 MOAT DUG 🏰\n\n```\n                    |||||||||||||||||\n                    |||||||||||||||||\n        ____________||||||||||||||||| ____________\n       |                                            |\n       |          🏯 YOUR CASTLE 🏯               |\n       |                                            |\n       |____________________________________________|\n              ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓\n            ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱\n          ╱╱   💧 MOAT 💧   ~~ 🐢 ~~   ╱╱\n        ╱╱      ~ 🐠 ~      ~ 🦆 ~     ╱╱\n      ╱╱      ~~~~~~~~~~~~~~~~~~~~~~   ╱╱\n```\n\n✅ **Your moat is complete!**\n\n- **Depth:** Unfathomable\n- **Width:** Adequately defensive\n- **Water level:** Full and menacing\n- **Residents:** A duck, some fish, and a turtle named Gerald\n- **Status:** Invaders not welcome\n\nYour fortress is now secure! 🛡️",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "status": "error",
+  "request": {
+    "model": "meituan/longcat-2.0",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.3,
+        "completion": 1.2,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "meituan/longcat-2.0",
+    "canonical_slug": "meituan/longcat-2.0-20260720",
+    "hugging_face_id": "meituan-longcat/LongCat-2.0",
+    "name": "Meituan: LongCat 2.0",
+    "created": 1784554658,
+    "description": "LongCat 2.0 is a sparse mixture-of-experts language model from Meituan, with 48B active parameters out of 1.6T total. It is suited for coding, repository-level changes, long-horizon problem solving, and agentic...",
+    "context_length": 1048756,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000003",
+      "completion": "0.0000012",
+      "input_cache_read": "0.000000006"
+    },
+    "top_provider": {
+      "context_length": 1048756,
+      "max_completion_tokens": 262144,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "seed",
+      "stop",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/meituan/longcat-2.0-20260720/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [],
+      "artificial_analysis": {
+        "intelligence_index": 19.1,
+        "coding_index": 45.3,
+        "agentic_index": 14
+      }
+    },
+    "reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supports_max_tokens": true
+    }
+  },
+  "response": {
+    "id": "gen-1792487576-2vyeyEtBSCPBOs7SyUFi",
+    "object": "chat.completion",
+    "created": 1792487576,
+    "model": "meituan/longcat-2.0",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "length",
+        "native_finish_reason": "length",
+        "message": {
+          "role": "assistant",
+          "content": "# Dig Me a Moat! 🏰\n\nHere's a little ASCII castle with a moat:\n\n```\n        |>>>                  |>>>\n        |                     |\n    _  _|_  _           _  _|_  _\n   |;|_|;|_|;|         |;|_|;|_|;|\n   \\\\.    .  /         \\\\.    .  /\n    \\\\:  .  /           \\\\:  .  /\n     ||:   |             ||:   |\n     ||:.  |             ||:.  |\n     ||:  . |             ||:  . |\n     ||:   |             ||:   |\n     ||: , |             ||: , |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: , |             ||: , |\n    ~||:  .|~          ~||:  .|~\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||:   |             ||:   |\n     ||: . |             ||: . |\n     ||:   |             ||:   |\n     ||:   |            ",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 2048,
+      "total_tokens": 2064,
+      "cost": 0.0024624,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0024624,
+        "upstream_inference_prompt_cost": 4.8e-06,
+        "upstream_inference_completions_cost": 0.0024576
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "meituan--longcat-2.0",
+    "displayName": "LongCat 2.0",
+    "provider": "meituan",
+    "modelId": "meituan/longcat-2.0",
+    "returnedModelId": "meituan/longcat-2.0",
+    "upstreamProvider": "AtlasCloud",
+    "evaluatedAt": "2026-10-20T09:13:31.811574+00:00",
+    "requestStartedAt": "2026-10-20T09:12:55.814537+00:00",
+    "requestId": "gen-1792487576-2vyeyEtBSCPBOs7SyUFi",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:12:57 GMT",
+      "CF-RAY": "a4d6e755dab141d7-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 2048,
+      "total_tokens": 2064,
+      "cost": 0.0024624,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0024624,
+        "upstream_inference_prompt_cost": 4.8e-06,
+        "upstream_inference_completions_cost": 0.0024576
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.0024624,
+    "latencyMs": 35996,
+    "finishReason": "length",
+    "nativeFinishReason": "length",
+    "requestSha256": "ac45ab973903f9bed6dfe8c26fad46801f698eb7d3e10613317e3dccb55f931b",
+    "responseSha256": "c6ae8af545397aa7958608b2208602e2bf79c40b759fbcd7040fa96c0af07918",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/meituan--longcat-2.0.json",
+    "httpStatus": 200,
+    "error": {
+      "message": "No complete public final answer returned",
+      "finishReason": "length"
+    }
+  }
+}

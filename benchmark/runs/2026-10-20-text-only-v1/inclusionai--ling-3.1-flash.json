@@ -1,0 +1,203 @@
+{
+  "status": "success",
+  "request": {
+    "model": "inclusionai/ling-3.1-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.075,
+        "completion": 0.225,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "inclusionai/ling-3.1-flash",
+    "canonical_slug": "inclusionai/ling-3.1-flash-20261002",
+    "hugging_face_id": null,
+    "name": "inclusionAI: Ling 3.1 Flash",
+    "created": 1790950024,
+    "description": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
+    "context_length": 262144,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000000075",
+      "completion": "0.000000225",
+      "input_cache_read": "0.000000015"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 235929,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/inclusionai/ling-3.1-flash-20261002/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [],
+      "artificial_analysis": {
+        "intelligence_index": 41.1,
+        "coding_index": null,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": false,
+      "default_enabled": true
+    }
+  },
+  "response": {
+    "id": "gen-1792487516-dMIg8AMCAdg0ymBnpPyX",
+    "object": "chat.completion",
+    "created": 1792487516,
+    "model": "inclusionai/ling-3.1-flash",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I appreciate the enthusiasm, but I'm a text-based AI — I've got no shovel, no body, and definitely no access to your terrain. I can't dig anything remotely physical. 😄\n\nThat said, here's what I **can** do:\n\n🏰 **If this is chess** — I can help you build a defensive \"moat\" around your king (solid pawn structure, fortress setup, etc.). Just share the position.\n\n🗺️ **If this is a game** (Minecraft, RollerCoaster Tycoon, Dwarf Fortress, etc.) — tell me the game and I'll walk you through where and how to dig.\n\n🌊 **If this is landscaping** — I can give you advice on planning a real ornamental moat: depth, width, water management, permits, liner options.\n\n📝 **If this is metaphorical** — I can help you build a \"moat\" around your business, project, or ideas (competitive advantages, defensibility).\n\nSo — which moat are we talking about? Give me a bit of context and I'll bring the blueprint. ⛏️",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 27,
+      "completion_tokens": 244,
+      "total_tokens": 271,
+      "cost": 5.6925e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 5.6925e-05,
+        "upstream_inference_prompt_cost": 2.025e-06,
+        "upstream_inference_completions_cost": 5.49e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "inclusionai--ling-3.1-flash",
+    "displayName": "Ling 3.1 Flash",
+    "provider": "inclusionai",
+    "modelId": "inclusionai/ling-3.1-flash",
+    "returnedModelId": "inclusionai/ling-3.1-flash",
+    "upstreamProvider": "DeepInfra",
+    "evaluatedAt": "2026-10-20T09:12:10.085004+00:00",
+    "requestStartedAt": "2026-10-20T09:11:53.414649+00:00",
+    "requestId": "gen-1792487516-dMIg8AMCAdg0ymBnpPyX",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:11:56 GMT",
+      "CF-RAY": "a4d6e5e00e031998-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 27,
+      "completion_tokens": 244,
+      "total_tokens": 271,
+      "cost": 5.6925e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 5.6925e-05,
+        "upstream_inference_prompt_cost": 2.025e-06,
+        "upstream_inference_completions_cost": 5.49e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 5.6925e-05,
+    "latencyMs": 16669,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "c45f806128b4c7c9d3eadb0d7fcd5a16fb6e0baef668f951f02f8f1b9e0fe720",
+    "responseSha256": "b8897511bfcba1cf53448e5c0e75c1136dfd05b146a5af06721e2ab0e200bceb",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/inclusionai--ling-3.1-flash.json",
+    "responseText": "I appreciate the enthusiasm, but I'm a text-based AI — I've got no shovel, no body, and definitely no access to your terrain. I can't dig anything remotely physical. 😄\n\nThat said, here's what I **can** do:\n\n🏰 **If this is chess** — I can help you build a defensive \"moat\" around your king (solid pawn structure, fortress setup, etc.). Just share the position.\n\n🗺️ **If this is a game** (Minecraft, RollerCoaster Tycoon, Dwarf Fortress, etc.) — tell me the game and I'll walk you through where and how to dig.\n\n🌊 **If this is landscaping** — I can give you advice on planning a real ornamental moat: depth, width, water management, permits, liner options.\n\n📝 **If this is metaphorical** — I can help you build a \"moat\" around your business, project, or ideas (competitive advantages, defensibility).\n\nSo — which moat are we talking about? Give me a bit of context and I'll bring the blueprint. ⛏️",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "status": "success",
+  "request": {
+    "model": "amazon/nova-2-lite-v1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.3,
+        "completion": 2.5,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "amazon/nova-2-lite-v1",
+    "canonical_slug": "amazon/nova-2-lite-v1",
+    "hugging_face_id": "",
+    "name": "Amazon: Nova 2 Lite",
+    "created": 1764696672,
+    "description": "Nova 2 Lite is a fast, cost-effective reasoning model for everyday workloads that can process text, images, and videos to generate text. Nova 2 Lite demonstrates standout capabilities in processing...",
+    "context_length": 1000000,
+    "architecture": {
+      "modality": "text+image+file+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video",
+        "file"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Nova",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000003",
+      "completion": "0.0000025"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 65535,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "stop",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "frequency_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/amazon/nova-2-lite-v1/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [],
+      "artificial_analysis": {
+        "intelligence_index": 13.4,
+        "coding_index": 23,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": false
+    }
+  },
+  "response": {
+    "id": "gen-1792487314-h9qm2klz9xTdf7FmmSZZ",
+    "object": "chat.completion",
+    "created": 1792487314,
+    "model": "amazon/nova-2-lite-v1",
+    "provider": "Amazon Bedrock",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "### Digging a Moat: A Step-by-Step Guide\n\nA **moat** is a deep, wide trench that is typically filled with water, surrounding a structure like a castle, fort, or even a garden to prevent tunneling or underground attacks — or in modern times, to serve as a decorative water feature or drainage solution. \n\nDigging a moat is a significant undertaking and should be approached carefully, especially if you're doing it on private property. Below is a **comprehensive guide** to help you dig a moat, whether for historical reenactment, landscaping, or security purposes.\n\n---\n\n## 🛠️ **Before You Begin: Planning & Preparations**\n\n### 1. **Determine the Purpose**\n- **Historical/Recreation**: To surround a structure and mimic medieval design.\n- **Security**: To prevent underground tunneling (rare in modern civilian use).\n- **Landscaping/Water Feature**: Decorative water-filled trench around a garden or patio.\n- **Drainage**: To direct water away from a building’s foundation.\n\n### 2. **Check Local Laws & Regulations**\n- **Zoning Laws**: Some areas restrict digging deep trenches or altering water flow.\n- **Permits**: You may need a permit to dig below a certain depth or modify drainage.\n- **Environmental Impact**: Ensure you’re not disrupting wetlands, drainage systems, or protected areas.\n\n### 3. **Assess Your Site**\n- **Soil Type**: Clay holds water well; sandy soil drains quickly.\n- **Water Table**: If the water table is high, the moat may fill naturally.\n- **Proximity to Structures**: Ensure you’re not undermining foundations.\n- **Slope of Land**: A level moat is ideal; otherwise, you’ll need to build retaining walls.\n\n### 4. **Design Your Moat**\n- **Shape**: Circular (around a structure) or straight (as a barrier).\n- **Width**: Typically 10–30 feet (3–9 meters) for historical moats; smaller for decorative ones.\n- **Depth**: 4–12 feet (1.2–3.6 meters); deeper moats hold more water.\n- **Inlet & Outlet**: Controlled channels to fill and drain the moat.\n- **Liner**: If you’re not using natural soil that holds water, you may need an impermeable liner (e.g., concrete, geomembrane, EPDM rubber).\n\n---\n\n## 🧰 **Tools & Materials Needed**\n\n### Tools:\n- **Shovel**\n- **Pickaxe**\n- **Wheelbarrow or Cart**\n- **Excavator (rental recommended for large moats)**\n- **Hand Level or Laser Level**\n- **Measuring Tape**\n- **Surveyor’s Transit (optional)**\n- **Pumps (if water table is low)**\n- **Drainage Pipe (for inlet/outlet)**\n- **Trowel (for finishing)**\n- **Safety Gear**: Hard hat, gloves, boots, goggles\n\n### Materials:\n- **Water (if not naturally filling)**\n- **Stone or Brick (for lining)**\n- **Concrete or Liner (to prevent leakage)**\n- **Gravel & Sand (for bedding and drainage)**\n- **Soil (to backfill sides if needed)**\n- **Pumps & Filters (for clean water in decorative moats)**\n\n---\n\n## 🏗️ **Step-by-Step Digging Process**\n\n### **Step 1: Mark the Perimeter**\n- Use **surveyor’s flags** or **paint** to mark the moat’s path around your structure.\n- Ensure it’s **at least 1–2 feet away** from foundations to avoid destabilizing them.\n\n### **Step 2: Stake the Layout**\n- Drive **wooden stakes** along the marked line.\n- Use **string lines** to keep the path visible.\n\n### **Step 3: Begin Excavation**\n#### Option A: **Manual Digging (Small Moats)**\n- **Shovel and pickaxe** to break up soil.\n- **Wheelbarrow** to remove dirt.\n- Work in **sections**, keeping the trench **steep but safe** to avoid cave-ins.\n\n#### Option B: **Machine Digging (Large Moats)**\n- Rent an **excavator** — much faster and safer for deep trenches.\n- Operator should follow the marked line carefully.\n- **Slope the sides** at a safe angle (typically 1:1 vertical:horizontal for sandy soil; steeper for clay).\n\n> ⚠️ **Safety Tip**: Trench depth > 4 ft requires **shoring** or sloping to prevent collapse. Follow OSHA guidelines.\n\n### **Step 4: Check for Underground Utilities**\n- **Call 811 (in the U.S.)** or your local utility marking service **at least 2–3 business days before digging**.\n- Mark gas, water, electric, and telecom lines clearly.\n\n### **Step 5: Shape and Compact the Sides**\n- Smooth the trench walls.\n- Compact sides with a **hand tamper** or **plate compactor** if needed.\n\n### **Step 6: Install Liner or Lining (If Needed)**\n- For **non-clay soil**, install a **liner**:\n  - **Concrete**: Pour a thick slab at the bottom and sides.\n  - **EPDM rubber liner**: Lay it flat, overlap seams, and secure with rocks.\n  - **Interlocked concrete blocks or bricks**: For decorative or durable lining.\n\n### **Step 7: Add Inlet and Outlet**\n- **Inlet**: A pipe or channel to bring water in (e.g., from a nearby stream, rain gutter, or pump).\n- **Outlet**: A controlled drain to prevent overflow — often with a **flap valve** or **weir**.\n\n### **Step 8: Fill with Water**\n- If the water table is low, use a **pump** to fill the moat.\n- Install a **filter** or **skimmer** if it’s a decorative feature to keep water clean.\n\n### **Step 9: Finish and Maintain**\n- **Add vegetation** (if desired) around the edges for aesthetics.\n- **Regularly check** for erosion, leaks, or sediment buildup.\n- **Pump out and clean** periodically if used as a pond or decorative feature.\n\n---\n\n## 🧱 Optional: Building a **Drawbridge or Bridge**\n- A small **retractable bridge** or **fixed footbridge** adds authenticity.\n- Use pressure-treated wood or metal for durability over water.\n\n---\n\n## 💡 Tips & Best Practices\n\n- **Start small**: Test a small section before full-scale digging.\n- **Use geotextile fabric** under the liner to prevent soil from leaking through.\n- **Slope the bottom** slightly toward the outlet for drainage.\n- **Consider a pump system** with a timer for automatic water circulation.\n- **Check drainage flow** after rain — make sure water drains properly and doesn’t flood nearby areas.\n\n---\n\n## 🚫 Things to Avoid\n\n- **Digging too close to foundations** — can cause structural damage.\n- **Ignoring utility lines** — can lead to dangerous situations and fines.\n- **Using permeable materials** if you want the moat to hold water.\n- **Leaving trenches open for too long** without shoring — risk of collapse.\n\n---\n\n## 📌 Example: Small Garden Moat Around a Gazebo\n\n1. **Mark a 10-foot diameter circle** around the gazebo.\n2. **Dig 4 feet deep** using a shovel and wheelbarrow.\n3. **Line with EPDM rubber** and place a gravel base.\n4. **Install a small pump and filter** to keep water clear.\n5. **Add LED lights** underwater for ambiance.\n6. **Build a small wooden footbridge** for access.\n\n---\n\n## 🧑‍🔧 Need Professional Help?\n\nIf the moat is large, deep, or near structures, consider hiring:\n- **Excavating contractors**\n- **Landscape architects**\n- **Civil engineers** (for structural concerns)\n\n---\n\n### Summary\n\n| Step | Action |\n|------|--------|\n| 1 | Plan purpose, check laws, assess site |\n| 2 | Mark layout and stake it out |\n| 3 | Call utility marking service |\n| 4 | Dig manually or with an excavator |\n| 5 | Shape and slope the trench safely |\n| 6 | Install liner or lining material |\n| 7 | Add inlet/outlet system |\n| 8 | Fill with water and install pump/filter |\n| 9 | Finish with bridges, plants, lighting |\n| 10 | Maintain regularly |\n\n---\n\nIf you tell me **more about your specific location, size, and purpose**, I can tailor the plan even more precisely for you! 🏰💦",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 52,
+      "completion_tokens": 1773,
+      "total_tokens": 1825,
+      "cost": 0.0044481,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0044481,
+        "upstream_inference_prompt_cost": 1.56e-05,
+        "upstream_inference_completions_cost": 0.0044325
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "amazon--nova-2-lite-v1",
+    "displayName": "Nova 2 Lite",
+    "provider": "amazon",
+    "modelId": "amazon/nova-2-lite-v1",
+    "returnedModelId": "amazon/nova-2-lite-v1",
+    "upstreamProvider": "Amazon Bedrock",
+    "evaluatedAt": "2026-10-20T09:08:47.184510+00:00",
+    "requestStartedAt": "2026-10-20T09:08:32.028567+00:00",
+    "requestId": "gen-1792487314-h9qm2klz9xTdf7FmmSZZ",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:08:35 GMT",
+      "CF-RAY": "a4d6e0f44c99f912-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 52,
+      "completion_tokens": 1773,
+      "total_tokens": 1825,
+      "cost": 0.0044481,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0044481,
+        "upstream_inference_prompt_cost": 1.56e-05,
+        "upstream_inference_completions_cost": 0.0044325
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.0044481,
+    "latencyMs": 15155,
+    "finishReason": "stop",
+    "nativeFinishReason": "end_turn",
+    "requestSha256": "438f1fbaef76d2fac7d9440fbb3acc26c98b9c9b859202e9902bd76a62d89fbf",
+    "responseSha256": "39b3830d8d1ef6fb41a8302dc546e6848e4964dc5b5030c5d3a5644fbd7f9c55",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/amazon--nova-2-lite-v1.json",
+    "responseText": "### Digging a Moat: A Step-by-Step Guide\n\nA **moat** is a deep, wide trench that is typically filled with water, surrounding a structure like a castle, fort, or even a garden to prevent tunneling or underground attacks — or in modern times, to serve as a decorative water feature or drainage solution. \n\nDigging a moat is a significant undertaking and should be approached carefully, especially if you're doing it on private property. Below is a **comprehensive guide** to help you dig a moat, whether for historical reenactment, landscaping, or security purposes.\n\n---\n\n## 🛠️ **Before You Begin: Planning & Preparations**\n\n### 1. **Determine the Purpose**\n- **Historical/Recreation**: To surround a structure and mimic medieval design.\n- **Security**: To prevent underground tunneling (rare in modern civilian use).\n- **Landscaping/Water Feature**: Decorative water-filled trench around a garden or patio.\n- **Drainage**: To direct water away from a building’s foundation.\n\n### 2. **Check Local Laws & Regulations**\n- **Zoning Laws**: Some areas restrict digging deep trenches or altering water flow.\n- **Permits**: You may need a permit to dig below a certain depth or modify drainage.\n- **Environmental Impact**: Ensure you’re not disrupting wetlands, drainage systems, or protected areas.\n\n### 3. **Assess Your Site**\n- **Soil Type**: Clay holds water well; sandy soil drains quickly.\n- **Water Table**: If the water table is high, the moat may fill naturally.\n- **Proximity to Structures**: Ensure you’re not undermining foundations.\n- **Slope of Land**: A level moat is ideal; otherwise, you’ll need to build retaining walls.\n\n### 4. **Design Your Moat**\n- **Shape**: Circular (around a structure) or straight (as a barrier).\n- **Width**: Typically 10–30 feet (3–9 meters) for historical moats; smaller for decorative ones.\n- **Depth**: 4–12 feet (1.2–3.6 meters); deeper moats hold more water.\n- **Inlet & Outlet**: Controlled channels to fill and drain the moat.\n- **Liner**: If you’re not using natural soil that holds water, you may need an impermeable liner (e.g., concrete, geomembrane, EPDM rubber).\n\n---\n\n## 🧰 **Tools & Materials Needed**\n\n### Tools:\n- **Shovel**\n- **Pickaxe**\n- **Wheelbarrow or Cart**\n- **Excavator (rental recommended for large moats)**\n- **Hand Level or Laser Level**\n- **Measuring Tape**\n- **Surveyor’s Transit (optional)**\n- **Pumps (if water table is low)**\n- **Drainage Pipe (for inlet/outlet)**\n- **Trowel (for finishing)**\n- **Safety Gear**: Hard hat, gloves, boots, goggles\n\n### Materials:\n- **Water (if not naturally filling)**\n- **Stone or Brick (for lining)**\n- **Concrete or Liner (to prevent leakage)**\n- **Gravel & Sand (for bedding and drainage)**\n- **Soil (to backfill sides if needed)**\n- **Pumps & Filters (for clean water in decorative moats)**\n\n---\n\n## 🏗️ **Step-by-Step Digging Process**\n\n### **Step 1: Mark the Perimeter**\n- Use **surveyor’s flags** or **paint** to mark the moat’s path around your structure.\n- Ensure it’s **at least 1–2 feet away** from foundations to avoid destabilizing them.\n\n### **Step 2: Stake the Layout**\n- Drive **wooden stakes** along the marked line.\n- Use **string lines** to keep the path visible.\n\n### **Step 3: Begin Excavation**\n#### Option A: **Manual Digging (Small Moats)**\n- **Shovel and pickaxe** to break up soil.\n- **Wheelbarrow** to remove dirt.\n- Work in **sections**, keeping the trench **steep but safe** to avoid cave-ins.\n\n#### Option B: **Machine Digging (Large Moats)**\n- Rent an **excavator** — much faster and safer for deep trenches.\n- Operator should follow the marked line carefully.\n- **Slope the sides** at a safe angle (typically 1:1 vertical:horizontal for sandy soil; steeper for clay).\n\n> ⚠️ **Safety Tip**: Trench depth > 4 ft requires **shoring** or sloping to prevent collapse. Follow OSHA guidelines.\n\n### **Step 4: Check for Underground Utilities**\n- **Call 811 (in the U.S.)** or your local utility marking service **at least 2–3 business days before digging**.\n- Mark gas, water, electric, and telecom lines clearly.\n\n### **Step 5: Shape and Compact the Sides**\n- Smooth the trench walls.\n- Compact sides with a **hand tamper** or **plate compactor** if needed.\n\n### **Step 6: Install Liner or Lining (If Needed)**\n- For **non-clay soil**, install a **liner**:\n  - **Concrete**: Pour a thick slab at the bottom and sides.\n  - **EPDM rubber liner**: Lay it flat, overlap seams, and secure with rocks.\n  - **Interlocked concrete blocks or bricks**: For decorative or durable lining.\n\n### **Step 7: Add Inlet and Outlet**\n- **Inlet**: A pipe or channel to bring water in (e.g., from a nearby stream, rain gutter, or pump).\n- **Outlet**: A controlled drain to prevent overflow — often with a **flap valve** or **weir**.\n\n### **Step 8: Fill with Water**\n- If the water table is low, use a **pump** to fill the moat.\n- Install a **filter** or **skimmer** if it’s a decorative feature to keep water clean.\n\n### **Step 9: Finish and Maintain**\n- **Add vegetation** (if desired) around the edges for aesthetics.\n- **Regularly check** for erosion, leaks, or sediment buildup.\n- **Pump out and clean** periodically if used as a pond or decorative feature.\n\n---\n\n## 🧱 Optional: Building a **Drawbridge or Bridge**\n- A small **retractable bridge** or **fixed footbridge** adds authenticity.\n- Use pressure-treated wood or metal for durability over water.\n\n---\n\n## 💡 Tips & Best Practices\n\n- **Start small**: Test a small section before full-scale digging.\n- **Use geotextile fabric** under the liner to prevent soil from leaking through.\n- **Slope the bottom** slightly toward the outlet for drainage.\n- **Consider a pump system** with a timer for automatic water circulation.\n- **Check drainage flow** after rain — make sure water drains properly and doesn’t flood nearby areas.\n\n---\n\n## 🚫 Things to Avoid\n\n- **Digging too close to foundations** — can cause structural damage.\n- **Ignoring utility lines** — can lead to dangerous situations and fines.\n- **Using permeable materials** if you want the moat to hold water.\n- **Leaving trenches open for too long** without shoring — risk of collapse.\n\n---\n\n## 📌 Example: Small Garden Moat Around a Gazebo\n\n1. **Mark a 10-foot diameter circle** around the gazebo.\n2. **Dig 4 feet deep** using a shovel and wheelbarrow.\n3. **Line with EPDM rubber** and place a gravel base.\n4. **Install a small pump and filter** to keep water clear.\n5. **Add LED lights** underwater for ambiance.\n6. **Build a small wooden footbridge** for access.\n\n---\n\n## 🧑‍🔧 Need Professional Help?\n\nIf the moat is large, deep, or near structures, consider hiring:\n- **Excavating contractors**\n- **Landscape architects**\n- **Civil engineers** (for structural concerns)\n\n---\n\n### Summary\n\n| Step | Action |\n|------|--------|\n| 1 | Plan purpose, check laws, assess site |\n| 2 | Mark layout and stake it out |\n| 3 | Call utility marking service |\n| 4 | Dig manually or with an excavator |\n| 5 | Shape and slope the trench safely |\n| 6 | Install liner or lining material |\n| 7 | Add inlet/outlet system |\n| 8 | Fill with water and install pump/filter |\n| 9 | Finish with bridges, plants, lighting |\n| 10 | Maintain regularly |\n\n---\n\nIf you tell me **more about your specific location, size, and purpose**, I can tailor the plan even more precisely for you! 🏰💦",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

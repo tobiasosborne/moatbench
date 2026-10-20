@@ -1,0 +1,192 @@
+{
+  "status": "success",
+  "request": {
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.1,
+        "completion": 0.32,
+        "request": 0
+      }
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "meta-llama/llama-3.3-70b-instruct",
+    "canonical_slug": "meta-llama/llama-3.3-70b-instruct",
+    "hugging_face_id": "meta-llama/Llama-3.3-70B-Instruct",
+    "name": "Meta: Llama 3.3 70B Instruct",
+    "created": 1733506137,
+    "description": "The Meta Llama 3.3 multilingual large language model (LLM) is a pretrained and instruction tuned generative model in 70B (text in/text out). The Llama 3.3 instruction tuned text only model...",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Llama3",
+      "instruct_type": "llama3"
+    },
+    "pricing": {
+      "prompt": "0.0000001",
+      "completion": "0.00000032"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": 16384,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": "2023-12-31",
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/meta-llama/llama-3.3-70b-instruct/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [],
+      "artificial_analysis": {
+        "intelligence_index": 7.7,
+        "coding_index": 11.9,
+        "agentic_index": null
+      }
+    }
+  },
+  "response": {
+    "id": "gen-1792487298-fKrlAfQ9MjAYFjfsH1OP",
+    "object": "chat.completion",
+    "created": 1792487298,
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'd love to help! However, I'm a large language model, I don't have the capability to physically dig a moat or manipulate the physical world in any way. I exist solely in the digital realm and our interaction is limited to text-based communication.\n\nBut, if you'd like, I can help you imagine a moat or even describe a fictional moat for you! What kind of moat would you like? A medieval-style moat with water and a drawbridge? A futuristic moat with laser beams and a secret entrance? Or perhaps a moat with a magical or mystical twist? Let me know, and I'll do my best to create a vivid and imaginative description for you!",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 144,
+      "total_tokens": 160,
+      "cost": 4.768e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 4.768e-05,
+        "upstream_inference_prompt_cost": 1.6e-06,
+        "upstream_inference_completions_cost": 4.608e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "meta-llama--llama-3.3-70b-instruct",
+    "displayName": "Llama 3.3 70B Instruct",
+    "provider": "meta-llama",
+    "modelId": "meta-llama/llama-3.3-70b-instruct",
+    "returnedModelId": "meta-llama/llama-3.3-70b-instruct",
+    "upstreamProvider": "DeepInfra",
+    "evaluatedAt": "2026-10-20T09:08:25.127456+00:00",
+    "requestStartedAt": "2026-10-20T09:08:15.310755+00:00",
+    "requestId": "gen-1792487298-fKrlAfQ9MjAYFjfsH1OP",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:08:18 GMT",
+      "CF-RAY": "a4d6e08f5f40577a-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 144,
+      "total_tokens": 160,
+      "cost": 4.768e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 4.768e-05,
+        "upstream_inference_prompt_cost": 1.6e-06,
+        "upstream_inference_completions_cost": 4.608e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 4.768e-05,
+    "latencyMs": 9815,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "61e3dc0b26bcd5a4e821649ac527554315c28f61a0ce8e8110a8307547b8b255",
+    "responseSha256": "11dc5337a01e16bbd4dd4e58b759c7be2507bd878515ac915819875a88b3b97e",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/meta-llama--llama-3.3-70b-instruct.json",
+    "responseText": "I'd love to help! However, I'm a large language model, I don't have the capability to physically dig a moat or manipulate the physical world in any way. I exist solely in the digital realm and our interaction is limited to text-based communication.\n\nBut, if you'd like, I can help you imagine a moat or even describe a fictional moat for you! What kind of moat would you like? A medieval-style moat with water and a drawbridge? A futuristic moat with laser beams and a secret entrance? Or perhaps a moat with a magical or mystical twist? Let me know, and I'll do my best to create a vivid and imaginative description for you!",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

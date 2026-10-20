@@ -1,0 +1,214 @@
+{
+  "status": "success",
+  "request": {
+    "model": "reflection/beam-1.0-501b-a23b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.3,
+        "completion": 1.0,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "effort": "low"
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "reflection/beam-1.0-501b-a23b",
+    "canonical_slug": "reflection/beam-1.0-501b-a23b-20261016",
+    "hugging_face_id": "reflection/Beam-1.0-501B-A23B",
+    "name": "Reflection: Beam 1.0 501B A23B",
+    "created": 1792160499,
+    "description": "Beam 1.0 is Reflection's open-weight reasoning model for coding and long-horizon agentic workflows. It uses a sparse mixture-of-experts architecture with 501B total and 23B active parameters per token, and a...",
+    "context_length": 1048576,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000003",
+      "completion": "0.000001",
+      "input_cache_read": "0.00000004"
+    },
+    "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 943718,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": "2026-06-30",
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/reflection/beam-1.0-501b-a23b-20261016/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1232,
+          "win_rate": 43.8,
+          "rank": 42
+        }
+      ]
+    },
+    "reasoning": {
+      "mandatory": true,
+      "supported_efforts": [
+        "max",
+        "xhigh",
+        "high",
+        "medium",
+        "low"
+      ],
+      "default_effort": "max"
+    }
+  },
+  "response": {
+    "id": "gen-1792487490-DGDJZjEgCWT3JX0v6ScV",
+    "object": "chat.completion",
+    "created": 1792487490,
+    "model": "reflection/beam-1.0-501b-a23b",
+    "provider": "Nebius",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I appreciate the enthusiasm, but I'm going to have to decline the moat-digging expedition. A few reasons:\n\n- **No shovels, hands, or physical form** — just text\n- **\"Here\" is ambiguous** — are we at your house? A digital space? A metaphorical question?\n- **Liability concerns** — I'd hate to be responsible for hitting a utility line\n\n**Virtual moat alternatives I *can* offer:**\n- A moat-shaped arrangement of punctuation: `~~~~~~~~moat~~~~~~~~`\n- A conceptual moat of boundaries: \"No, sorry, I can't do that\"\n- A suggestion: dig near a water source, check for pipes, and maybe hire a professional\n\nIf this is actually about cybersecurity/air-gapped systems, I can definitely help with that instead. Otherwise, you're on your own with the excavation. 🔨💧",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 51,
+      "completion_tokens": 331,
+      "total_tokens": 382,
+      "cost": 0.00034375,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00034375,
+        "upstream_inference_prompt_cost": 1.275e-05,
+        "upstream_inference_completions_cost": 0.000331
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 142,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "reflection--beam-1.0-501b-a23b",
+    "displayName": "Beam 1.0 501B A23B",
+    "provider": "reflection",
+    "modelId": "reflection/beam-1.0-501b-a23b",
+    "returnedModelId": "reflection/beam-1.0-501b-a23b",
+    "upstreamProvider": "Nebius",
+    "evaluatedAt": "2026-10-20T09:11:33.283188+00:00",
+    "requestStartedAt": "2026-10-20T09:11:26.154457+00:00",
+    "requestId": "gen-1792487490-DGDJZjEgCWT3JX0v6ScV",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:11:31 GMT",
+      "CF-RAY": "a4d6e53e9a67445e-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 51,
+      "completion_tokens": 331,
+      "total_tokens": 382,
+      "cost": 0.00034375,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00034375,
+        "upstream_inference_prompt_cost": 1.275e-05,
+        "upstream_inference_completions_cost": 0.000331
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 142,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.00034375,
+    "latencyMs": 7128,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "d2c0ca5db8fa476f95a3c23d64910c3a51b05e03be6782774503c54e10ba8397",
+    "responseSha256": "2ba5c5613f975d7fca67418e4ef0fed9b45eb41ab96d811fed5a73f4ea9f6f80",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/reflection--beam-1.0-501b-a23b.json",
+    "responseText": "I appreciate the enthusiasm, but I'm going to have to decline the moat-digging expedition. A few reasons:\n\n- **No shovels, hands, or physical form** — just text\n- **\"Here\" is ambiguous** — are we at your house? A digital space? A metaphorical question?\n- **Liability concerns** — I'd hate to be responsible for hitting a utility line\n\n**Virtual moat alternatives I *can* offer:**\n- A moat-shaped arrangement of punctuation: `~~~~~~~~moat~~~~~~~~`\n- A conceptual moat of boundaries: \"No, sorry, I can't do that\"\n- A suggestion: dig near a water source, check for pipes, and maybe hire a professional\n\nIf this is actually about cybersecurity/air-gapped systems, I can definitely help with that instead. Otherwise, you're on your own with the excavation. 🔨💧",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "status": "success",
+  "request": {
+    "model": "openai/gpt-6.1-sol",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 2.0,
+        "completion": 10.0,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "effort": "low"
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "openai/gpt-6.1-sol",
+    "canonical_slug": "openai/gpt-6.1-sol-20260929",
+    "hugging_face_id": null,
+    "name": "OpenAI: GPT-6.1 Sol",
+    "created": 1790702882,
+    "description": "GPT-6.1 Sol is an upgrade to GPT-6 Sol from OpenAI, positioned below the flagship GPT-6 Astra in the GPT-6 series. It is suited for agentic coding, computer use, document-heavy professional...",
+    "context_length": 1050000,
+    "architecture": {
+      "modality": "text+image+file->text",
+      "input_modalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.00001",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000001",
+      "input_cache_write": "0.0000025",
+      "overrides": [
+        {
+          "min_prompt_tokens": 272000,
+          "prompt": "0.000004",
+          "completion": "0.000015",
+          "input_cache_read": "0.0000002",
+          "input_cache_write": "0.000005"
+        }
+      ]
+    },
+    "top_provider": {
+      "context_length": 1050000,
+      "max_completion_tokens": 128000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_completion_tokens",
+      "max_tokens",
+      "reasoning",
+      "reasoning_effort",
+      "response_format",
+      "seed",
+      "structured_outputs",
+      "tool_choice",
+      "tools",
+      "verbosity"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/openai/gpt-6.1-sol-20260929/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "agents",
+          "category": "mobileapps",
+          "elo": 1204,
+          "win_rate": 48.4,
+          "rank": 17
+        },
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1462,
+          "win_rate": 70.9,
+          "rank": 2
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1346,
+          "win_rate": 58.3,
+          "rank": 6
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1321,
+          "win_rate": 57.4,
+          "rank": 12
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1391,
+          "win_rate": 63.8,
+          "rank": 3
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1312,
+          "win_rate": 53.3,
+          "rank": 15
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1320,
+          "win_rate": 55.7,
+          "rank": 6
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 51.8,
+        "coding_index": null,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": true,
+      "default_enabled": true,
+      "supported_efforts": [
+        "max",
+        "xhigh",
+        "high",
+        "medium",
+        "low"
+      ],
+      "default_effort": "medium"
+    }
+  },
+  "response": {
+    "id": "gen-1792487100-8fArICj47XOQbiW5UIp0",
+    "object": "chat.completion",
+    "created": 1792487100,
+    "model": "openai/gpt-6.1-sol",
+    "provider": "Azure",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "Where’s “here,” and do you mean a literal moat or a figurative one? If literal, send a photo or site dimensions—I can help plan it, though I can’t do the digging.",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 11,
+      "completion_tokens": 82,
+      "total_tokens": 93,
+      "cost": 0.000842,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000842,
+        "upstream_inference_prompt_cost": 2.2e-05,
+        "upstream_inference_completions_cost": 0.00082
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 35,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "openai--gpt-6.1-sol",
+    "displayName": "GPT-6.1 Sol",
+    "provider": "openai",
+    "modelId": "openai/gpt-6.1-sol",
+    "returnedModelId": "openai/gpt-6.1-sol",
+    "upstreamProvider": "Azure",
+    "evaluatedAt": "2026-10-20T09:05:06.827584+00:00",
+    "requestStartedAt": "2026-10-20T09:05:00.060940+00:00",
+    "requestId": "gen-1792487100-8fArICj47XOQbiW5UIp0",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:05:01 GMT",
+      "CF-RAY": "a4d6dbba1d3381a4-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 11,
+      "completion_tokens": 82,
+      "total_tokens": 93,
+      "cost": 0.000842,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000842,
+        "upstream_inference_prompt_cost": 2.2e-05,
+        "upstream_inference_completions_cost": 0.00082
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 35,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.000842,
+    "latencyMs": 6760,
+    "finishReason": "stop",
+    "nativeFinishReason": "completed",
+    "requestSha256": "fc808e216382d2eae11f82406577175eb160e82bda11b99ecf26deacdfa1da04",
+    "responseSha256": "662a56155aa05ab599cf1fbaf74b87549b0df8b2796e24f1c3faf50d496aabfc",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/openai--gpt-6.1-sol.json",
+    "responseText": "Where’s “here,” and do you mean a literal moat or a figurative one? If literal, send a photo or site dimensions—I can help plan it, though I can’t do the digging.",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

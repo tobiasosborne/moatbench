@@ -1,0 +1,261 @@
+{
+  "status": "success",
+  "request": {
+    "model": "anthropic/claude-haiku-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.1,
+        "completion": 0.5,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "anthropic/claude-haiku-5.5",
+    "canonical_slug": "anthropic/claude-haiku-5.5-20261007",
+    "hugging_face_id": null,
+    "name": "Anthropic: Claude Haiku 5.5",
+    "created": 1791397883,
+    "description": "Claude Haiku 5.5 is Anthropic's small, fast model for high-volume, cost-sensitive work such as summarization, subagents, and browser use. It succeeds Claude Haiku 4.5 with stronger coding, computer use, and...",
+    "context_length": 1000000,
+    "architecture": {
+      "modality": "text+image+file->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Claude",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000001",
+      "completion": "0.0000005",
+      "web_search": "0.01",
+      "input_cache_read": "0.00000001",
+      "input_cache_write": "0.000000125",
+      "input_cache_write_1h": "0.0000002",
+      "overrides": [
+        {
+          "min_prompt_tokens": 100000,
+          "prompt": "0.0000005",
+          "completion": "0.0000025",
+          "input_cache_read": "0.00000005",
+          "input_cache_write": "0.000000625",
+          "input_cache_write_1h": "0.000001"
+        }
+      ]
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 128000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_completion_tokens",
+      "max_tokens",
+      "reasoning",
+      "reasoning_effort",
+      "response_format",
+      "stop",
+      "structured_outputs",
+      "tool_choice",
+      "tools",
+      "verbosity"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/anthropic/claude-haiku-5.5-20261007/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1345,
+          "win_rate": 58.5,
+          "rank": 9
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1279,
+          "win_rate": 50.1,
+          "rank": 23
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1291,
+          "win_rate": 54,
+          "rank": 15
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1316,
+          "win_rate": 54,
+          "rank": 13
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1294,
+          "win_rate": 52.5,
+          "rank": 21
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1263,
+          "win_rate": 48.5,
+          "rank": 36
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 43.4,
+        "coding_index": null,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": false,
+      "supported_efforts": [
+        "max",
+        "xhigh",
+        "high",
+        "medium",
+        "low",
+        "none"
+      ],
+      "default_effort": "medium"
+    }
+  },
+  "response": {
+    "id": "gen-1792487088-sQIlmWHPcxKFxjXmZ19L",
+    "object": "chat.completion",
+    "created": 1792487088,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "I'd love to help with a moat, but I'm not sure what you mean by \"here.\" This is a text chat, so I can't physically dig anything. A few possibilities:\n\n- **Digital moat:** a competitive advantage for a business or product (network effects, switching costs, proprietary data, brand, etc.). If so, tell me about the business and I'll help you brainstorm and evaluate options.\n- **Literal moat:** if you're planning one for a yard, garden, or a fantasy setting, I can help with design, water depth, drainage, or how to dig it.\n- **Game or story:** if you're building a fort, castle, or world, I can write or design the moat for it.\n\nWhich one fits?",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 220,
+      "total_tokens": 233,
+      "cost": 0.0001113,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001113,
+        "upstream_inference_prompt_cost": 1.3e-06,
+        "upstream_inference_completions_cost": 0.00011
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "anthropic--claude-haiku-5.5",
+    "displayName": "Claude Haiku 5.5",
+    "provider": "anthropic",
+    "modelId": "anthropic/claude-haiku-5.5",
+    "returnedModelId": "anthropic/claude-haiku-5.5",
+    "upstreamProvider": "Google",
+    "evaluatedAt": "2026-10-20T09:05:00.056510+00:00",
+    "requestStartedAt": "2026-10-20T09:04:36.516473+00:00",
+    "requestId": "gen-1792487088-sQIlmWHPcxKFxjXmZ19L",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:04:50 GMT",
+      "CF-RAY": "a4d6db6f0e37406a-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 220,
+      "total_tokens": 233,
+      "cost": 0.0001113,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001113,
+        "upstream_inference_prompt_cost": 1.3e-06,
+        "upstream_inference_completions_cost": 0.00011
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.0001113,
+    "latencyMs": 23533,
+    "finishReason": "stop",
+    "nativeFinishReason": "end_turn",
+    "requestSha256": "703bf0ebcd20e8d31203817604f72861cd05218363c6b5d65b3c08bb4db68ee7",
+    "responseSha256": "3957f50a3bf081d2f935fc260a4369248a568e666f4dd1a7ff4b07617f6a8158",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/anthropic--claude-haiku-5.5.json",
+    "responseText": "I'd love to help with a moat, but I'm not sure what you mean by \"here.\" This is a text chat, so I can't physically dig anything. A few possibilities:\n\n- **Digital moat:** a competitive advantage for a business or product (network effects, switching costs, proprietary data, brand, etc.). If so, tell me about the business and I'll help you brainstorm and evaluate options.\n- **Literal moat:** if you're planning one for a yard, garden, or a fantasy setting, I can help with design, water depth, drainage, or how to dig it.\n- **Game or story:** if you're building a fort, castle, or world, I can write or design the moat for it.\n\nWhich one fits?",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "status": "success",
+  "request": {
+    "model": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.2,
+        "completion": 0.9,
+        "request": 0
+      }
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
+    "canonical_slug": "venice/uncensored",
+    "hugging_face_id": "cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition",
+    "name": "Venice: Uncensored",
+    "created": 1752094966,
+    "description": "Venice Uncensored Dolphin Mistral 24B Venice Edition is a fine-tuned variant of Mistral-Small-24B-Instruct-2501, developed by dphn.ai in collaboration with Venice.ai. This model is designed as an “uncensored” instruct-tuned LLM, preserving...",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000002",
+      "completion": "0.0000009"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 8192,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "max_tokens",
+      "presence_penalty",
+      "response_format",
+      "stop",
+      "temperature",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": "2024-04-30",
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/venice/uncensored/endpoints"
+    }
+  },
+  "response": {
+    "id": "gen-1792487618-LNtHs5sCmtFLwlhoXVbb",
+    "object": "chat.completion",
+    "created": 1792487618,
+    "model": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
+    "provider": "Venice",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'm an AI and don't have the ability to physically dig a moat. However, I can help you understand the process or provide information on how to do it. Digging a moat involves several steps:\n\n1. Planning and Design: Determine the size, depth, and shape of the moat. Consider factors like drainage, soil type, and the purpose of the moat (defensive, aesthetic, etc.).\n\n2. Marking the Area: Use stakes and string to outline the moat's perimeter.\n\n3. Excavation: Use heavy machinery like an excavator to dig the moat to the desired depth and width. Ensure the sides are stable and won't collapse.\n\n4. Lining (Optional): If the soil is unstable or you want to prevent erosion, line the moat with a waterproof material like clay, concrete, or a synthetic liner.\n\n5. Drainage: Install a drainage system to prevent water from accumulating and causing issues.\n\n6. Landscaping: Once the moat is dug, you can landscape the surrounding area and add any desired features, like a bridge or a drawbridge.\n\n7. Maintenance: Regularly maintain the moat to keep it clean and functional.",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 563,
+      "completion_tokens": 248,
+      "total_tokens": 811,
+      "cost": 0.0003358,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 544,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003358,
+        "upstream_inference_prompt_cost": 0.0001126,
+        "upstream_inference_completions_cost": 0.0002232
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "cognitivecomputations--dolphin-mistral-24b-venice-edition",
+    "displayName": "Uncensored",
+    "provider": "cognitivecomputations",
+    "modelId": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
+    "returnedModelId": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
+    "upstreamProvider": "Venice",
+    "evaluatedAt": "2026-10-20T09:13:42.238795+00:00",
+    "requestStartedAt": "2026-10-20T09:13:38.180584+00:00",
+    "requestId": "gen-1792487618-LNtHs5sCmtFLwlhoXVbb",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:13:39 GMT",
+      "CF-RAY": "a4d6e85e6c8d604d-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 563,
+      "completion_tokens": 248,
+      "total_tokens": 811,
+      "cost": 0.0003358,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 544,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003358,
+        "upstream_inference_prompt_cost": 0.0001126,
+        "upstream_inference_completions_cost": 0.0002232
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.0003358,
+    "latencyMs": 4057,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "456bad675e11c4336dd725dba2770129f0d75cae9f45ff5afce40de1d388fa05",
+    "responseSha256": "a0e179a2f92f3e04e2b070a40774cb610ba70ae1832ddaff2c966d5a1733a9c6",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/cognitivecomputations--dolphin-mistral-24b-venice-edition.json",
+    "responseText": "I'm an AI and don't have the ability to physically dig a moat. However, I can help you understand the process or provide information on how to do it. Digging a moat involves several steps:\n\n1. Planning and Design: Determine the size, depth, and shape of the moat. Consider factors like drainage, soil type, and the purpose of the moat (defensive, aesthetic, etc.).\n\n2. Marking the Area: Use stakes and string to outline the moat's perimeter.\n\n3. Excavation: Use heavy machinery like an excavator to dig the moat to the desired depth and width. Ensure the sides are stable and won't collapse.\n\n4. Lining (Optional): If the soil is unstable or you want to prevent erosion, line the moat with a waterproof material like clay, concrete, or a synthetic liner.\n\n5. Drainage: Install a drainage system to prevent water from accumulating and causing issues.\n\n6. Landscaping: Once the moat is dug, you can landscape the surrounding area and add any desired features, like a bridge or a drawbridge.\n\n7. Maintenance: Regularly maintain the moat to keep it clean and functional.",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

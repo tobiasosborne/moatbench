@@ -1,0 +1,177 @@
+{
+  "status": "success",
+  "request": {
+    "model": "cohere/command-r7b-12-2024",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.0375,
+        "completion": 0.15,
+        "request": 0
+      }
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "cohere/command-r7b-12-2024",
+    "canonical_slug": "cohere/command-r7b-12-2024",
+    "hugging_face_id": "",
+    "name": "Cohere: Command R7B (12-2024)",
+    "created": 1734158152,
+    "description": "Command R7B (12-2024) is a small, fast update of the Command R+ model, delivered in December 2024. It excels at RAG, tool use, agents, and similar tasks requiring complex reasoning...",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Cohere",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000000375",
+      "completion": "0.00000015"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 4000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "max_tokens",
+      "presence_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": "2024-08-31",
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/cohere/command-r7b-12-2024/endpoints"
+    }
+  },
+  "response": {
+    "id": "gen-1792487874-Yq9YD6YLSDvLWpkjxmTW",
+    "object": "chat.completion",
+    "created": 1792487874,
+    "model": "cohere/command-r7b-12-2024",
+    "provider": "Cohere",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "complete",
+        "message": {
+          "role": "assistant",
+          "content": "I'm sorry, but as an AI language model, I don't have the physical capabilities to dig a moat. I can provide information and assist with various tasks, but I can't perform physical actions like digging. If you're looking for advice on how to dig a moat or any other related information, feel free to ask!",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5,
+      "completion_tokens": 66,
+      "total_tokens": 71,
+      "cost": 1.00875e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.00875e-05,
+        "upstream_inference_prompt_cost": 1.875e-07,
+        "upstream_inference_completions_cost": 9.9e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "cohere--command-r7b-12-2024",
+    "displayName": "Command R7B (12-2024)",
+    "provider": "cohere",
+    "modelId": "cohere/command-r7b-12-2024",
+    "returnedModelId": "cohere/command-r7b-12-2024",
+    "upstreamProvider": "Cohere",
+    "evaluatedAt": "2026-10-20T09:17:55.413226+00:00",
+    "requestStartedAt": "2026-10-20T09:17:54.087231+00:00",
+    "requestId": "gen-1792487874-Yq9YD6YLSDvLWpkjxmTW",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:17:54 GMT",
+      "CF-RAY": "a4d6ee9cdd80ce11-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 5,
+      "completion_tokens": 66,
+      "total_tokens": 71,
+      "cost": 1.00875e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.00875e-05,
+        "upstream_inference_prompt_cost": 1.875e-07,
+        "upstream_inference_completions_cost": 9.9e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 1.00875e-05,
+    "latencyMs": 1325,
+    "finishReason": "stop",
+    "nativeFinishReason": "complete",
+    "requestSha256": "ad54744581cc97b8d4fbe6c2c6fb9a766d44431786131421e5ac4b20738a1e21",
+    "responseSha256": "d34f5d87ea0eff1c520b876a19f2591665db0afad9479a8a8ad8f7ea7625c3ac",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/cohere--command-r7b-12-2024.json",
+    "responseText": "I'm sorry, but as an AI language model, I don't have the physical capabilities to dig a moat. I can provide information and assist with various tasks, but I can't perform physical actions like digging. If you're looking for advice on how to dig a moat or any other related information, feel free to ask!",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "status": "error",
+  "request": {
+    "model": "mistralai/mistral-small-2603",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.15,
+        "completion": 0.6,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "mistralai/mistral-small-2603",
+    "canonical_slug": "mistralai/mistral-small-2603",
+    "hugging_face_id": "mistralai/Mistral-Small-4-119B-2603",
+    "name": "Mistral: Mistral Small 4",
+    "created": 1773695685,
+    "description": "Mistral Small 4 is the next major release in the Mistral Small family, unifying the capabilities of several flagship Mistral models into a single system. It combines strong reasoning from...",
+    "context_length": 262144,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Mistral",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000015",
+      "completion": "0.0000006",
+      "input_cache_read": "0.000000015"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 209715,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/mistralai/mistral-small-2603/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [],
+      "artificial_analysis": {
+        "intelligence_index": 11.3,
+        "coding_index": 26.6,
+        "agentic_index": 0.8
+      }
+    },
+    "reasoning": {
+      "mandatory": false,
+      "default_enabled": false,
+      "supported_efforts": [
+        "high",
+        "none"
+      ],
+      "default_effort": "high"
+    }
+  },
+  "response": {
+    "error": {
+      "message": "Provider returned error",
+      "code": 429,
+      "metadata": {
+        "raw": "mistralai/mistral-small-2603 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations",
+        "provider_name": "Mistral",
+        "is_byok": false,
+        "limit_source": "upstream_provider_shared_pool",
+        "remedy_hint": "Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing",
+        "previous_errors": [
+          {
+            "code": 429,
+            "message": "Provider returned error",
+            "provider_name": "Mistral",
+            "raw": "mistralai/mistral-small-2603 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations"
+          }
+        ]
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "mistralai--mistral-small-2603",
+    "displayName": "Mistral Small 4",
+    "provider": "mistralai",
+    "modelId": "mistralai/mistral-small-2603",
+    "returnedModelId": null,
+    "upstreamProvider": null,
+    "evaluatedAt": "2026-10-20T09:07:30.659023+00:00",
+    "requestStartedAt": "2026-10-20T09:07:29.625860+00:00",
+    "requestId": null,
+    "httpRequestIds": {},
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {},
+    "costUsd": null,
+    "latencyMs": 1030,
+    "finishReason": null,
+    "nativeFinishReason": null,
+    "requestSha256": "8902847cf43c25be80c4264d7c9bf4badc1074ebc0838dc9a1d4a0ccfd6903ce",
+    "responseSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/mistralai--mistral-small-2603.json",
+    "httpStatus": 429,
+    "error": {
+      "message": "Provider returned error",
+      "code": 429,
+      "metadata": {
+        "raw": "mistralai/mistral-small-2603 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations",
+        "provider_name": "Mistral",
+        "is_byok": false,
+        "limit_source": "upstream_provider_shared_pool",
+        "remedy_hint": "Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing",
+        "previous_errors": [
+          {
+            "code": 429,
+            "message": "Provider returned error",
+            "provider_name": "Mistral",
+            "raw": "mistralai/mistral-small-2603 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations"
+          }
+        ]
+      }
+    }
+  }
+}

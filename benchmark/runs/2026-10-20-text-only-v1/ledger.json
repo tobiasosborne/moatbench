@@ -1,0 +1,586 @@
+{
+  "runId": "2026-10-20-text-only-v1",
+  "startedAt": "2026-10-20T09:03:30.467650+00:00",
+  "capUsd": 3.5,
+  "catalogFetchedAt": "2026-10-20T09:01:37.441883+00:00",
+  "catalogSha256": "c7b6851289e006bddf8ec7a3e6c84f27b2e667e3f90f91acdc91baae34d7b5ab",
+  "entries": [
+    {
+      "modelId": "anthropic/claude-opus-5.5",
+      "startedAt": "2026-10-20T09:03:30.475996+00:00",
+      "reservedUsd": 0.1081344,
+      "costUsd": null,
+      "status": "error",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/anthropic--claude-opus-5.5.json",
+      "completedAt": "2026-10-20T09:03:46.761163+00:00"
+    },
+    {
+      "modelId": "anthropic/claude-sonnet-5.5",
+      "startedAt": "2026-10-20T09:04:16.492562+00:00",
+      "reservedUsd": 0.0540672,
+      "costUsd": 0.00462,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/anthropic--claude-sonnet-5.5.json",
+      "completedAt": "2026-10-20T09:04:36.512973+00:00"
+    },
+    {
+      "modelId": "anthropic/claude-haiku-5.5",
+      "startedAt": "2026-10-20T09:04:36.516473+00:00",
+      "reservedUsd": 0.00270336,
+      "costUsd": 0.0001113,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/anthropic--claude-haiku-5.5.json",
+      "completedAt": "2026-10-20T09:05:00.056510+00:00"
+    },
+    {
+      "modelId": "openai/gpt-6.1-sol",
+      "startedAt": "2026-10-20T09:05:00.060940+00:00",
+      "reservedUsd": 0.0540672,
+      "costUsd": 0.000842,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/openai--gpt-6.1-sol.json",
+      "completedAt": "2026-10-20T09:05:06.827584+00:00"
+    },
+    {
+      "modelId": "openai/gpt-6-astra",
+      "startedAt": "2026-10-20T09:05:06.828978+00:00",
+      "reservedUsd": 0.270336,
+      "costUsd": 0.00271,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/openai--gpt-6-astra.json",
+      "completedAt": "2026-10-20T09:05:10.771805+00:00"
+    },
+    {
+      "modelId": "openai/gpt-6-luna",
+      "startedAt": "2026-10-20T09:05:10.777367+00:00",
+      "reservedUsd": 0.00270336,
+      "costUsd": 2.16e-05,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/openai--gpt-6-luna.json",
+      "completedAt": "2026-10-20T09:05:14.928054+00:00"
+    },
+    {
+      "modelId": "google/gemini-4-argon",
+      "startedAt": "2026-10-20T09:05:14.933611+00:00",
+      "reservedUsd": 0.0540672,
+      "costUsd": 0.001872,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/google--gemini-4-argon.json",
+      "completedAt": "2026-10-20T09:05:20.924195+00:00"
+    },
+    {
+      "modelId": "google/gemini-3.8-flash",
+      "startedAt": "2026-10-20T09:05:20.930424+00:00",
+      "reservedUsd": 0.02230272,
+      "costUsd": null,
+      "status": "error",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/google--gemini-3.8-flash.json",
+      "completedAt": "2026-10-20T09:05:44.195672+00:00"
+    },
+    {
+      "modelId": "x-ai/grok-4.7",
+      "startedAt": "2026-10-20T09:06:23.882201+00:00",
+      "reservedUsd": 0.0360448,
+      "costUsd": 0.00426,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/x-ai--grok-4.7.json",
+      "completedAt": "2026-10-20T09:06:36.188580+00:00"
+    },
+    {
+      "modelId": "deepseek/deepseek-v4.1-flash-1017",
+      "startedAt": "2026-10-20T09:06:36.196423+00:00",
+      "reservedUsd": 0.0067584,
+      "costUsd": 0.0001012,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/deepseek--deepseek-v4.1-flash-1017.json",
+      "completedAt": "2026-10-20T09:06:41.154123+00:00"
+    },
+    {
+      "modelId": "deepseek/deepseek-v4-pro-0813",
+      "startedAt": "2026-10-20T09:06:41.161243+00:00",
+      "reservedUsd": 0.011894784,
+      "costUsd": 0.00054912,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/deepseek--deepseek-v4-pro-0813.json",
+      "completedAt": "2026-10-20T09:06:48.887867+00:00"
+    },
+    {
+      "modelId": "qwen/qwen3.8-max-prime",
+      "startedAt": "2026-10-20T09:06:48.894805+00:00",
+      "reservedUsd": 0.0720896,
+      "costUsd": 0.003268,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/qwen--qwen3.8-max-prime.json",
+      "completedAt": "2026-10-20T09:06:53.363024+00:00"
+    },
+    {
+      "modelId": "qwen/qwen3.8-flash",
+      "startedAt": "2026-10-20T09:06:53.369196+00:00",
+      "reservedUsd": 0.002793472,
+      "costUsd": 0.00023495,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/qwen--qwen3.8-flash.json",
+      "completedAt": "2026-10-20T09:07:02.433774+00:00"
+    },
+    {
+      "modelId": "moonshotai/kimi-k3",
+      "startedAt": "2026-10-20T09:07:02.442244+00:00",
+      "reservedUsd": 0.05485568,
+      "costUsd": 0.003861064,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/moonshotai--kimi-k3.json",
+      "completedAt": "2026-10-20T09:07:08.510429+00:00"
+    },
+    {
+      "modelId": "z-ai/glm-5.3-prime",
+      "startedAt": "2026-10-20T09:07:08.517949+00:00",
+      "reservedUsd": 0.05226496,
+      "costUsd": 0.0032536,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/z-ai--glm-5.3-prime.json",
+      "completedAt": "2026-10-20T09:07:14.552364+00:00"
+    },
+    {
+      "modelId": "z-ai/glm-5.3-flash",
+      "startedAt": "2026-10-20T09:07:14.559589+00:00",
+      "reservedUsd": 0.0009330016256,
+      "costUsd": 0.000136640584,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/z-ai--glm-5.3-flash.json",
+      "completedAt": "2026-10-20T09:07:26.592800+00:00"
+    },
+    {
+      "modelId": "mistralai/mistral-large-4-0",
+      "startedAt": "2026-10-20T09:07:26.601366+00:00",
+      "reservedUsd": 0.012480512,
+      "costUsd": 0.00027364,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/mistralai--mistral-large-4-0.json",
+      "completedAt": "2026-10-20T09:07:29.618986+00:00"
+    },
+    {
+      "modelId": "mistralai/mistral-small-2603",
+      "startedAt": "2026-10-20T09:07:29.625860+00:00",
+      "reservedUsd": 0.0033792,
+      "costUsd": null,
+      "status": "error",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/mistralai--mistral-small-2603.json",
+      "completedAt": "2026-10-20T09:07:30.659023+00:00"
+    },
+    {
+      "modelId": "meta-llama/llama-4-maverick",
+      "startedAt": "2026-10-20T09:07:50.866783+00:00",
+      "reservedUsd": 0.003784704,
+      "costUsd": 0.0001733025,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/meta-llama--llama-4-maverick.json",
+      "completedAt": "2026-10-20T09:08:15.302372+00:00"
+    },
+    {
+      "modelId": "meta-llama/llama-3.3-70b-instruct",
+      "startedAt": "2026-10-20T09:08:15.310755+00:00",
+      "reservedUsd": 0.001892352,
+      "costUsd": 4.768e-05,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/meta-llama--llama-3.3-70b-instruct.json",
+      "completedAt": "2026-10-20T09:08:25.127456+00:00"
+    },
+    {
+      "modelId": "cohere/command-a-plus",
+      "startedAt": "2026-10-20T09:08:25.137087+00:00",
+      "reservedUsd": 0.00811008,
+      "costUsd": 0.0002505,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/cohere--command-a-plus.json",
+      "completedAt": "2026-10-20T09:08:32.019269+00:00"
+    },
+    {
+      "modelId": "amazon/nova-2-lite-v1",
+      "startedAt": "2026-10-20T09:08:32.028567+00:00",
+      "reservedUsd": 0.01261568,
+      "costUsd": 0.0044481,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/amazon--nova-2-lite-v1.json",
+      "completedAt": "2026-10-20T09:08:47.184510+00:00"
+    },
+    {
+      "modelId": "amazon/nova-premier-v1",
+      "startedAt": "2026-10-20T09:08:47.194955+00:00",
+      "reservedUsd": 0.067584,
+      "costUsd": null,
+      "status": "error",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/amazon--nova-premier-v1.json",
+      "completedAt": "2026-10-20T09:08:48.076132+00:00"
+    },
+    {
+      "modelId": "nvidia/nemotron-3.5-super-vl",
+      "startedAt": "2026-10-20T09:08:56.176937+00:00",
+      "reservedUsd": 0.00292864,
+      "costUsd": 0.0003126,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/nvidia--nemotron-3.5-super-vl.json",
+      "completedAt": "2026-10-20T09:08:59.607972+00:00"
+    },
+    {
+      "modelId": "minimax/minimax-m3",
+      "startedAt": "2026-10-20T09:08:59.620689+00:00",
+      "reservedUsd": 0.0067584,
+      "costUsd": 0.00023375,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/minimax--minimax-m3.json",
+      "completedAt": "2026-10-20T09:09:07.503906+00:00"
+    },
+    {
+      "modelId": "microsoft/phi-4",
+      "startedAt": "2026-10-20T09:09:07.513451+00:00",
+      "reservedUsd": 0.000946176,
+      "costUsd": 8.127e-05,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/microsoft--phi-4.json",
+      "completedAt": "2026-10-20T09:09:16.405021+00:00"
+    },
+    {
+      "modelId": "bytedance-seed/seed-2-1-turbo",
+      "startedAt": "2026-10-20T09:09:16.415262+00:00",
+      "reservedUsd": 0.0135168,
+      "costUsd": 0.0005275,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/bytedance-seed--seed-2-1-turbo.json",
+      "completedAt": "2026-10-20T09:09:21.482070+00:00"
+    },
+    {
+      "modelId": "inception/mercury-3",
+      "startedAt": "2026-10-20T09:09:21.493921+00:00",
+      "reservedUsd": 0.00202752,
+      "costUsd": null,
+      "status": "error",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/inception--mercury-3.json",
+      "completedAt": "2026-10-20T09:09:21.826721+00:00"
+    },
+    {
+      "modelId": "tencent/hy4-preview",
+      "startedAt": "2026-10-20T09:09:48.287236+00:00",
+      "reservedUsd": 0.015026176,
+      "costUsd": 0.000230102,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/tencent--hy4-preview.json",
+      "completedAt": "2026-10-20T09:09:50.920126+00:00"
+    },
+    {
+      "modelId": "arcee-ai/trinity-large-thinking",
+      "startedAt": "2026-10-20T09:09:50.932335+00:00",
+      "reservedUsd": 0.00473088,
+      "costUsd": 0.0002824,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/arcee-ai--trinity-large-thinking.json",
+      "completedAt": "2026-10-20T09:09:53.983253+00:00"
+    },
+    {
+      "modelId": "ibm-granite/granite-4.2-8b",
+      "startedAt": "2026-10-20T09:09:53.994773+00:00",
+      "reservedUsd": 0.001396736,
+      "costUsd": 0.00051326,
+      "status": "error",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/ibm-granite--granite-4.2-8b.json",
+      "completedAt": "2026-10-20T09:10:31.012757+00:00"
+    },
+    {
+      "modelId": "xiaomi/mimo-v2.6-pro",
+      "startedAt": "2026-10-20T09:10:31.036657+00:00",
+      "reservedUsd": 0.005879808,
+      "costUsd": 0.000179631,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/xiaomi--mimo-v2.6-pro.json",
+      "completedAt": "2026-10-20T09:10:38.652695+00:00"
+    },
+    {
+      "modelId": "reflection/beam-1.0-501b-a23b",
+      "startedAt": "2026-10-20T09:11:26.154457+00:00",
+      "reservedUsd": 0.00585728,
+      "costUsd": 0.00034375,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/reflection--beam-1.0-501b-a23b.json",
+      "completedAt": "2026-10-20T09:11:33.283188+00:00"
+    },
+    {
+      "modelId": "meta/muse-spark-open",
+      "startedAt": "2026-10-20T09:11:33.298021+00:00",
+      "reservedUsd": 0.0247808,
+      "costUsd": 0.00259725,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/meta--muse-spark-open.json",
+      "completedAt": "2026-10-20T09:11:40.305784+00:00"
+    },
+    {
+      "modelId": "liquid/lfm-2.5-24b-a2b",
+      "startedAt": "2026-10-20T09:11:40.319173+00:00",
+      "reservedUsd": 0.0033792,
+      "costUsd": 0.0007778,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/liquid--lfm-2.5-24b-a2b.json",
+      "completedAt": "2026-10-20T09:11:46.272356+00:00"
+    },
+    {
+      "modelId": "stepfun/step-5-preview",
+      "startedAt": "2026-10-20T09:11:46.286031+00:00",
+      "reservedUsd": 0.01667072,
+      "costUsd": 0.0018711,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/stepfun--step-5-preview.json",
+      "completedAt": "2026-10-20T09:11:53.400618+00:00"
+    },
+    {
+      "modelId": "inclusionai/ling-3.1-flash",
+      "startedAt": "2026-10-20T09:11:53.414649+00:00",
+      "reservedUsd": 0.00135168,
+      "costUsd": 5.6925e-05,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/inclusionai--ling-3.1-flash.json",
+      "completedAt": "2026-10-20T09:12:10.085004+00:00"
+    },
+    {
+      "modelId": "upstage/solar-pro4",
+      "startedAt": "2026-10-20T09:12:10.094808+00:00",
+      "reservedUsd": 0.0033792,
+      "costUsd": 9.15e-05,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/upstage--solar-pro4.json",
+      "completedAt": "2026-10-20T09:12:15.582808+00:00"
+    },
+    {
+      "modelId": "aion-labs/aion-3.5-mini",
+      "startedAt": "2026-10-20T09:12:15.593836+00:00",
+      "reservedUsd": 0.00946176,
+      "costUsd": 0.0028462,
+      "status": "error",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/aion-labs--aion-3.5-mini.json",
+      "completedAt": "2026-10-20T09:12:48.975172+00:00"
+    },
+    {
+      "modelId": "sakana/fugu-max",
+      "startedAt": "2026-10-20T09:12:48.990868+00:00",
+      "reservedUsd": 0.0360448,
+      "costUsd": null,
+      "status": "error",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/sakana--fugu-max.json",
+      "completedAt": "2026-10-20T09:12:49.176030+00:00"
+    },
+    {
+      "modelId": "nex-agi/nex-n2.5-mini",
+      "startedAt": "2026-10-20T09:12:53.049225+00:00",
+      "reservedUsd": 0.0005632,
+      "costUsd": 1.175e-05,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/nex-agi--nex-n2.5-mini.json",
+      "completedAt": "2026-10-20T09:12:54.486190+00:00"
+    },
+    {
+      "modelId": "thinkingmachines/inkling-small",
+      "startedAt": "2026-10-20T09:12:54.504402+00:00",
+      "reservedUsd": 0.00743424,
+      "costUsd": 0.00020325,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/thinkingmachines--inkling-small.json",
+      "completedAt": "2026-10-20T09:12:55.799742+00:00"
+    },
+    {
+      "modelId": "meituan/longcat-2.0",
+      "startedAt": "2026-10-20T09:12:55.814537+00:00",
+      "reservedUsd": 0.0067584,
+      "costUsd": 0.0024624,
+      "status": "error",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/meituan--longcat-2.0.json",
+      "completedAt": "2026-10-20T09:13:31.811574+00:00"
+    },
+    {
+      "modelId": "rekaai/reka-edge",
+      "startedAt": "2026-10-20T09:13:31.826723+00:00",
+      "reservedUsd": 0.00090112,
+      "costUsd": 3.8e-06,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/rekaai--reka-edge.json",
+      "completedAt": "2026-10-20T09:13:32.625219+00:00"
+    },
+    {
+      "modelId": "writer/palmyra-x5",
+      "startedAt": "2026-10-20T09:13:32.641319+00:00",
+      "reservedUsd": 0.02973696,
+      "costUsd": 0.0006438,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/writer--palmyra-x5.json",
+      "completedAt": "2026-10-20T09:13:35.086388+00:00"
+    },
+    {
+      "modelId": "nousresearch/hermes-4-405b",
+      "startedAt": "2026-10-20T09:13:35.110304+00:00",
+      "reservedUsd": 0.0180224,
+      "costUsd": 0.000222,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/nousresearch--hermes-4-405b.json",
+      "completedAt": "2026-10-20T09:13:38.159499+00:00"
+    },
+    {
+      "modelId": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
+      "startedAt": "2026-10-20T09:13:38.180584+00:00",
+      "reservedUsd": 0.00495616,
+      "costUsd": 0.0003358,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/cognitivecomputations--dolphin-mistral-24b-venice-edition.json",
+      "completedAt": "2026-10-20T09:13:42.238795+00:00"
+    },
+    {
+      "modelId": "openai/gpt-5.4",
+      "startedAt": "2026-10-20T09:13:42.254981+00:00",
+      "reservedUsd": 0.078848,
+      "costUsd": 0.0029825,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/openai--gpt-5.4.json",
+      "completedAt": "2026-10-20T09:13:46.641401+00:00"
+    },
+    {
+      "modelId": "openai/gpt-4.1-nano",
+      "startedAt": "2026-10-20T09:13:46.659484+00:00",
+      "reservedUsd": 0.0022528,
+      "costUsd": 1.76e-05,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/openai--gpt-4.1-nano.json",
+      "completedAt": "2026-10-20T09:13:48.488161+00:00"
+    },
+    {
+      "modelId": "openai/gpt-4o",
+      "startedAt": "2026-10-20T09:13:48.501816+00:00",
+      "reservedUsd": 0.05632,
+      "costUsd": 0.00336,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/openai--gpt-4o.json",
+      "completedAt": "2026-10-20T09:13:52.722116+00:00"
+    },
+    {
+      "modelId": "anthropic/claude-sonnet-4.6",
+      "startedAt": "2026-10-20T09:13:52.742471+00:00",
+      "reservedUsd": 0.0811008,
+      "costUsd": null,
+      "status": "error",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/anthropic--claude-sonnet-4.6.json",
+      "completedAt": "2026-10-20T09:16:54.385420+00:00"
+    },
+    {
+      "modelId": "anthropic/claude-haiku-4.5",
+      "startedAt": "2026-10-20T09:16:58.179858+00:00",
+      "reservedUsd": 0.0270336,
+      "costUsd": 0.001798,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/anthropic--claude-haiku-4.5.json",
+      "completedAt": "2026-10-20T09:17:03.136191+00:00"
+    },
+    {
+      "modelId": "google/gemini-2.5-pro",
+      "startedAt": "2026-10-20T09:17:03.155072+00:00",
+      "reservedUsd": 0.050688,
+      "costUsd": 0.00684625,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/google--gemini-2.5-pro.json",
+      "completedAt": "2026-10-20T09:17:13.188369+00:00"
+    },
+    {
+      "modelId": "google/gemma-4-31b-it",
+      "startedAt": "2026-10-20T09:17:13.199792+00:00",
+      "reservedUsd": 0.00270336,
+      "costUsd": 0.0001667,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/google--gemma-4-31b-it.json",
+      "completedAt": "2026-10-20T09:17:25.106058+00:00"
+    },
+    {
+      "modelId": "deepseek/deepseek-v3.2",
+      "startedAt": "2026-10-20T09:17:25.128067+00:00",
+      "reservedUsd": 0.00315392,
+      "costUsd": 8.61264e-05,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/deepseek--deepseek-v3.2.json",
+      "completedAt": "2026-10-20T09:17:34.345728+00:00"
+    },
+    {
+      "modelId": "qwen/qwen3.5-9b",
+      "startedAt": "2026-10-20T09:17:34.367652+00:00",
+      "reservedUsd": 0.0011264,
+      "costUsd": 2.549e-05,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/qwen--qwen3.5-9b.json",
+      "completedAt": "2026-10-20T09:17:43.327690+00:00"
+    },
+    {
+      "modelId": "meta-llama/llama-3.2-3b-instruct",
+      "startedAt": "2026-10-20T09:17:43.338340+00:00",
+      "reservedUsd": 0.00173871104,
+      "costUsd": 0.00013813,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/meta-llama--llama-3.2-3b-instruct.json",
+      "completedAt": "2026-10-20T09:17:45.047756+00:00"
+    },
+    {
+      "modelId": "amazon/nova-micro-v1",
+      "startedAt": "2026-10-20T09:17:45.066440+00:00",
+      "reservedUsd": 0.00078848,
+      "costUsd": 8.0395e-05,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/amazon--nova-micro-v1.json",
+      "completedAt": "2026-10-20T09:17:48.479193+00:00"
+    },
+    {
+      "modelId": "mistralai/ministral-3b-2512",
+      "startedAt": "2026-10-20T09:17:48.496219+00:00",
+      "reservedUsd": 0.00090112,
+      "costUsd": 8.35e-05,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/mistralai--ministral-3b-2512.json",
+      "completedAt": "2026-10-20T09:17:54.074788+00:00"
+    },
+    {
+      "modelId": "cohere/command-r7b-12-2024",
+      "startedAt": "2026-10-20T09:17:54.087231+00:00",
+      "reservedUsd": 0.0008448,
+      "costUsd": 1.00875e-05,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/cohere--command-r7b-12-2024.json",
+      "completedAt": "2026-10-20T09:17:55.413226+00:00"
+    },
+    {
+      "modelId": "nvidia/nemotron-3-nano-30b-a3b",
+      "startedAt": "2026-10-20T09:17:55.434881+00:00",
+      "reservedUsd": 0.00135168,
+      "costUsd": 0.0001489,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/nvidia--nemotron-3-nano-30b-a3b.json",
+      "completedAt": "2026-10-20T09:17:59.069640+00:00"
+    },
+    {
+      "modelId": "minimax/minimax-m2.5",
+      "startedAt": "2026-10-20T09:17:59.084630+00:00",
+      "reservedUsd": 0.005496832,
+      "costUsd": 0.00029311,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/minimax--minimax-m2.5.json",
+      "completedAt": "2026-10-20T09:18:10.414064+00:00"
+    },
+    {
+      "modelId": "moonshotai/kimi-k2.5",
+      "startedAt": "2026-10-20T09:18:10.433843+00:00",
+      "reservedUsd": 0.0135168,
+      "costUsd": 0.00040985,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/moonshotai--kimi-k2.5.json",
+      "completedAt": "2026-10-20T09:18:18.547938+00:00"
+    },
+    {
+      "modelId": "google/gemini-2.5-flash",
+      "startedAt": "2026-10-20T09:18:18.568314+00:00",
+      "reservedUsd": 0.01261568,
+      "costUsd": 0.0007065,
+      "status": "success",
+      "recordPath": "benchmark/runs/2026-10-20-text-only-v1/google--gemini-2.5-flash.json",
+      "completedAt": "2026-10-20T09:18:25.736401+00:00"
+    }
+  ],
+  "completedAt": "2026-10-20T09:18:25.756506+00:00"
+}

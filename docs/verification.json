@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "models": 54,
+  "attempts": 64,
+  "viewports": [
+    360,
+    390,
+    768,
+    1440
+  ],
+  "productionSubpath": "/moatbench/",
+  "axePageViolations": 0,
+  "axeDialogViolations": 0,
+  "browserErrors": [],
+  "failedRequests": [],
+  "checks": [
+    "search",
+    "provider filter",
+    "expand/collapse",
+    "exact transcript",
+    "Escape focus restoration",
+    "slider keyboard",
+    "observation timer pause",
+    "SVG export",
+    "JSON export",
+    "clipboard link",
+    "deep link",
+    "evidence bundle",
+    "reduced motion",
+    "responsive overflow",
+    "asset loading"
+  ]
+}

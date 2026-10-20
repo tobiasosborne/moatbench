@@ -1,0 +1,139 @@
+{
+  "status": "error",
+  "request": {
+    "model": "amazon/nova-premier-v1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 2.5,
+        "completion": 12.5,
+        "request": 0
+      }
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "amazon/nova-premier-v1",
+    "canonical_slug": "amazon/nova-premier-v1",
+    "hugging_face_id": "",
+    "name": "Amazon: Nova Premier 1.0",
+    "created": 1761950332,
+    "description": "Amazon Nova Premier is the most capable of Amazon’s multimodal models for complex reasoning tasks and for use as the best teacher for distilling custom models.",
+    "context_length": 1000000,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Nova",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000025",
+      "completion": "0.0000125",
+      "input_cache_read": "0.000000625"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 32000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "max_tokens",
+      "stop",
+      "temperature",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "frequency_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/amazon/nova-premier-v1/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 835,
+          "win_rate": 26.2,
+          "rank": 141
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 9.2,
+        "coding_index": null,
+        "agentic_index": null
+      }
+    }
+  },
+  "response": {
+    "error": {
+      "message": "Provider returned error",
+      "code": 404,
+      "metadata": {
+        "raw": "{\"message\":\"This model version has reached the end of its life. Please refer to the AWS documentation for more details.\"}",
+        "provider_name": "Amazon Bedrock",
+        "is_byok": false
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "amazon--nova-premier-v1",
+    "displayName": "Nova Premier 1.0",
+    "provider": "amazon",
+    "modelId": "amazon/nova-premier-v1",
+    "returnedModelId": null,
+    "upstreamProvider": null,
+    "evaluatedAt": "2026-10-20T09:08:48.076132+00:00",
+    "requestStartedAt": "2026-10-20T09:08:47.194955+00:00",
+    "requestId": null,
+    "httpRequestIds": {},
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {},
+    "costUsd": null,
+    "latencyMs": 880,
+    "finishReason": null,
+    "nativeFinishReason": null,
+    "requestSha256": "2b29829324366c00f3a4f46b6e9bf0351ba1888efb8d302e3c1a41768bd3c5a3",
+    "responseSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/amazon--nova-premier-v1.json",
+    "httpStatus": 404,
+    "error": {
+      "message": "Provider returned error",
+      "code": 404,
+      "metadata": {
+        "raw": "{\"message\":\"This model version has reached the end of its life. Please refer to the AWS documentation for more details.\"}",
+        "provider_name": "Amazon Bedrock",
+        "is_byok": false
+      }
+    }
+  }
+}

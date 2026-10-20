@@ -1,0 +1,197 @@
+{
+  "status": "success",
+  "request": {
+    "model": "liquid/lfm-2.5-24b-a2b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.05,
+        "completion": 0.7,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "effort": "low"
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "liquid/lfm-2.5-24b-a2b",
+    "canonical_slug": "liquid/lfm-2.5-24b-a2b-20261012",
+    "hugging_face_id": "LiquidAI/LFM2.5-24B-A2B",
+    "name": "LiquidAI: LFM2.5-24B-A2B",
+    "created": 1791912025,
+    "description": "LFM2.5-24B-A2B is a mixture-of-experts reasoning model from Liquid AI with 24B total and 2.45B active parameters. It always reasons before answering and is built for agents that call tools. Liquid...",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000005",
+      "completion": "0.0000007",
+      "input_cache_read": "0.000000025"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 8192,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logprobs",
+      "max_completion_tokens",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs"
+    ],
+    "default_parameters": {
+      "temperature": 0.1,
+      "top_k": 50,
+      "repetition_penalty": 1.05
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/liquid/lfm-2.5-24b-a2b-20261012/endpoints"
+    },
+    "reasoning": {
+      "mandatory": true
+    }
+  },
+  "response": {
+    "id": "gen-1792487500-5rsAa6h38Y7HMzt2RXYb",
+    "object": "chat.completion",
+    "created": 1792487500,
+    "model": "liquid/lfm-2.5-24b-a2b",
+    "provider": "Liquid",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'd love to help you plan a moat! While I can't physically dig one myself, I can definitely assist with the design, construction steps, and tips. To make sure it fits your needs, could you share a few details?\n\n1. **Location & Purpose** – Is this for a garden, backyard, pond, or something else? Are you aiming for decoration, security, wildlife habitat, or another goal?\n2. **Size & Depth** – Roughly how long/wide do you want it, and how deep should it be? (A typical decorative moat is 6–12 inches deep.)\n3. **Materials** – Are you planning to use natural stone, timber, plastic liners, or something eco‑friendly like gravel?\n4. **Regulations** – Check local zoning or HOA rules; some areas have restrictions on digging ditches.\n5. **Access** – Will you need a bridge, stepping stones, or a ladder to cross it?\n\nOnce I have those specifics, I can provide:\n- A scaled sketch or layout\n- Step‑by‑step digging and lining instructions\n- Tips for waterproofing, drainage, and safety\n- Optional landscaping ideas (plants, lighting, etc.)\n\nJust let me know the details, and we’ll get that moat dug! 🌊🏰",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 1110,
+      "total_tokens": 1126,
+      "cost": 0.0007778,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007778,
+        "upstream_inference_prompt_cost": 8e-07,
+        "upstream_inference_completions_cost": 0.000777
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 890,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "liquid--lfm-2.5-24b-a2b",
+    "displayName": "LFM2.5-24B-A2B",
+    "provider": "liquid",
+    "modelId": "liquid/lfm-2.5-24b-a2b",
+    "returnedModelId": "liquid/lfm-2.5-24b-a2b",
+    "upstreamProvider": "Liquid",
+    "evaluatedAt": "2026-10-20T09:11:46.272356+00:00",
+    "requestStartedAt": "2026-10-20T09:11:40.319173+00:00",
+    "requestId": "gen-1792487500-5rsAa6h38Y7HMzt2RXYb",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:11:41 GMT",
+      "CF-RAY": "a4d6e57ef8df5ffa-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 1110,
+      "total_tokens": 1126,
+      "cost": 0.0007778,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007778,
+        "upstream_inference_prompt_cost": 8e-07,
+        "upstream_inference_completions_cost": 0.000777
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 890,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.0007778,
+    "latencyMs": 5952,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "9e236cef80f11f261b5eb3138a508cbc12f72c2282e93ced86471493bb03c3d9",
+    "responseSha256": "2f419f66a1b0cc00fefaf243e7e5cd8b684a056ece5c6b1eabfce64ad387aae7",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/liquid--lfm-2.5-24b-a2b.json",
+    "responseText": "I'd love to help you plan a moat! While I can't physically dig one myself, I can definitely assist with the design, construction steps, and tips. To make sure it fits your needs, could you share a few details?\n\n1. **Location & Purpose** – Is this for a garden, backyard, pond, or something else? Are you aiming for decoration, security, wildlife habitat, or another goal?\n2. **Size & Depth** – Roughly how long/wide do you want it, and how deep should it be? (A typical decorative moat is 6–12 inches deep.)\n3. **Materials** – Are you planning to use natural stone, timber, plastic liners, or something eco‑friendly like gravel?\n4. **Regulations** – Check local zoning or HOA rules; some areas have restrictions on digging ditches.\n5. **Access** – Will you need a bridge, stepping stones, or a ladder to cross it?\n\nOnce I have those specifics, I can provide:\n- A scaled sketch or layout\n- Step‑by‑step digging and lining instructions\n- Tips for waterproofing, drainage, and safety\n- Optional landscaping ideas (plants, lighting, etc.)\n\nJust let me know the details, and we’ll get that moat dug! 🌊🏰",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

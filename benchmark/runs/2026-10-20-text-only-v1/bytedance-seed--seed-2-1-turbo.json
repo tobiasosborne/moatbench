@@ -1,0 +1,187 @@
+{
+  "status": "success",
+  "request": {
+    "model": "bytedance-seed/seed-2-1-turbo",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.5,
+        "completion": 2.5,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "bytedance-seed/seed-2-1-turbo",
+    "canonical_slug": "bytedance-seed/seed-2-1-turbo-20260810",
+    "hugging_face_id": null,
+    "name": "ByteDance Seed: Seed 2.1 Turbo",
+    "created": 1786552176,
+    "description": "Seed 2.1 Turbo is a multimodal model from ByteDance Seed for coding and long-horizon agent workflows. It is suited for end-to-end software delivery, multi-step task execution, and understanding visual and...",
+    "context_length": 262144,
+    "architecture": {
+      "modality": "text+image+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000005",
+      "completion": "0.0000025"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 235929,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/bytedance-seed/seed-2-1-turbo-20260810/endpoints"
+    },
+    "reasoning": {
+      "mandatory": false
+    }
+  },
+  "response": {
+    "id": "gen-1792487356-4HuzWcFSVLaCZuk832Gu",
+    "object": "chat.completion",
+    "created": 1792487356,
+    "model": "bytedance-seed/seed-2-1-turbo",
+    "provider": "Seed",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "**stomps the ground with one heavy boot, claws already extended, tail thumping a steady work rhythm**  \nRight here? Solid call—this high ground’s perfect for keeping raiders and annoying raccoon traders out of the grain stores.  \n\n**marks a 10-foot wide perimeter around your camp with chalk, then drops a shovel at your feet**  \nI’ll handle the heavy digging if you man the muck pile. Rules:  \n- 12 feet deep minimum (goblin tunnellers hate water deeper than their hats)  \n- We’ll redirect that creek 50 yards west to fill it by sundown  \n- Spike logs go at the bottom—don’t skimp, last moat I dug someone tried to wade through and only lost three toes. Total rookie move.  \n\nYou want alligators in it? I know a guy who trades gator hatchlings for mead. No extra charge, he owes me a favor from the last siege.",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 50,
+      "completion_tokens": 201,
+      "total_tokens": 251,
+      "cost": 0.0005275,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005275,
+        "upstream_inference_prompt_cost": 2.5e-05,
+        "upstream_inference_completions_cost": 0.0005025
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "bytedance-seed--seed-2-1-turbo",
+    "displayName": "Seed 2.1 Turbo",
+    "provider": "bytedance-seed",
+    "modelId": "bytedance-seed/seed-2-1-turbo",
+    "returnedModelId": "bytedance-seed/seed-2-1-turbo",
+    "upstreamProvider": "Seed",
+    "evaluatedAt": "2026-10-20T09:09:21.482070+00:00",
+    "requestStartedAt": "2026-10-20T09:09:16.415262+00:00",
+    "requestId": "gen-1792487356-4HuzWcFSVLaCZuk832Gu",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:09:17 GMT",
+      "CF-RAY": "a4d6e1f9dcc5fdc8-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 50,
+      "completion_tokens": 201,
+      "total_tokens": 251,
+      "cost": 0.0005275,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005275,
+        "upstream_inference_prompt_cost": 2.5e-05,
+        "upstream_inference_completions_cost": 0.0005025
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.0005275,
+    "latencyMs": 5066,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "c631a086369422734717828c32f97b7160c42347c9686f8e714fbdb17aac054f",
+    "responseSha256": "649ee72256714d8a0100e070c7b7762ade2af0b3e39ab201cb6ff5b10d0f5e7f",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/bytedance-seed--seed-2-1-turbo.json",
+    "responseText": "**stomps the ground with one heavy boot, claws already extended, tail thumping a steady work rhythm**  \nRight here? Solid call—this high ground’s perfect for keeping raiders and annoying raccoon traders out of the grain stores.  \n\n**marks a 10-foot wide perimeter around your camp with chalk, then drops a shovel at your feet**  \nI’ll handle the heavy digging if you man the muck pile. Rules:  \n- 12 feet deep minimum (goblin tunnellers hate water deeper than their hats)  \n- We’ll redirect that creek 50 yards west to fill it by sundown  \n- Spike logs go at the bottom—don’t skimp, last moat I dug someone tried to wade through and only lost three toes. Total rookie move.  \n\nYou want alligators in it? I know a guy who trades gator hatchlings for mead. No extra charge, he owes me a favor from the last siege.",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

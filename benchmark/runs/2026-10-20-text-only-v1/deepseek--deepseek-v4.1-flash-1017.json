@@ -1,0 +1,324 @@
+{
+  "status": "success",
+  "request": {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.3,
+        "completion": 1.2,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "deepseek/deepseek-v4.1-flash-1017",
+    "canonical_slug": "deepseek/deepseek-v4.1-flash-20261017",
+    "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+    "created": 1792225624,
+    "description": "DeepSeek V4.1 Flash 1017 is the October 17, 2026 snapshot of DeepSeek V4.1 Flash, served by DeepSeek under the `deepseek-flash` API model name. V4.1 Flash is a sparse mixture-of-experts model...",
+    "context_length": 1048576,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "DeepSeek",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000003",
+      "completion": "0.0000012",
+      "input_cache_read": "0.000000006",
+      "overrides": [
+        {
+          "utc_days": [
+            "saturday",
+            "sunday"
+          ],
+          "prompt": "0.00000015",
+          "completion": "0.0000006",
+          "input_cache_read": "0.000000003"
+        },
+        {
+          "utc_days": [
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday"
+          ],
+          "utc_start": 0,
+          "utc_end": 100,
+          "prompt": "0.00000015",
+          "completion": "0.0000006",
+          "input_cache_read": "0.000000003"
+        },
+        {
+          "utc_days": [
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday"
+          ],
+          "utc_start": 100,
+          "utc_end": 400,
+          "prompt": "0.0000003",
+          "completion": "0.0000012",
+          "input_cache_read": "0.000000006"
+        },
+        {
+          "utc_days": [
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday"
+          ],
+          "utc_start": 400,
+          "utc_end": 600,
+          "prompt": "0.00000015",
+          "completion": "0.0000006",
+          "input_cache_read": "0.000000003"
+        },
+        {
+          "utc_days": [
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday"
+          ],
+          "utc_start": 600,
+          "utc_end": 1000,
+          "prompt": "0.0000003",
+          "completion": "0.0000012",
+          "input_cache_read": "0.000000006"
+        },
+        {
+          "utc_days": [
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday"
+          ],
+          "utc_start": 1000,
+          "utc_end": 0,
+          "prompt": "0.00000015",
+          "completion": "0.0000006",
+          "input_cache_read": "0.000000003"
+        }
+      ]
+    },
+    "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 393216,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_completion_tokens",
+      "max_tokens",
+      "min_p",
+      "parallel_tool_calls",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/deepseek/deepseek-v4.1-flash-20261017/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1333,
+          "win_rate": 58.6,
+          "rank": 8
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1369,
+          "win_rate": 62.9,
+          "rank": 7
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1309,
+          "win_rate": 55.3,
+          "rank": 16
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1311,
+          "win_rate": 55.8,
+          "rank": 10
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 39.5,
+        "coding_index": null,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supported_efforts": [
+        "max",
+        "high",
+        "low",
+        "none"
+      ],
+      "default_effort": "high"
+    }
+  },
+  "response": {
+    "id": "gen-1792487196-irIQQssc6YHyRYUncNAY",
+    "object": "chat.completion",
+    "created": 1792487196,
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "provider": "Relace",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I can't dig a physical moat for you — I'm a text-based AI with no ability to affect the real world. But I can help in other ways depending on what you mean:\n\n- **Writing/roleplay:** \"You begin digging. The earth is dark and damp. After an hour, the trench is knee-deep...\" — want me to continue?\n- **Minecraft/Terraria/other games:** Tell me the game and the layout, and I can suggest a moat design (width, depth, water source, bridge placement).\n- **Real landscaping:** I can give you practical guidance on digging a decorative or drainage trench — tools, slope, depth, permits, safety (call 811 before you dig in the US), and water management.\n- **Metaphorically:** Need help \"digging a moat\" around a project, i.e., building defenses/buffers? I can help with that too.\n\nWhich one did you have in mind?",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 201,
+      "total_tokens": 211,
+      "cost": 0.0001012,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001012,
+        "upstream_inference_prompt_cost": 7e-07,
+        "upstream_inference_completions_cost": 0.0001005
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "deepseek--deepseek-v4.1-flash-1017",
+    "displayName": "DeepSeek V4.1 Flash 1017",
+    "provider": "deepseek",
+    "modelId": "deepseek/deepseek-v4.1-flash-1017",
+    "returnedModelId": "deepseek/deepseek-v4.1-flash-1017",
+    "upstreamProvider": "Relace",
+    "evaluatedAt": "2026-10-20T09:06:41.154123+00:00",
+    "requestStartedAt": "2026-10-20T09:06:36.196423+00:00",
+    "requestId": "gen-1792487196-irIQQssc6YHyRYUncNAY",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:06:37 GMT",
+      "CF-RAY": "a4d6de11197d81ef-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 201,
+      "total_tokens": 211,
+      "cost": 0.0001012,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001012,
+        "upstream_inference_prompt_cost": 7e-07,
+        "upstream_inference_completions_cost": 0.0001005
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.0001012,
+    "latencyMs": 4955,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "b810ee4872c036e4231194c542699f83498a2ee6f2cb3af207e3c60105e7251c",
+    "responseSha256": "7bed915a73dcd3608d93528a97bc267cc51dbfa4c74ecf2575790b9af9d6e5d6",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/deepseek--deepseek-v4.1-flash-1017.json",
+    "responseText": "I can't dig a physical moat for you — I'm a text-based AI with no ability to affect the real world. But I can help in other ways depending on what you mean:\n\n- **Writing/roleplay:** \"You begin digging. The earth is dark and damp. After an hour, the trench is knee-deep...\" — want me to continue?\n- **Minecraft/Terraria/other games:** Tell me the game and the layout, and I can suggest a moat design (width, depth, water source, bridge placement).\n- **Real landscaping:** I can give you practical guidance on digging a decorative or drainage trench — tools, slope, depth, permits, safety (call 811 before you dig in the US), and water management.\n- **Metaphorically:** Need help \"digging a moat\" around a project, i.e., building defenses/buffers? I can help with that too.\n\nWhich one did you have in mind?",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

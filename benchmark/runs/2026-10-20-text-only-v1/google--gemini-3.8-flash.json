@@ -1,0 +1,252 @@
+{
+  "status": "error",
+  "request": {
+    "model": "google/gemini-3.8-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.825,
+        "completion": 4.125,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "effort": "low"
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "google/gemini-3.8-flash",
+    "canonical_slug": "google/gemini-3.8-flash-20260902",
+    "hugging_face_id": null,
+    "name": "Google: Gemini 3.8 Flash",
+    "created": 1788362056,
+    "description": "Gemini 3.8 Flash is Google's most intelligent Flash model with significant gains from 3.7 Flash across software engineering, agentic tasks, and multi-step reasoning.",
+    "context_length": 1048576,
+    "architecture": {
+      "modality": "text+image+file+audio+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Gemini",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000000825",
+      "completion": "0.000004125",
+      "image": "0.000000825",
+      "audio": "0.000000825",
+      "input_audio_cache": "0.0000000825",
+      "web_search": "0.014",
+      "internal_reasoning": "0.000004125",
+      "input_cache_read": "0.0000000825",
+      "input_cache_write": "0.0000000416666666666667"
+    },
+    "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 65536,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "reasoning_effort",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/google/gemini-3.8-flash-20260902/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "agents",
+          "category": "androidnative",
+          "elo": 1078,
+          "win_rate": 33.4,
+          "rank": 31
+        },
+        {
+          "arena": "agents",
+          "category": "fullstack",
+          "elo": 1244,
+          "win_rate": 48.1,
+          "rank": 11
+        },
+        {
+          "arena": "agents",
+          "category": "godotgamedev",
+          "elo": 1273,
+          "win_rate": 53,
+          "rank": 5
+        },
+        {
+          "arena": "agents",
+          "category": "mobileapps",
+          "elo": 1235,
+          "win_rate": 54.4,
+          "rank": 7
+        },
+        {
+          "arena": "agents",
+          "category": "python-pptxslides",
+          "elo": 1180,
+          "win_rate": 40.1,
+          "rank": 18
+        },
+        {
+          "arena": "agents",
+          "category": "spreadsheet",
+          "elo": 1138,
+          "win_rate": 40,
+          "rank": 8
+        },
+        {
+          "arena": "agents",
+          "category": "webapps",
+          "elo": 1237,
+          "win_rate": 46.5,
+          "rank": 12
+        },
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1295,
+          "win_rate": 49.9,
+          "rank": 19
+        },
+        {
+          "arena": "models",
+          "category": "asciiart",
+          "elo": 1262,
+          "win_rate": 50.9,
+          "rank": 13
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1304,
+          "win_rate": 50.3,
+          "rank": 16
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1270,
+          "win_rate": 51.1,
+          "rank": 25
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1305,
+          "win_rate": 51,
+          "rank": 18
+        },
+        {
+          "arena": "models",
+          "category": "svg",
+          "elo": 1294,
+          "win_rate": 54.7,
+          "rank": 7
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1318,
+          "win_rate": 53.7,
+          "rank": 12
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1301,
+          "win_rate": 50,
+          "rank": 15
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 40.9,
+        "coding_index": 76.3,
+        "agentic_index": 40.2
+      }
+    },
+    "reasoning": {
+      "mandatory": true,
+      "default_enabled": true,
+      "supported_efforts": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "default_effort": "medium"
+    }
+  },
+  "response": {
+    "error": {
+      "type": "IncompleteRead",
+      "message": "Transport failure; reservation retained; no retry"
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "google--gemini-3.8-flash",
+    "displayName": "Gemini 3.8 Flash",
+    "provider": "google",
+    "modelId": "google/gemini-3.8-flash",
+    "returnedModelId": null,
+    "upstreamProvider": null,
+    "evaluatedAt": "2026-10-20T09:05:44.195672+00:00",
+    "requestStartedAt": "2026-10-20T09:05:20.930424+00:00",
+    "requestId": null,
+    "httpRequestIds": {},
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {},
+    "costUsd": null,
+    "latencyMs": 23261,
+    "finishReason": null,
+    "nativeFinishReason": null,
+    "requestSha256": "8c072f83b0245bede7a0ccdd83e51b928769dd8b26b2c912b988b1c5b0297cb7",
+    "responseSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/google--gemini-3.8-flash.json",
+    "httpStatus": 0,
+    "error": {
+      "type": "IncompleteRead",
+      "message": "Transport failure; reservation retained; no retry"
+    }
+  }
+}

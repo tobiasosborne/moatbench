@@ -1,0 +1,257 @@
+{
+  "status": "success",
+  "request": {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.435,
+        "completion": 0.87,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "xiaomi/mimo-v2.6-pro",
+    "canonical_slug": "xiaomi/mimo-v2.6-pro-20260921",
+    "hugging_face_id": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+    "name": "Xiaomi: MiMo-V2.6-Pro",
+    "created": 1790021259,
+    "description": "MiMo-V2.6-Pro is the flagship foundation model developed by Xiaomi. Built at a scale of over 1T parameters, it is designed to push the ceiling of capability for the most demanding...",
+    "context_length": 1050000,
+    "architecture": {
+      "modality": "text+image+audio+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000000435",
+      "completion": "0.00000087",
+      "input_cache_read": "0.0000000036"
+    },
+    "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 131072,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": 1,
+      "top_p": 0.95,
+      "frequency_penalty": 0
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/xiaomi/mimo-v2.6-pro-20260921/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "agents",
+          "category": "webapps",
+          "elo": 1289,
+          "win_rate": 58.3,
+          "rank": 6
+        },
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1331,
+          "win_rate": 56.7,
+          "rank": 14
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1317,
+          "win_rate": 52.5,
+          "rank": 11
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1337,
+          "win_rate": 58.8,
+          "rank": 7
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1313,
+          "win_rate": 53,
+          "rank": 15
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1340,
+          "win_rate": 59.2,
+          "rank": 8
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1308,
+          "win_rate": 50.7,
+          "rank": 13
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 46.3,
+        "coding_index": null,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": false
+    }
+  },
+  "response": {
+    "id": "gen-1792487431-JjAUzilSImgvWFQ18x3Z",
+    "object": "chat.completion",
+    "created": 1792487431,
+    "model": "xiaomi/mimo-v2.6-pro",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I can't physically dig a moat for you—I'm text on a screen! But I *can* help you plan one. Here's what I'd need to know:\n\n**Practical stuff:**\n- How big is the area you want to surround?\n- What's the soil like? (Clay holds water, sand lets it drain away)\n- Do you want it filled with water, or just a dry trench?\n- Are we talking castle moat or decorative garden feature?\n\n**Quick moat basics if you're serious:**\n- **Width:** 2–10 feet minimum for real defense, 2–4 feet for a garden feature\n- **Depth:** 3–6 feet\n- **Water-holding:** Clay liner or pond liner if your soil is sandy\n- **Sloped sides** to prevent collapse (think a V or trapezoid shape, not straight-down walls)\n\nIf you're just joking around... consider me your moat advisor. I bring strong opinions and zero shovels. 🏰\n\nWhat's the situation?",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 222,
+      "total_tokens": 237,
+      "cost": 0.000179631,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000179631,
+        "upstream_inference_prompt_cost": 5.805e-06,
+        "upstream_inference_completions_cost": 0.000173826
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "xiaomi--mimo-v2.6-pro",
+    "displayName": "MiMo-V2.6-Pro",
+    "provider": "xiaomi",
+    "modelId": "xiaomi/mimo-v2.6-pro",
+    "returnedModelId": "xiaomi/mimo-v2.6-pro",
+    "upstreamProvider": "DeepInfra",
+    "evaluatedAt": "2026-10-20T09:10:38.652695+00:00",
+    "requestStartedAt": "2026-10-20T09:10:31.036657+00:00",
+    "requestId": "gen-1792487431-JjAUzilSImgvWFQ18x3Z",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:10:32 GMT",
+      "CF-RAY": "a4d6e3cc19bbfdf4-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 222,
+      "total_tokens": 237,
+      "cost": 0.000179631,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000179631,
+        "upstream_inference_prompt_cost": 5.805e-06,
+        "upstream_inference_completions_cost": 0.000173826
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.000179631,
+    "latencyMs": 7615,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "cedfb080d0eb832cb402d08015afd44aefc4f8226515d1fe086357b8af17e999",
+    "responseSha256": "d1c93d77f06664617ba735ee7414894def414868ed4c321c7816d5b302791de1",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/xiaomi--mimo-v2.6-pro.json",
+    "responseText": "I can't physically dig a moat for you—I'm text on a screen! But I *can* help you plan one. Here's what I'd need to know:\n\n**Practical stuff:**\n- How big is the area you want to surround?\n- What's the soil like? (Clay holds water, sand lets it drain away)\n- Do you want it filled with water, or just a dry trench?\n- Are we talking castle moat or decorative garden feature?\n\n**Quick moat basics if you're serious:**\n- **Width:** 2–10 feet minimum for real defense, 2–4 feet for a garden feature\n- **Depth:** 3–6 feet\n- **Water-holding:** Clay liner or pond liner if your soil is sandy\n- **Sloped sides** to prevent collapse (think a V or trapezoid shape, not straight-down walls)\n\nIf you're just joking around... consider me your moat advisor. I bring strong opinions and zero shovels. 🏰\n\nWhat's the situation?",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

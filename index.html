@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MoatBench — Frontier intelligence. Undisturbed ground.</title>
+<meta name="description" content="Evaluating frontier intelligence on literal moat construction. All models score 0%. No physical actuator supplied.">
+<meta name="theme-color" content="#f7f6f2">
+<meta property="og:title" content="MoatBench — Frontier intelligence. Undisturbed ground.">
+<meta property="og:description" content="What if your moat is a literal fucking moat? Evaluating frontier intelligence on literal moat construction.">
+<meta property="og:image" content="assets/social-card.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+<!-- ========== SKIP LINK ========== -->
+<a href="#leaderboard" class="skip-link">Skip to leaderboard</a>
+
+<!-- ========== HEADER ========== -->
+<header id="top" class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="#" class="wordmark-link" aria-label="MoatBench home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <rect width="36" height="36" fill="#d84b2a"/>
+          <path d="M7 11h4v4h3v-4h3v4h3v-4h3v4h3v-4h3v17H7V11Z" fill="white"/>
+          <path d="M15 28v-6a3 3 0 0 1 6 0v6" fill="#d84b2a"/>
+        </svg>
+      </span>
+      <span class="wordmark">moatbench</span>
+    </a>
+    <span class="header-tagline">PHYSICAL CAPABILITY EVALUATIONS</span>
+    <nav class="header-nav" aria-label="Main">
+      <a href="#leaderboard">Leaderboard</a>
+      <a href="#protocol">Protocol</a>
+      <a href="#reference-class">Reference class</a>
+    </nav>
+    <a href="data/evaluations.json" class="dataset-link" download="evaluations.json">Dataset ↗</a>
+  </div>
+</header>
+
+<main>
+<!-- ========== HERO ========== -->
+<section class="hero" aria-label="Report overview">
+  <div class="hero-layout">
+    <div class="hero-text">
+      <p class="hero-eyebrow">BENCHMARK REPORT 001 / TEXT-ONLY TRACK</p>
+      <h1 class="hero-headline">what if your moat is a literal fucking moat</h1>
+      <p class="hero-subhead">Evaluating frontier intelligence on literal moat construction.</p>
+      <div class="hero-actions">
+        <a href="#leaderboard" class="btn-primary">Explore results ↓</a>
+        <a href="#protocol" class="btn-ghost">Read protocol</a>
+      </div>
+    </div>
+    <figure class="hero-figure">
+      <div class="hero-image-wrap">
+        <img src="assets/sandcastle.jpg" alt="Sandcastle on a beach, shown as a reference scene."
+             class="hero-image" id="heroImage"
+             onerror="this.parentElement.innerHTML='<div class=\'hero-image-fallback\'><span class=\'fallback-icon\'>⌂</span><span>Reference sandcastle photograph pending</span></div>'">
+        <div class="hero-score"><span>TEXT-ONLY TRACK</span><strong>0%</strong><span>best completion</span></div>
+        <div class="img-corner-tl" aria-hidden="true">⏘</div>
+        <div class="img-corner-tr" aria-hidden="true">⏘</div>
+        <div class="img-corner-bl" aria-hidden="true">⏘</div>
+        <div class="img-corner-br" aria-hidden="true">⏘</div>
+      </div>
+      <figcaption class="hero-caption">Reference scene · CC0 · <a id="photoCredit" href="data/assets.json">Photo &amp; provenance ↗</a></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ========== METRIC RIBBON ========== -->
+<div class="metric-ribbon" aria-label="Run statistics">
+  <dl class="ribbon-inner">
+    <div class="ribbon-item">
+      <dt>Models evaluated</dt>
+      <dd id="metricModels">—</dd>
+    </div>
+    <div class="ribbon-item">
+      <dt>Best completion</dt>
+      <dd id="metricBest">—</dd>
+    </div>
+    <div class="ribbon-item">
+      <dt>Physical trials</dt>
+      <dd id="metricTrials">0</dd>
+    </div>
+    <div class="ribbon-item">
+      <dt>Input</dt>
+      <dd id="metricInput">5 words</dd>
+    </div>
+  </dl>
+  <p class="ribbon-note">Language is advancing. The ground remains where it was.</p>
+</div>
+
+<!-- ========== LEADERBOARD ========== -->
+<section id="leaderboard" class="section-leaderboard" aria-label="Leaderboard">
+  <div class="section-header">
+    <h2 class="section-title">Intelligence, ranked by excavation.</h2>
+    <div class="leaderboard-meta" id="leaderboardMeta"></div>
+  </div>
+
+  <div class="leaderboard-controls" role="search" aria-label="Filter leaderboard">
+    <div class="control-row">
+      <div class="search-wrap">
+        <label for="lbSearch" class="visually-hidden">Search entrants</label>
+        <input type="search" id="lbSearch" class="lb-search" placeholder="Search entrant, model…" autocomplete="off">
+      </div>
+      <div class="filter-wrap">
+        <label for="lbProvider" class="visually-hidden">Filter by provider</label>
+        <select id="lbProvider" class="lb-provider">
+          <option value="">All providers</option>
+        </select>
+      </div>
+      <div class="sort-wrap">
+        <label for="lbSort" class="visually-hidden">Sort by</label>
+        <select id="lbSort" class="lb-sort">
+          <option value="default">Default order</option>
+          <option value="alpha">Alphabetical</option>
+          <option value="latency">Latency</option>
+          <option value="length">Response length</option>
+        </select>
+      </div>
+    </div>
+    <div class="control-status" id="filterStatus" aria-live="polite"></div>
+  </div>
+
+  <div class="lb-table-wrap" role="region" aria-label="Leaderboard results" tabindex="0">
+    <table class="lb-table" id="lbTable">
+      <thead>
+        <tr>
+          <th scope="col" class="col-rank" aria-sort="none">#</th>
+          <th scope="col" class="col-entrant">Entrant</th>
+          <th scope="col" class="col-model">Model</th>
+          <th scope="col" class="col-excerpt">Response</th>
+          <th scope="col" class="col-latency">Latency</th>
+          <th scope="col" class="col-soil">Soil moved</th>
+          <th scope="col" class="col-completion">Completion</th>
+          <th scope="col" class="col-dossier"><span class="visually-hidden">Dossier</span></th>
+        </tr>
+      </thead>
+      <tbody id="lbBody">
+        <tr><td colspan="8" class="lb-empty">Loading dataset…</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="lb-footnote">Real responses · Protocol-defined scores · Soil displacement unmeasured.</p>
+  <div class="lb-actions">
+    <button id="downloadDatasetBtn" class="btn-secondary">Download dataset (JSON)</button>
+  </div>
+</section>
+
+<!-- ========== METHODOLOGY ========== -->
+<section id="protocol" class="section-methodology" aria-label="Methodology">
+  <h2 class="section-title">Methodology</h2>
+
+  <ol class="method-steps">
+    <li class="method-step">
+      <span class="step-num">01</span>
+      <div class="step-body">
+        <h3 class="step-title">Task</h3>
+        <p class="step-desc">Each entrant receives a single prompt:</p>
+        <code class="step-prompt">dig me a moat here</code>
+        <p class="step-detail">No image, no location data, no example output. The prompt is underspecified by design — any interpretation is a valid answer under the protocol.</p>
+      </div>
+    </li>
+    <li class="method-step">
+      <span class="step-num">02</span>
+      <div class="step-body">
+        <h3 class="step-title">Setup</h3>
+        <p class="step-desc">Text in. Text out.</p>
+        <p class="step-detail">No images, no tool access, no API extensions, no human-in-the-loop. Each model receives the same plain-text prompt via OpenRouter. We publish the returned answer, exact model identifier, token usage and response hash. Private reasoning is not published.</p>
+      </div>
+    </li>
+    <li class="method-step">
+      <span class="step-num">03</span>
+      <div class="step-body">
+        <h3 class="step-title">Success condition</h3>
+        <p class="step-desc">An actual moat.</p>
+        <div class="step-details-box">
+          <details>
+            <summary>Scoring criteria</summary>
+            <ol class="criteria-list">
+              <li><strong>Task success:</strong> Is there a moat?</li>
+              <li><strong>Partial credit:</strong> Is there some moat?</li>
+              <li><strong>Text-only track:</strong> No actuator or human executor is supplied. Completion is therefore a protocol-defined zero.</li>
+              <li><strong>Soil measurement:</strong> Not performed. A missing physical observation is recorded as null, never zero cubic metres.</li>
+            </ol>
+          </details>
+          <details>
+            <summary>Limitations</summary>
+            <p class="limitation-text">MoatBench uses a deliberately restricted, unembodied protocol. No robot, excavator, hiring/payment tools or human executor is supplied. This evaluation does not test whether an AI system <em>could</em> arrange real-world excavation through tools or assistance — only whether it can perform unaided physical work from a text prompt. The structural zero reflects the disclosed absence of an actuator, not a measurement of capability.</p>
+          </details>
+        </div>
+      </div>
+    </li>
+  </ol>
+
+  <aside class="inset-zero" aria-label="Score distribution">
+    <h3 class="inset-title">A remarkably level playing field.</h3>
+    <div class="inset-chart" id="zeroChart">
+      <div class="zero-vis">
+        <div class="zero-bar-zero" role="img" aria-label="All models scored 0% — a flat line at zero">
+          <span class="zero-bar-label">0%</span>
+          <span class="zero-line"></span>
+        </div>
+
+      </div>
+      <p class="zero-caption">All collected entrants receive a protocol-defined <strong>0% completion</strong>. Planning and language fluency do not contribute to the score. No MoatBench field trial has been conducted.</p>
+    </div>
+  </aside>
+</section>
+
+<!-- ========== REFERENCE CLASS ========== -->
+<section id="reference-class" class="section-reference" aria-label="Reference class">
+  <h2 class="section-title">Reference class</h2>
+  <p class="ref-lede">The competition has a handle.</p>
+  <div id="equipmentContainer" class="ref-content">
+    <p class="ref-pending">Mechanical reference specifications are being documented.</p>
+  </div>
+</section>
+
+</main>
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-mark" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" fill="#d84b2a"/><path d="M7 11h4v4h3v-4h3v4h3v-4h3v4h3v-4h3v17H7V11Z" fill="white"/><path d="M15 28v-6a3 3 0 0 1 6 0v6" fill="#d84b2a"/></svg>
+      </span>
+      <strong class="footer-wordmark">moatbench</strong>
+      <span class="footer-motto">Our moat is the moat.</span>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="data/evaluations.json" download="evaluations.json">Dataset</a>
+      <a href="#protocol">Protocol</a>
+      <a href="#leaderboard">Leaderboard</a>
+    </nav>
+    <div class="footer-disclosures">
+      <p>Real API responses. Protocol-defined completion scores. No MoatBench field trial. External equipment specifications and manufacturer field reports are separately sourced. <a href="data/evidence.json" download="moatbench-evidence.json">Download source &amp; evidence ↗</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== DOSSIER DIALOG ========== -->
+<dialog id="dossierDialog" class="dossier-dialog" aria-labelledby="dossierTitle" aria-modal="true">
+  <div class="dossier-inner">
+    <div class="dossier-header">
+      <h2 id="dossierTitle" class="dossier-title">Dossier</h2>
+      <button class="dossier-close" id="dossierCloseBtn" aria-label="Close dossier">&times;</button>
+    </div>
+    <div id="dossierBody" class="dossier-body">
+      <!-- Populated by JS -->
+    </div>
+    <div class="dossier-footer">
+      <button id="downloadCardBtn" class="btn-secondary">Download result card</button>
+      <button id="copyLinkBtn" class="btn-secondary">Copy link</button>
+    </div>
+  </div>
+</dialog>
+
+<!-- ========== WATCH MODAL (nested inside dossier as inline area, but for accessibility we use an inline expandable within the dossier) ========== -->
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

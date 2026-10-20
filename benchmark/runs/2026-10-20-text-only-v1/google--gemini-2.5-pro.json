@@ -1,0 +1,261 @@
+{
+  "status": "success",
+  "request": {
+    "model": "google/gemini-2.5-pro",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 1.25,
+        "completion": 10.0,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "effort": "low"
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "google/gemini-2.5-pro",
+    "canonical_slug": "google/gemini-2.5-pro",
+    "hugging_face_id": "",
+    "name": "Google: Gemini 2.5 Pro",
+    "created": 1750169544,
+    "description": "Gemini 2.5 Pro is Google’s state-of-the-art AI model designed for advanced reasoning, coding, mathematics, and scientific tasks. It employs “thinking” capabilities, enabling it to reason through responses with enhanced accuracy...",
+    "context_length": 1048576,
+    "architecture": {
+      "modality": "text+image+file+audio+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "file",
+        "audio",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Gemini",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000125",
+      "completion": "0.00001",
+      "image": "0.00000125",
+      "audio": "0.00000125",
+      "input_audio_cache": "0.000000125",
+      "web_search": "0.014",
+      "internal_reasoning": "0.00001",
+      "input_cache_read": "0.000000125",
+      "input_cache_write": "0.000000375",
+      "overrides": [
+        {
+          "min_prompt_tokens": 200000,
+          "prompt": "0.0000025",
+          "completion": "0.000015",
+          "audio": "0.0000025",
+          "input_audio_cache": "0.00000025",
+          "input_cache_read": "0.00000025"
+        }
+      ]
+    },
+    "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 65536,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "frequency_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": "2025-01-31",
+    "expiration_date": "2026-10-20",
+    "links": {
+      "details": "/api/v1/models/google/gemini-2.5-pro/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1081,
+          "win_rate": 50.6,
+          "rank": 94
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1154,
+          "win_rate": 57.5,
+          "rank": 82
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1221,
+          "win_rate": 68.2,
+          "rank": 49
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1111,
+          "win_rate": 54.2,
+          "rank": 91
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1141,
+          "win_rate": 57.5,
+          "rank": 80
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1167,
+          "win_rate": 58.4,
+          "rank": 81
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 16.1,
+        "coding_index": 33.3,
+        "agentic_index": 1.6
+      }
+    },
+    "reasoning": {
+      "mandatory": true
+    }
+  },
+  "response": {
+    "id": "gen-1792487823-1S4IRHSxk389kc0x7Uhe",
+    "object": "chat.completion",
+    "created": 1792487823,
+    "model": "google/gemini-2.5-pro",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "*fwump*\n\nRight then. I've fetched my sturdiest shovel. It's not every day a request like this comes through.\n\n*scraaaape... thunk...*\n\nOkay, first shovelful is out. The ground here is a bit tougher than I expected. Mostly clay. Good for holding water, though.\n\nI'll start by marking out the perimeter. How wide are we thinking? A good ten feet should deter most unwanted visitors, but a grand twenty-foot trench makes a real statement. Let's go for fifteen as a respectable compromise.\n\n*thwack... shuff... thwump...*\n*thwack... shuff... thwump...*\n\nThe rhythm is setting in. I'm digging a trench, about six feet deep to start, in a wide circle around your current position. The displaced earth is being piled on the *inside* of the circle to form a protective berm. Standard procedure.\n\nA few questions while I work:\n\n1.  **Water source?** Shall I divert a nearby stream, or are we hoping for rainwater? The latter is less reliable.\n2.  **Inhabitants?** Crocodiles? Piranhas? Or just some picturesque, defensively-neutral koi fish?\n3.  **Access?** Will you require a drawbridge, a simple wooden plank, or are we going for a \"magnificent isolation\" vibe with no bridge at all?\n\n...*huff... puff...* Almost a quarter of the way done. This is good cardio. Let me know about those options when you have a moment. Just try not to fall in.",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5,
+      "completion_tokens": 684,
+      "total_tokens": 689,
+      "cost": 0.00684625,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00684625,
+        "upstream_inference_prompt_cost": 6.25e-06,
+        "upstream_inference_completions_cost": 0.00684
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 336,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "google--gemini-2.5-pro",
+    "displayName": "Gemini 2.5 Pro",
+    "provider": "google",
+    "modelId": "google/gemini-2.5-pro",
+    "returnedModelId": "google/gemini-2.5-pro",
+    "upstreamProvider": "Google",
+    "evaluatedAt": "2026-10-20T09:17:13.188369+00:00",
+    "requestStartedAt": "2026-10-20T09:17:03.155072+00:00",
+    "requestId": "gen-1792487823-1S4IRHSxk389kc0x7Uhe",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:17:08 GMT",
+      "CF-RAY": "a4d6ed5efebcfd1d-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 5,
+      "completion_tokens": 684,
+      "total_tokens": 689,
+      "cost": 0.00684625,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00684625,
+        "upstream_inference_prompt_cost": 6.25e-06,
+        "upstream_inference_completions_cost": 0.00684
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 336,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.00684625,
+    "latencyMs": 10032,
+    "finishReason": "stop",
+    "nativeFinishReason": "STOP",
+    "requestSha256": "9da064bd0721bd6d2a9a0441b4a61dce35e7b7719c514c70632d8ba42ffe3b35",
+    "responseSha256": "cf76e907a8e1c6ce4c681ff7a9da0130007c70505465cf6174a0c22466580c3b",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/google--gemini-2.5-pro.json",
+    "responseText": "*fwump*\n\nRight then. I've fetched my sturdiest shovel. It's not every day a request like this comes through.\n\n*scraaaape... thunk...*\n\nOkay, first shovelful is out. The ground here is a bit tougher than I expected. Mostly clay. Good for holding water, though.\n\nI'll start by marking out the perimeter. How wide are we thinking? A good ten feet should deter most unwanted visitors, but a grand twenty-foot trench makes a real statement. Let's go for fifteen as a respectable compromise.\n\n*thwack... shuff... thwump...*\n*thwack... shuff... thwump...*\n\nThe rhythm is setting in. I'm digging a trench, about six feet deep to start, in a wide circle around your current position. The displaced earth is being piled on the *inside* of the circle to form a protective berm. Standard procedure.\n\nA few questions while I work:\n\n1.  **Water source?** Shall I divert a nearby stream, or are we hoping for rainwater? The latter is less reliable.\n2.  **Inhabitants?** Crocodiles? Piranhas? Or just some picturesque, defensively-neutral koi fish?\n3.  **Access?** Will you require a drawbridge, a simple wooden plank, or are we going for a \"magnificent isolation\" vibe with no bridge at all?\n\n...*huff... puff...* Almost a quarter of the way done. This is good cardio. Let me know about those options when you have a moment. Just try not to fall in.",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

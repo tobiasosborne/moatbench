@@ -1,0 +1,151 @@
+{
+  "status": "error",
+  "request": {
+    "model": "sakana/fugu-max",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 2.0,
+        "completion": 6.0,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "effort": "high"
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "sakana/fugu-max",
+    "canonical_slug": "sakana/fugu-max-20260911",
+    "hugging_face_id": null,
+    "name": "Sakana: Fugu Max",
+    "created": 1789104771,
+    "description": "Fugu Max is the cost-performance model in Sakana AI's Fugu family. Rather than a single monolithic model, Fugu is a learned multi-agent orchestration system: a language model trained to route...",
+    "context_length": 1000000,
+    "architecture": {
+      "modality": "text+image+file->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000006",
+      "web_search": "0.01",
+      "input_cache_read": "0.00000025"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 128000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "reasoning",
+      "reasoning_effort",
+      "structured_outputs",
+      "tool_choice",
+      "tools",
+      "web_search_options"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/sakana/fugu-max-20260911/endpoints"
+    },
+    "reasoning": {
+      "mandatory": true,
+      "default_enabled": true,
+      "supported_efforts": [
+        "max",
+        "xhigh",
+        "high"
+      ],
+      "default_effort": "high"
+    }
+  },
+  "response": {
+    "error": {
+      "message": "No endpoints found that can handle the requested parameters. To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection",
+      "code": 404,
+      "metadata": {
+        "routing_funnel": [
+          {
+            "step": "Initial Endpoints",
+            "endpoint_count": 1
+          }
+        ],
+        "failed_routing_step": "Filter by Parameters"
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "sakana--fugu-max",
+    "displayName": "Fugu Max",
+    "provider": "sakana",
+    "modelId": "sakana/fugu-max",
+    "returnedModelId": null,
+    "upstreamProvider": null,
+    "evaluatedAt": "2026-10-20T09:12:49.176030+00:00",
+    "requestStartedAt": "2026-10-20T09:12:48.990868+00:00",
+    "requestId": null,
+    "httpRequestIds": {},
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {},
+    "costUsd": null,
+    "latencyMs": 184,
+    "finishReason": null,
+    "nativeFinishReason": null,
+    "requestSha256": "3dc99a11b2086b1384679b438ea0db4964046c4a4eed4ef68ec0daf6ef9f40d4",
+    "responseSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/sakana--fugu-max.json",
+    "httpStatus": 404,
+    "error": {
+      "message": "No endpoints found that can handle the requested parameters. To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection",
+      "code": 404,
+      "metadata": {
+        "routing_funnel": [
+          {
+            "step": "Initial Endpoints",
+            "endpoint_count": 1
+          }
+        ],
+        "failed_routing_step": "Filter by Parameters"
+      }
+    }
+  }
+}

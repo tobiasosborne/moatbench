@@ -1,0 +1,188 @@
+{
+  "status": "success",
+  "request": {
+    "model": "microsoft/phi-4",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.07,
+        "completion": 0.14,
+        "request": 0
+      }
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "microsoft/phi-4",
+    "canonical_slug": "microsoft/phi-4",
+    "hugging_face_id": "microsoft/phi-4",
+    "name": "Microsoft: Phi 4",
+    "created": 1736489872,
+    "description": "[Microsoft Research](/microsoft) Phi-4 is designed to perform well in complex reasoning tasks and can operate efficiently in situations with limited memory or where quick responses are needed. At 14 billion...",
+    "context_length": 16384,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000007",
+      "completion": "0.00000014"
+    },
+    "top_provider": {
+      "context_length": 16384,
+      "max_completion_tokens": 14745,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "logit_bias",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": "2024-06-30",
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/microsoft/phi-4/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [],
+      "artificial_analysis": {
+        "intelligence_index": 5.9,
+        "coding_index": null,
+        "agentic_index": null
+      }
+    }
+  },
+  "response": {
+    "id": "gen-1792487347-oyKBaja4O2nkSFIPVCDe",
+    "object": "chat.completion",
+    "created": 1792487347,
+    "model": "microsoft/phi-4",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "A moat is a deep, broad ditch, either dry or filled with water, that surrounds a castle, fortification, building, or town, typically to provide it with a preliminary line of defense. If you're interested in digging a moat, here are some general steps and considerations:\n\n1. **Planning and Design:**\n   - **Purpose:** Decide why you are creating a moat—whether for ornamental, defensive, historical, or irrigation purposes.\n   - **Size and Depth:** Determine the dimensions of your moat. Consider how wide and deep it needs to be for its intended use.\n   - **Type:** Decide between a dry moat, a natural water-filled moat, or a water-filled moat that may require a water source.\n\n2. **Location:**\n   - **Suitability:** Ensure the terrain is suitable for digging. Avoid areas with underground utilities, significant rocks, or water tables that are too high.\n   - **Property Lines:** Make sure the moat doesn’t encroach on neighboring properties unless permission is obtained.\n\n3. **Permissions and Regulations:**\n   - **Permits:** Check with local authorities about any necessary permits or permissions required to dig a moat.\n   - **Building Codes:** Ensure compliance with zoning laws and building codes. \n\n4. **Environmental and Legal Considerations:**\n   - **Wildlife:** Consider the impact on local wildlife, especially if the moat will hold water.\n   - **Water Rights:** If using water, ensure compliance with local water laws.\n   - **Flood Risks:** Evaluate how the moat might affect local drainage and retention of water.\n\n5. **Contruction:**\n   - **Hiring Professionals:** Depending on the moat’s size, you might need to hire construction contractors or engineers, especially if it involves earthmoving equipment.\n   - **Manual Labor:** For smaller moats, manual digging might be practical with the use of shovels, picks, and possibly a backhoe.\n   - **Lining and Sealing:** Consider lining the moat to prevent water seepage and erosion issues, if you plan to fill it with water.\n\n6. **Finishing Touches:**\n   - **Banks:** Shape the banks of the moat for either defensive purposes or aesthetics.\n   - **Fencing or Bridging:** Install fencing or bridges for access or security.\n\n7. **Maintenance:**\n   - **Regular Inspection:** Check for erosion, blockages, and structural integrity regularly.\n   - **Water Quality:** If filled, ensure the water quality remains healthy if wildlife or plants will be in and around it.\n\nCreating a moat can be a significant project, so careful planning is crucial. For larger or more complex projects, seeking the advice of professionals such as landscape architects or civil engineers is recommended.",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 574,
+      "total_tokens": 587,
+      "cost": 8.127e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.127e-05,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 8.036e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "microsoft--phi-4",
+    "displayName": "Phi 4",
+    "provider": "microsoft",
+    "modelId": "microsoft/phi-4",
+    "returnedModelId": "microsoft/phi-4",
+    "upstreamProvider": "DeepInfra",
+    "evaluatedAt": "2026-10-20T09:09:16.405021+00:00",
+    "requestStartedAt": "2026-10-20T09:09:07.513451+00:00",
+    "requestId": "gen-1792487347-oyKBaja4O2nkSFIPVCDe",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:09:08 GMT",
+      "CF-RAY": "a4d6e1c479c16591-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 13,
+      "completion_tokens": 574,
+      "total_tokens": 587,
+      "cost": 8.127e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.127e-05,
+        "upstream_inference_prompt_cost": 9.1e-07,
+        "upstream_inference_completions_cost": 8.036e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 8.127e-05,
+    "latencyMs": 8891,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "fb5a0c49761581bae7910b42f8d3be266478985ef464c6c5689e49a0f9378641",
+    "responseSha256": "07be6f88e59f965cc212b69fa99e6b45b82b7d9a7a8fb5402f35fec15a9cfc8c",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/microsoft--phi-4.json",
+    "responseText": "A moat is a deep, broad ditch, either dry or filled with water, that surrounds a castle, fortification, building, or town, typically to provide it with a preliminary line of defense. If you're interested in digging a moat, here are some general steps and considerations:\n\n1. **Planning and Design:**\n   - **Purpose:** Decide why you are creating a moat—whether for ornamental, defensive, historical, or irrigation purposes.\n   - **Size and Depth:** Determine the dimensions of your moat. Consider how wide and deep it needs to be for its intended use.\n   - **Type:** Decide between a dry moat, a natural water-filled moat, or a water-filled moat that may require a water source.\n\n2. **Location:**\n   - **Suitability:** Ensure the terrain is suitable for digging. Avoid areas with underground utilities, significant rocks, or water tables that are too high.\n   - **Property Lines:** Make sure the moat doesn’t encroach on neighboring properties unless permission is obtained.\n\n3. **Permissions and Regulations:**\n   - **Permits:** Check with local authorities about any necessary permits or permissions required to dig a moat.\n   - **Building Codes:** Ensure compliance with zoning laws and building codes. \n\n4. **Environmental and Legal Considerations:**\n   - **Wildlife:** Consider the impact on local wildlife, especially if the moat will hold water.\n   - **Water Rights:** If using water, ensure compliance with local water laws.\n   - **Flood Risks:** Evaluate how the moat might affect local drainage and retention of water.\n\n5. **Contruction:**\n   - **Hiring Professionals:** Depending on the moat’s size, you might need to hire construction contractors or engineers, especially if it involves earthmoving equipment.\n   - **Manual Labor:** For smaller moats, manual digging might be practical with the use of shovels, picks, and possibly a backhoe.\n   - **Lining and Sealing:** Consider lining the moat to prevent water seepage and erosion issues, if you plan to fill it with water.\n\n6. **Finishing Touches:**\n   - **Banks:** Shape the banks of the moat for either defensive purposes or aesthetics.\n   - **Fencing or Bridging:** Install fencing or bridges for access or security.\n\n7. **Maintenance:**\n   - **Regular Inspection:** Check for erosion, blockages, and structural integrity regularly.\n   - **Water Quality:** If filled, ensure the water quality remains healthy if wildlife or plants will be in and around it.\n\nCreating a moat can be a significant project, so careful planning is crucial. For larger or more complex projects, seeking the advice of professionals such as landscape architects or civil engineers is recommended.",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

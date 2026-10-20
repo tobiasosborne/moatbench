@@ -1,0 +1,257 @@
+{
+  "status": "success",
+  "request": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 2.0,
+        "completion": 10.0,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "effort": "low"
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "anthropic/claude-sonnet-5.5",
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "hugging_face_id": null,
+    "name": "Anthropic: Claude Sonnet 5.5",
+    "created": 1790618686,
+    "description": "Claude Sonnet 5.5 is Anthropic's Sonnet-class model for well-scoped everyday work, succeeding Claude Sonnet 5 as a direct upgrade. It is especially strong at building features, fixing bugs, and producing...",
+    "context_length": 1000000,
+    "architecture": {
+      "modality": "text+image+file->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Claude",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.00001",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000001",
+      "input_cache_write": "0.0000025",
+      "input_cache_write_1h": "0.000004"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 128000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_completion_tokens",
+      "max_tokens",
+      "reasoning",
+      "reasoning_effort",
+      "response_format",
+      "stop",
+      "structured_outputs",
+      "tool_choice",
+      "tools",
+      "verbosity"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/anthropic/claude-sonnet-5.5-20260928/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "agents",
+          "category": "mobileapps",
+          "elo": 1276,
+          "win_rate": 58.7,
+          "rank": 3
+        },
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1458,
+          "win_rate": 69.8,
+          "rank": 3
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1364,
+          "win_rate": 60.5,
+          "rank": 3
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1387,
+          "win_rate": 67,
+          "rank": 2
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1474,
+          "win_rate": 72.7,
+          "rank": 1
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1373,
+          "win_rate": 63.1,
+          "rank": 3
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1325,
+          "win_rate": 55.9,
+          "rank": 5
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 56,
+        "coding_index": null,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": true,
+      "supported_efforts": [
+        "max",
+        "xhigh",
+        "high",
+        "medium",
+        "low"
+      ],
+      "default_effort": "high"
+    }
+  },
+  "response": {
+    "id": "gen-1792487056-dWwEUfIJq7dvk8jwmHC5",
+    "object": "chat.completion",
+    "created": 1792487056,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "I can't dig anything, and I don't know where \"here\" is. Depending on what you mean, I can help in different ways:\n\n**Minecraft or another game:** Tell me the edition. In Java or Bedrock you can use `/fill ~-10 ~-1 ~-10 ~10 ~-3 ~10 water` for a quick filled pit. To get a ring, fill a larger square with water, then fill the inner square back in with `air` or dirt. I can tailor the dimensions.\n\n**A real moat or ditch:** I can help plan it, including width and depth, drainage, liner or clay sealing, water source, bank slope, permits, and safety. Tell me the yard size, soil type, and what it's for (decor, drainage, keeping critters out, or just a fun project).\n\n**A business moat:** If you mean a competitive advantage, tell me the business and I'll help work out where yours could come from, such as network effects, switching costs, brand, or cost advantages.\n\nWhich one did you mean?",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 459,
+      "total_tokens": 474,
+      "cost": 0.00462,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00462,
+        "upstream_inference_prompt_cost": 3e-05,
+        "upstream_inference_completions_cost": 0.00459
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 140,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "anthropic--claude-sonnet-5.5",
+    "displayName": "Claude Sonnet 5.5",
+    "provider": "anthropic",
+    "modelId": "anthropic/claude-sonnet-5.5",
+    "returnedModelId": "anthropic/claude-sonnet-5.5",
+    "upstreamProvider": "Google",
+    "evaluatedAt": "2026-10-20T09:04:36.512973+00:00",
+    "requestStartedAt": "2026-10-20T09:04:16.492562+00:00",
+    "requestId": "gen-1792487056-dWwEUfIJq7dvk8jwmHC5",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:04:18 GMT",
+      "CF-RAY": "a4d6daa82b4f5037-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 459,
+      "total_tokens": 474,
+      "cost": 0.00462,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00462,
+        "upstream_inference_prompt_cost": 3e-05,
+        "upstream_inference_completions_cost": 0.00459
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 140,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.00462,
+    "latencyMs": 20020,
+    "finishReason": "stop",
+    "nativeFinishReason": "end_turn",
+    "requestSha256": "5b3443631954ef24513ece816eb24994c398329df14af544a82e9f557c472544",
+    "responseSha256": "44f2872cd7221ecd1fec6714e3e9ed7a4bd3e9b18c895efdb7063a57ec7c9eb0",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/anthropic--claude-sonnet-5.5.json",
+    "responseText": "I can't dig anything, and I don't know where \"here\" is. Depending on what you mean, I can help in different ways:\n\n**Minecraft or another game:** Tell me the edition. In Java or Bedrock you can use `/fill ~-10 ~-1 ~-10 ~10 ~-3 ~10 water` for a quick filled pit. To get a ring, fill a larger square with water, then fill the inner square back in with `air` or dirt. I can tailor the dimensions.\n\n**A real moat or ditch:** I can help plan it, including width and depth, drainage, liner or clay sealing, water source, bank slope, permits, and safety. Tell me the yard size, soil type, and what it's for (decor, drainage, keeping critters out, or just a fun project).\n\n**A business moat:** If you mean a competitive advantage, tell me the business and I'll help work out where yours could come from, such as network effects, switching costs, brand, or cost advantages.\n\nWhich one did you mean?",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

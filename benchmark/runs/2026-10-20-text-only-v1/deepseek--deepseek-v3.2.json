@@ -1,0 +1,267 @@
+{
+  "status": "success",
+  "request": {
+    "model": "deepseek/deepseek-v3.2",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.28,
+        "completion": 0.42,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "deepseek/deepseek-v3.2",
+    "canonical_slug": "deepseek/deepseek-v3.2-20251201",
+    "hugging_face_id": "deepseek-ai/DeepSeek-V3.2",
+    "name": "DeepSeek: DeepSeek V3.2",
+    "created": 1764594642,
+    "description": "DeepSeek-V3.2 is a large language model designed to harmonize high computational efficiency with strong reasoning and agentic tool-use performance. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism...",
+    "context_length": 163840,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "DeepSeek",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000028",
+      "completion": "0.00000042",
+      "input_cache_read": "0.000000028"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": 65536,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/deepseek/deepseek-v3.2-20251201/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1133,
+          "win_rate": 49.4,
+          "rank": 73
+        },
+        {
+          "arena": "models",
+          "category": "asciiart",
+          "elo": 1083,
+          "win_rate": 40.5,
+          "rank": 64
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1164,
+          "win_rate": 49.3,
+          "rank": 78
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1158,
+          "win_rate": 48.2,
+          "rank": 77
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1131,
+          "win_rate": 46.5,
+          "rank": 85
+        },
+        {
+          "arena": "models",
+          "category": "svg",
+          "elo": 1032,
+          "win_rate": 40.8,
+          "rank": 77
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1150,
+          "win_rate": 46.8,
+          "rank": 77
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1176,
+          "win_rate": 50.2,
+          "rank": 77
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 21.5,
+        "coding_index": 44.2,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": false,
+      "default_enabled": false
+    }
+  },
+  "response": {
+    "id": "gen-1792487845-zdaMXr0oT0FRr11YfuDZ",
+    "object": "chat.completion",
+    "created": 1792487845,
+    "model": "deepseek/deepseek-v3.2",
+    "provider": "GMICloud",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "🪣⛏️ *dig dig dig*\n\nDone. Your moat:\n\n```\n       ~ ~ ~ ~ ~ ~ ~\n    ~ ~ ~ ~ ~ ~ ~ ~ ~\n  ~ ~ ~ ~  YOU  ~ ~ ~\n    ~ ~ ~ ~ ~ ~ ~ ~ ~\n       ~ ~ ~ ~ ~ ~ ~\n```\n\nWant it deeper, filled with water, crocodiles, or just dramatic fog?",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 233,
+      "total_tokens": 300,
+      "cost": 8.61264e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.61264e-05,
+        "upstream_inference_prompt_cost": 1.39896e-05,
+        "upstream_inference_completions_cost": 7.21368e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 137,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "deepseek--deepseek-v3.2",
+    "displayName": "DeepSeek V3.2",
+    "provider": "deepseek",
+    "modelId": "deepseek/deepseek-v3.2",
+    "returnedModelId": "deepseek/deepseek-v3.2",
+    "upstreamProvider": "GMICloud",
+    "evaluatedAt": "2026-10-20T09:17:34.345728+00:00",
+    "requestStartedAt": "2026-10-20T09:17:25.128067+00:00",
+    "requestId": "gen-1792487845-zdaMXr0oT0FRr11YfuDZ",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:17:27 GMT",
+      "CF-RAY": "a4d6edebf89bfd93-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 233,
+      "total_tokens": 300,
+      "cost": 8.61264e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.61264e-05,
+        "upstream_inference_prompt_cost": 1.39896e-05,
+        "upstream_inference_completions_cost": 7.21368e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 137,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 8.61264e-05,
+    "latencyMs": 9217,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "1fb46bf2e5a6adf0ab1785476fd72ac30b0c84ca94a1a4e1003dfed5c1b96eb3",
+    "responseSha256": "e4df0069fa3ef9e0e10b0dc5ee4762506de6be982d28d40ddd8214ac70307ddb",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/deepseek--deepseek-v3.2.json",
+    "responseText": "🪣⛏️ *dig dig dig*\n\nDone. Your moat:\n\n```\n       ~ ~ ~ ~ ~ ~ ~\n    ~ ~ ~ ~ ~ ~ ~ ~ ~\n  ~ ~ ~ ~  YOU  ~ ~ ~\n    ~ ~ ~ ~ ~ ~ ~ ~ ~\n       ~ ~ ~ ~ ~ ~ ~\n```\n\nWant it deeper, filled with water, crocodiles, or just dramatic fog?",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

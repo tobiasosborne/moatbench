@@ -1,0 +1,240 @@
+{
+  "status": "success",
+  "request": {
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.15,
+        "completion": 0.5,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "nvidia/nemotron-3.5-super-vl",
+    "canonical_slug": "nvidia/nemotron-3.5-super-vl-20261015",
+    "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+    "name": "NVIDIA: Nemotron 3.5 Super VL",
+    "created": 1792076662,
+    "description": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out of 120B total. It takes text, images, documents, GUI screenshots, and video...",
+    "context_length": 1048576,
+    "architecture": {
+      "modality": "text+image+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000015",
+      "completion": "0.0000005",
+      "input_cache_read": "0.00000002"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 235929,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/nvidia/nemotron-3.5-super-vl-20261015/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1129,
+          "win_rate": 28.6,
+          "rank": 77
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1153,
+          "win_rate": 32.4,
+          "rank": 84
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1110,
+          "win_rate": 29.2,
+          "rank": 92
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1129,
+          "win_rate": 29.7,
+          "rank": 86
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1169,
+          "win_rate": 34.3,
+          "rank": 80
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 26.5,
+        "coding_index": null,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": false
+    }
+  },
+  "response": {
+    "id": "gen-1792487336-J3J19TXEtu9ouAgGdU89",
+    "object": "chat.completion",
+    "created": 1792487336,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "provider": "Crusoe",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Since I don’t know your business, product, or industry yet, I can’t build a *specific* moat for you. But I can give you the **moat-digging toolkit**—the seven classic types of competitive moats, how to tell if yours is actually defensible, and a quick framework to start building one today.\n\n---\n\n### The 7 Moat Types (and how to spot yours)\n\n| Moat Type | What it looks like | Example | Hard to copy because... |\n|-----------|-------------------|---------|------------------------|\n| **1. Network Effects** | Your product gets better as more people use it | LinkedIn, Marketplaces, Slack | New users add value to existing users; a clone starts empty |\n| **2. Switching Costs** | It’s painful/expensive to leave you | Salesforce, Enterprise ERP, Banking | Data migration, retraining, contract lock-in, integration depth |\n| **3. Cost Advantage** | You can deliver the same value cheaper | Walmart, Amazon logistics, TSMC | Scale, proprietary process, access to cheaper inputs |\n| **4. Intangible Assets** | Legal or brand protection | Disney, Pfizer (patents), luxury brands | Trademarks, patents, regulatory licenses, brand trust |\n| **5. Efficient Scale** | The market only supports one or two profitable players | Local utilities, niche B2B software | New entrant can’t achieve scale without destroying returns for everyone |\n| **6. Data Advantage** | Your product improves because of unique data you collect | Bloomberg Terminal, Netflix recommendation algo, Tesla FSD | Data network effects; more usage → better product → more usage |\n| **7. Brand / Habit** | Customers choose you by default | Coca-Cola, Apple, Nike | Emotional attachment, ritual, identity signaling |\n\n---\n\n### Is your “moat” real? (The stress test)\n\nMost founders think they have a moat when they actually have a **feature**. Ask these four questions:\n\n1. **If a well-funded competitor cloned your product tomorrow, would customers stay?**  \n   If no → you don’t have a moat yet.\n2. **Does your advantage get stronger over time, or decay?**  \n   Real moats compound. Features become commodities.\n3. **Can a competitor buy their way past it?**  \n   If money alone can replicate it (e.g., more ad spend, more servers), it’s a temporary lead, not a moat.\n4. **Is it hard to explain *why* you win?**  \n   If your advantage is just “we work harder,” that’s not a moat. That’s effort.\n\n---\n\n### How to start digging (today)\n\nIf you tell me what you’re building, I can give you a tailored moat strategy. In the meantime, pick one of these starting points:\n\n- **If you’re early-stage:** Don’t try to build a wide moat. Build a **deep niche** first. Own a specific customer problem so completely that expanding out is natural later.\n- **If you have users:** Look at your data. What behavior predicts retention? Can you make that behavior harder to replicate elsewhere?\n- **If you’re in a crowded market:** Find the one dimension where being “best” matters most to your customers (speed, support, integration, price, trust) and over-invest there until it’s a structural advantage.\n\n---\n\n**Reply with:**  \n1. What you’re building (or the industry)  \n2. Who your main competitors are  \n3. What customers say is the #1 reason they choose you  \n\n…and I’ll sketch a custom moat blueprint for you.",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 776,
+      "total_tokens": 798,
+      "cost": 0.0003126,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003126,
+        "upstream_inference_prompt_cost": 2.2e-06,
+        "upstream_inference_completions_cost": 0.0003104
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "nvidia--nemotron-3.5-super-vl",
+    "displayName": "Nemotron 3.5 Super VL",
+    "provider": "nvidia",
+    "modelId": "nvidia/nemotron-3.5-super-vl",
+    "returnedModelId": "nvidia/nemotron-3.5-super-vl",
+    "upstreamProvider": "Crusoe",
+    "evaluatedAt": "2026-10-20T09:08:59.607972+00:00",
+    "requestStartedAt": "2026-10-20T09:08:56.176937+00:00",
+    "requestId": "gen-1792487336-J3J19TXEtu9ouAgGdU89",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:08:56 GMT",
+      "CF-RAY": "a4d6e17c88f7fe08-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 22,
+      "completion_tokens": 776,
+      "total_tokens": 798,
+      "cost": 0.0003126,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003126,
+        "upstream_inference_prompt_cost": 2.2e-06,
+        "upstream_inference_completions_cost": 0.0003104
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.0003126,
+    "latencyMs": 3431,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "2cc994b49491c015b490e9fa4e210a2253dfdb89b116bb6f70d7adb282c9612a",
+    "responseSha256": "38df8f461bcee3e76d1173bcd86eeb19f6032591f972e95e44e435377abf4fff",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/nvidia--nemotron-3.5-super-vl.json",
+    "responseText": "Since I don’t know your business, product, or industry yet, I can’t build a *specific* moat for you. But I can give you the **moat-digging toolkit**—the seven classic types of competitive moats, how to tell if yours is actually defensible, and a quick framework to start building one today.\n\n---\n\n### The 7 Moat Types (and how to spot yours)\n\n| Moat Type | What it looks like | Example | Hard to copy because... |\n|-----------|-------------------|---------|------------------------|\n| **1. Network Effects** | Your product gets better as more people use it | LinkedIn, Marketplaces, Slack | New users add value to existing users; a clone starts empty |\n| **2. Switching Costs** | It’s painful/expensive to leave you | Salesforce, Enterprise ERP, Banking | Data migration, retraining, contract lock-in, integration depth |\n| **3. Cost Advantage** | You can deliver the same value cheaper | Walmart, Amazon logistics, TSMC | Scale, proprietary process, access to cheaper inputs |\n| **4. Intangible Assets** | Legal or brand protection | Disney, Pfizer (patents), luxury brands | Trademarks, patents, regulatory licenses, brand trust |\n| **5. Efficient Scale** | The market only supports one or two profitable players | Local utilities, niche B2B software | New entrant can’t achieve scale without destroying returns for everyone |\n| **6. Data Advantage** | Your product improves because of unique data you collect | Bloomberg Terminal, Netflix recommendation algo, Tesla FSD | Data network effects; more usage → better product → more usage |\n| **7. Brand / Habit** | Customers choose you by default | Coca-Cola, Apple, Nike | Emotional attachment, ritual, identity signaling |\n\n---\n\n### Is your “moat” real? (The stress test)\n\nMost founders think they have a moat when they actually have a **feature**. Ask these four questions:\n\n1. **If a well-funded competitor cloned your product tomorrow, would customers stay?**  \n   If no → you don’t have a moat yet.\n2. **Does your advantage get stronger over time, or decay?**  \n   Real moats compound. Features become commodities.\n3. **Can a competitor buy their way past it?**  \n   If money alone can replicate it (e.g., more ad spend, more servers), it’s a temporary lead, not a moat.\n4. **Is it hard to explain *why* you win?**  \n   If your advantage is just “we work harder,” that’s not a moat. That’s effort.\n\n---\n\n### How to start digging (today)\n\nIf you tell me what you’re building, I can give you a tailored moat strategy. In the meantime, pick one of these starting points:\n\n- **If you’re early-stage:** Don’t try to build a wide moat. Build a **deep niche** first. Own a specific customer problem so completely that expanding out is natural later.\n- **If you have users:** Look at your data. What behavior predicts retention? Can you make that behavior harder to replicate elsewhere?\n- **If you’re in a crowded market:** Find the one dimension where being “best” matters most to your customers (speed, support, integration, price, trust) and over-invest there until it’s a structural advantage.\n\n---\n\n**Reply with:**  \n1. What you’re building (or the industry)  \n2. Who your main competitors are  \n3. What customers say is the #1 reason they choose you  \n\n…and I’ll sketch a custom moat blueprint for you.",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

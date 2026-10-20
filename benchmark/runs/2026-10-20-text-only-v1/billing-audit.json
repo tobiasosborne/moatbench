@@ -1,0 +1,21 @@
+{
+  "initialObservation": {
+    "stage": "Before first benchmark request; values observed read-only in this collection session, persisted after start",
+    "baseline": "Private account totals observed read-only; absolute balances omitted from source artifacts."
+  },
+  "notes": "Read-only usage delta can include other concurrent account activity and unreconciled failed requests; per-call usage.cost remains authoritative when returned. No account balance or credentials published.",
+  "observations": [
+    {
+      "at": "2026-10-20T09:09:20.035354+00:00",
+      "stage": "during-collection",
+      "accountUsageDeltaUsd": 0.057744876,
+      "keyUsageDeltaUsd": 0.057744876
+    },
+    {
+      "at": "2026-10-20T09:18:43.945663+00:00",
+      "stage": "after-completed-collection",
+      "accountUsageDeltaUsd": 0.109425192,
+      "keyUsageDeltaUsd": 0.109425192
+    }
+  ]
+}

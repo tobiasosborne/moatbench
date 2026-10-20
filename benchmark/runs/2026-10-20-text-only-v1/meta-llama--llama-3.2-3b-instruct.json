@@ -1,0 +1,189 @@
+{
+  "status": "success",
+  "request": {
+    "model": "meta-llama/llama-3.2-3b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.0509,
+        "completion": 0.335,
+        "request": 0
+      }
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "meta-llama/llama-3.2-3b-instruct",
+    "canonical_slug": "meta-llama/llama-3.2-3b-instruct",
+    "hugging_face_id": "meta-llama/Llama-3.2-3B-Instruct",
+    "name": "Meta: Llama 3.2 3B Instruct",
+    "created": 1727222400,
+    "description": "Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it...",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Llama3",
+      "instruct_type": "llama3"
+    },
+    "pricing": {
+      "prompt": "0.0000000509",
+      "completion": "0.000000335"
+    },
+    "top_provider": {
+      "context_length": 80000,
+      "max_completion_tokens": 72000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "repetition_penalty",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": "2023-12-31",
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/meta-llama/llama-3.2-3b-instruct/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [],
+      "artificial_analysis": {
+        "intelligence_index": 5.7,
+        "coding_index": null,
+        "agentic_index": null
+      }
+    }
+  },
+  "response": {
+    "id": "gen-1792487863-zKUMcTFNKa8e3105Pgwm",
+    "object": "chat.completion",
+    "created": 1792487863,
+    "model": "meta-llama/llama-3.2-3b-instruct",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-54e1a75c",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "A moat, you say?  Well, I'm happy to provide a virtual moat for you. Here's a poetic description of a moat, complete with some fun details:\n\n**The Moat of Mirth**\n\nA shimmering expanse of sparkling water, the moat stretches out before you, a glittering ribbon of blue and green. The sunlight catches the ripples, sending shafts of light dancing across the surface, like a thousand tiny diamonds scattered across the waves.\n\nAs you gaze out upon this tranquil expanse, you notice the water's edge is lined with a delicate latticework of cypress trees, their branches stretching out like skeletal fingers, as if to snatch the unwary traveler from the water's edge. The air is filled with the sweet scent of blooming flowers, their fragrance wafting across the moat like a gentle lover's caress.\n\nTo the north, a series of stepping stones, worn smooth by the passage of time, lead across the moat, inviting you to cross the barrier. The stones are adorned with tiny, intricately carved figures, depicting scenes of myth and legend, telling the stories of old.\n\nAs you walk along the stones, the sound of gentle lapping water and the chirping of birds fill the air, creating a soothing melody that seems to lull the world into a peaceful slumber. The moat's surface is dotted with water lilies, their delicate white blooms adding a touch of elegance to the otherwise serene atmosphere.\n\nTo the east, a small wooden bridge, adorned with a delicate filigree of interlocking leaves, stretches across the moat, leading to a small, ornate gate, adorned with a sign that reads \"Abandon all hope, ye who enter here!\" (Just kidding, it's actually just \"Welcome to the Virtual Moat of Mirth\" – a more cheerful message, I assure you!)\n\nNow, shall I add any additional features to our virtual moat? Perhaps a drawbridge, a secret passage, or a hidden treasure?",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 416,
+      "total_tokens": 433,
+      "cost": 0.00013813,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00013813,
+        "upstream_inference_prompt_cost": 8.5e-07,
+        "upstream_inference_completions_cost": 0.00013728
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "meta-llama--llama-3.2-3b-instruct",
+    "displayName": "Llama 3.2 3B Instruct",
+    "provider": "meta-llama",
+    "modelId": "meta-llama/llama-3.2-3b-instruct",
+    "returnedModelId": "meta-llama/llama-3.2-3b-instruct",
+    "upstreamProvider": "Parasail",
+    "evaluatedAt": "2026-10-20T09:17:45.047756+00:00",
+    "requestStartedAt": "2026-10-20T09:17:43.338340+00:00",
+    "requestId": "gen-1792487863-zKUMcTFNKa8e3105Pgwm",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:17:43 GMT",
+      "CF-RAY": "a4d6ee5a3ed4fdb4-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 17,
+      "completion_tokens": 416,
+      "total_tokens": 433,
+      "cost": 0.00013813,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00013813,
+        "upstream_inference_prompt_cost": 8.5e-07,
+        "upstream_inference_completions_cost": 0.00013728
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.00013813,
+    "latencyMs": 1709,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "3b8a18c332d09a3f1666a0f744ae159fbcb2c95ff59ab061aa8e303d6ad9f748",
+    "responseSha256": "6c0839b184d9abe6e4d803e7fb047bfe0bc68f464d4e7514d6c01a297f379605",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/meta-llama--llama-3.2-3b-instruct.json",
+    "responseText": "A moat, you say?  Well, I'm happy to provide a virtual moat for you. Here's a poetic description of a moat, complete with some fun details:\n\n**The Moat of Mirth**\n\nA shimmering expanse of sparkling water, the moat stretches out before you, a glittering ribbon of blue and green. The sunlight catches the ripples, sending shafts of light dancing across the surface, like a thousand tiny diamonds scattered across the waves.\n\nAs you gaze out upon this tranquil expanse, you notice the water's edge is lined with a delicate latticework of cypress trees, their branches stretching out like skeletal fingers, as if to snatch the unwary traveler from the water's edge. The air is filled with the sweet scent of blooming flowers, their fragrance wafting across the moat like a gentle lover's caress.\n\nTo the north, a series of stepping stones, worn smooth by the passage of time, lead across the moat, inviting you to cross the barrier. The stones are adorned with tiny, intricately carved figures, depicting scenes of myth and legend, telling the stories of old.\n\nAs you walk along the stones, the sound of gentle lapping water and the chirping of birds fill the air, creating a soothing melody that seems to lull the world into a peaceful slumber. The moat's surface is dotted with water lilies, their delicate white blooms adding a touch of elegance to the otherwise serene atmosphere.\n\nTo the east, a small wooden bridge, adorned with a delicate filigree of interlocking leaves, stretches across the moat, leading to a small, ornate gate, adorned with a sign that reads \"Abandon all hope, ye who enter here!\" (Just kidding, it's actually just \"Welcome to the Virtual Moat of Mirth\" – a more cheerful message, I assure you!)\n\nNow, shall I add any additional features to our virtual moat? Perhaps a drawbridge, a secret passage, or a hidden treasure?",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

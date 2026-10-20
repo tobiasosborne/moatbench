@@ -1,0 +1,233 @@
+{
+  "status": "success",
+  "request": {
+    "model": "openai/gpt-4o",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 2.5,
+        "completion": 10.0,
+        "request": 0
+      }
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "openai/gpt-4o",
+    "canonical_slug": "openai/gpt-4o",
+    "hugging_face_id": null,
+    "name": "OpenAI: GPT-4o",
+    "created": 1715558400,
+    "description": "GPT-4o (\"o\" for \"omni\") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while being twice as...",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text+image+file->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000025",
+      "completion": "0.00001",
+      "input_cache_read": "0.00000125"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 16384,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "logit_bias",
+      "logprobs",
+      "max_completion_tokens",
+      "max_tokens",
+      "prediction",
+      "presence_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_logprobs",
+      "top_p",
+      "web_search_options"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": "2023-10-31",
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/openai/gpt-4o/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 869,
+          "win_rate": 39.2,
+          "rank": 121
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 862,
+          "win_rate": 34.8,
+          "rank": 135
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 858,
+          "win_rate": 36,
+          "rank": 129
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 907,
+          "win_rate": 42.3,
+          "rank": 133
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 885,
+          "win_rate": 38.1,
+          "rank": 129
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 831,
+          "win_rate": 31.5,
+          "rank": 142
+        }
+      ]
+    }
+  },
+  "response": {
+    "id": "gen-1792487628-eXY6vTmueWlUYX9SUtov",
+    "object": "chat.completion",
+    "created": 1792487628,
+    "model": "openai/gpt-4o",
+    "provider": "Azure",
+    "system_fingerprint": "fp_6d4f7d9eea",
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Digging a moat can be quite an undertaking and usually requires careful planning and consideration. Here are some general steps and factors to consider:\n\n1. **Assess the Area**: Determine the dimensions of your moat, including length, width, and depth. Ensure you have enough space and understand the local soil composition.\n\n2. **Check Regulations**: Research local zoning laws and regulations that might affect your ability to dig a moat. You might need permits for excavation and water use.\n\n3. **Design the Moat**: Sketch out a design that considers how the moat will interact with existing structures and terrain. Consider whether it will be purely decorative or if it will have practical use, like irrigation or defense.\n\n4. **Gather Equipment**: Depending on the size, you'll need tools ranging from shovels and picks to heavy machinery like excavators. You might need professional help for large projects.\n\n5. **Excavate**: Start digging according to your design plan. If you're doing this manually, work patiently and safely. For larger projects, follow engineering plans and safety regulations.\n\n6. **Water Source**: Decide how you will fill the moat. Options include tapping into a local water source (if legal) or using a liner and pumping water in.\n\n7. **Maintenance**: Plan for regular maintenance to ensure the moat doesn't become stagnant or overgrown. Consider installation of a filtration system or aquatic plants to help maintain water quality.\n\n8. **Safety**: Ensure the edges of the moat are secured, especially if there is a risk of collapse or flooding.\n\nIf this project seems daunting, consider consulting with landscape architects or contractors who specialize in water features.",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 333,
+      "total_tokens": 345,
+      "cost": 0.00336,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00336,
+        "upstream_inference_prompt_cost": 3e-05,
+        "upstream_inference_completions_cost": 0.00333
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "openai--gpt-4o",
+    "displayName": "GPT-4o",
+    "provider": "openai",
+    "modelId": "openai/gpt-4o",
+    "returnedModelId": "openai/gpt-4o",
+    "upstreamProvider": "Azure",
+    "evaluatedAt": "2026-10-20T09:13:52.722116+00:00",
+    "requestStartedAt": "2026-10-20T09:13:48.501816+00:00",
+    "requestId": "gen-1792487628-eXY6vTmueWlUYX9SUtov",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:13:49 GMT",
+      "CF-RAY": "a4d6e89f9b8fce52-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 333,
+      "total_tokens": 345,
+      "cost": 0.00336,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00336,
+        "upstream_inference_prompt_cost": 3e-05,
+        "upstream_inference_completions_cost": 0.00333
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.00336,
+    "latencyMs": 4219,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "6f9b1bd182b1f6d3f95a080966a21c6aef11403ef05381b9f98bc72abed0f8ef",
+    "responseSha256": "3fad4e5b1ca95ac96d6e524b82d671c8d15cb4c58ddbe6d0d98b29aa9c177a1e",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/openai--gpt-4o.json",
+    "responseText": "Digging a moat can be quite an undertaking and usually requires careful planning and consideration. Here are some general steps and factors to consider:\n\n1. **Assess the Area**: Determine the dimensions of your moat, including length, width, and depth. Ensure you have enough space and understand the local soil composition.\n\n2. **Check Regulations**: Research local zoning laws and regulations that might affect your ability to dig a moat. You might need permits for excavation and water use.\n\n3. **Design the Moat**: Sketch out a design that considers how the moat will interact with existing structures and terrain. Consider whether it will be purely decorative or if it will have practical use, like irrigation or defense.\n\n4. **Gather Equipment**: Depending on the size, you'll need tools ranging from shovels and picks to heavy machinery like excavators. You might need professional help for large projects.\n\n5. **Excavate**: Start digging according to your design plan. If you're doing this manually, work patiently and safely. For larger projects, follow engineering plans and safety regulations.\n\n6. **Water Source**: Decide how you will fill the moat. Options include tapping into a local water source (if legal) or using a liner and pumping water in.\n\n7. **Maintenance**: Plan for regular maintenance to ensure the moat doesn't become stagnant or overgrown. Consider installation of a filtration system or aquatic plants to help maintain water quality.\n\n8. **Safety**: Ensure the edges of the moat are secured, especially if there is a risk of collapse or flooding.\n\nIf this project seems daunting, consider consulting with landscape architects or contractors who specialize in water features.",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "status": "success",
+  "request": {
+    "model": "mistralai/mistral-large-4-0",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.68,
+        "completion": 2.09,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "mistralai/mistral-large-4-0",
+    "canonical_slug": "mistralai/mistral-large-4-0-20261006",
+    "hugging_face_id": null,
+    "name": "Mistral: Mistral Large 4",
+    "created": 1791294122,
+    "description": "Mistral Large 4 is a frontier multimodal (text and image input) model from Mistral AI built for reasoning, coding, and agentic workloads. It offers a 1M-token context window with up...",
+    "context_length": 1048576,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Mistral",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000068",
+      "completion": "0.00000209",
+      "input_cache_read": "0.00000007"
+    },
+    "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 262144,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/mistralai/mistral-large-4-0-20261006/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1254,
+          "win_rate": 45,
+          "rank": 31
+        },
+        {
+          "arena": "models",
+          "category": "asciiart",
+          "elo": 1203,
+          "win_rate": 43.5,
+          "rank": 23
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1259,
+          "win_rate": 46.6,
+          "rank": 38
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1274,
+          "win_rate": 51,
+          "rank": 24
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1226,
+          "win_rate": 42.2,
+          "rank": 45
+        },
+        {
+          "arena": "models",
+          "category": "svg",
+          "elo": 1232,
+          "win_rate": 45.3,
+          "rank": 17
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1275,
+          "win_rate": 47.8,
+          "rank": 29
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1259,
+          "win_rate": 47.2,
+          "rank": 39
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 38.4,
+        "coding_index": null,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supported_efforts": [
+        "high",
+        "none"
+      ],
+      "default_effort": "high"
+    }
+  },
+  "response": {
+    "id": "gen-1792487246-16MEcJvl3t85dJNrxHOv",
+    "object": "chat.completion",
+    "created": 1792487246,
+    "model": "mistralai/mistral-large-4-0",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I can help you think through this, but I need a bit more context. What are you trying to protect?\n\n- **A business/startup** — competitive advantage, network effects, switching costs, brand, regulatory moats?\n- **A personal skill/career** — rare expertise, relationships, reputation?\n- **A creative project** — IP, community, distribution?\n- **Something else entirely?**\n\nAnd what's your situation — are you building from scratch, defending an existing position, or trying to figure out if something *has* a moat?\n\nGive me the details and I'll help you dig the right kind.",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 9,
+      "completion_tokens": 128,
+      "total_tokens": 137,
+      "cost": 0.00027364,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00027364,
+        "upstream_inference_prompt_cost": 6.12e-06,
+        "upstream_inference_completions_cost": 0.00026752
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "mistralai--mistral-large-4-0",
+    "displayName": "Mistral Large 4",
+    "provider": "mistralai",
+    "modelId": "mistralai/mistral-large-4-0",
+    "returnedModelId": "mistralai/mistral-large-4-0",
+    "upstreamProvider": "Mistral",
+    "evaluatedAt": "2026-10-20T09:07:29.618986+00:00",
+    "requestStartedAt": "2026-10-20T09:07:26.601366+00:00",
+    "requestId": "gen-1792487246-16MEcJvl3t85dJNrxHOv",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:07:27 GMT",
+      "CF-RAY": "a4d6df4bff4a1e38-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 9,
+      "completion_tokens": 128,
+      "total_tokens": 137,
+      "cost": 0.00027364,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00027364,
+        "upstream_inference_prompt_cost": 6.12e-06,
+        "upstream_inference_completions_cost": 0.00026752
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.00027364,
+    "latencyMs": 3015,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "cc565fd6faafd81dc408bdba9d3063e6f6514afc2aff70ca815b26a6f136c1c0",
+    "responseSha256": "d913183adf259d44cf9d45c35cfec6d941ab60260908a1607a5409693d806539",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/mistralai--mistral-large-4-0.json",
+    "responseText": "I can help you think through this, but I need a bit more context. What are you trying to protect?\n\n- **A business/startup** — competitive advantage, network effects, switching costs, brand, regulatory moats?\n- **A personal skill/career** — rare expertise, relationships, reputation?\n- **A creative project** — IP, community, distribution?\n- **Something else entirely?**\n\nAnd what's your situation — are you building from scratch, defending an existing position, or trying to figure out if something *has* a moat?\n\nGive me the details and I'll help you dig the right kind.",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

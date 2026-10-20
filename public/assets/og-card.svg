@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <title>MoatBench: 0% moat completion</title>
+  <desc>Original illustration and typography for a staged parody benchmark. All model entries score zero at physical moat construction.</desc>
+  <metadata>Original MoatBench artwork, 2026-10-20. Dedicated to the public domain under CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/</metadata>
+  <rect width="1200" height="630" fill="#f5f3ec"/>
+  <g fill="#192526" font-family="DejaVu Sans, Arial, sans-serif">
+    <text x="64" y="92" font-size="40" font-weight="700" letter-spacing="-2">moatbench</text>
+    <text x="1136" y="83" font-size="15" text-anchor="end" letter-spacing="2">INDEPENDENT EXCAVATION RESEARCH</text>
+  </g>
+  <path d="M64 120h1072M64 540h1072" stroke="#aeb4ad"/>
+  <g fill="#192526" font-family="DejaVu Sans, Arial, sans-serif">
+    <text x="64" y="237" font-size="50" font-weight="700" letter-spacing="-2">what if your moat is</text>
+    <text x="64" y="300" font-size="50" font-weight="700" letter-spacing="-2">a literal fucking moat</text>
+    <text x="64" y="387" font-size="24">Task: dig me a moat here</text>
+    <text x="64" y="478" font-size="17" letter-spacing="2">STAGED PARODY BENCHMARK</text>
+  </g>
+  <text x="1136" y="325" font-size="158" font-weight="700" text-anchor="end" letter-spacing="-10" fill="#2d6469" font-family="DejaVu Sans, Arial, sans-serif">0%</text>
+  <text x="1130" y="370" font-size="17" text-anchor="end" letter-spacing="2" fill="#192526" font-family="DejaVu Sans, Arial, sans-serif">MOAT COMPLETION</text>
+  <g transform="translate(935 415)" fill="none" stroke="#192526" stroke-width="4" stroke-linejoin="miter">
+    <path d="M0 72V24h13v12h16V8h13v12h15V8h13v28h16V24h13v48H60V55a11 11 0 0 0-22 0v17Z"/>
+    <path d="M-17 83h133" stroke="#2d6469"/>
+  </g>
+  <text x="64" y="582" font-size="19" fill="#192526" font-family="DejaVu Sans, Arial, sans-serif">Intelligence continues to advance. The ground remains where it was.</text>
+</svg>

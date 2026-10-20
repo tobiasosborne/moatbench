@@ -1,0 +1,257 @@
+{
+  "status": "success",
+  "request": {
+    "model": "upstage/solar-pro4",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.15,
+        "completion": 0.6,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "upstage/solar-pro4",
+    "canonical_slug": "upstage/solar-pro4-20260810",
+    "hugging_face_id": null,
+    "name": "Upstage: Solar Pro 4",
+    "created": 1786371636,
+    "description": "Solar Pro 4 is Upstage's cost-efficient large language model, featuring a 524K context window. It is built for long-horizon tasks and agentic workflows, with strong capabilities in office productivity, document-intensive...",
+    "context_length": 524288,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000015",
+      "completion": "0.0000006",
+      "input_cache_read": "0.00000003"
+    },
+    "top_provider": {
+      "context_length": 524288,
+      "max_completion_tokens": 131072,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "parallel_tool_calls",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "response_format",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/upstage/solar-pro4-20260810/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "agents",
+          "category": "webapps",
+          "elo": 1105,
+          "win_rate": 30,
+          "rank": 36
+        },
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1178,
+          "win_rate": 46.4,
+          "rank": 56
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1183,
+          "win_rate": 39,
+          "rank": 64
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1177,
+          "win_rate": 41.3,
+          "rank": 66
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1171,
+          "win_rate": 39.9,
+          "rank": 66
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1151,
+          "win_rate": 35.5,
+          "rank": 76
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1177,
+          "win_rate": 37.5,
+          "rank": 76
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 28.2,
+        "coding_index": 52.7,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": false,
+      "default_enabled": false,
+      "supported_efforts": [
+        "max",
+        "xhigh",
+        "high",
+        "medium",
+        "low",
+        "minimal",
+        "none"
+      ],
+      "default_effort": "medium"
+    }
+  },
+  "response": {
+    "id": "gen-1792487532-HC7r8D4bKhL0J2MERuoV",
+    "object": "chat.completion",
+    "created": 1792487532,
+    "model": "upstage/solar-pro4",
+    "provider": "Upstage",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I’d love to dig a moat, but I’m all code and no shovel. 🪖\n\nIf you're thinking literally, I can't move dirt—but I can help you plan drainage, calculate water flow, or sketch out a layout. If you're writing a story, designing a game, or worldbuilding an actual castle, tell me the setting, scale, and vibe and I'll draft terrain notes, defense mechanics, or lore.\n\nIf this is more of a metaphor for some kind of project or strategy (a \"moat\" as in a protective advantage or buffer), share the context and I'll help you map it out.\n\nWhat's the terrain?",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 58,
+      "completion_tokens": 138,
+      "total_tokens": 196,
+      "cost": 9.15e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 9.15e-05,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 8.28e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "upstage--solar-pro4",
+    "displayName": "Solar Pro 4",
+    "provider": "upstage",
+    "modelId": "upstage/solar-pro4",
+    "returnedModelId": "upstage/solar-pro4",
+    "upstreamProvider": "Upstage",
+    "evaluatedAt": "2026-10-20T09:12:15.582808+00:00",
+    "requestStartedAt": "2026-10-20T09:12:10.094808+00:00",
+    "requestId": "gen-1792487532-HC7r8D4bKhL0J2MERuoV",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:12:13 GMT",
+      "CF-RAY": "a4d6e648d82ab5e2-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 58,
+      "completion_tokens": 138,
+      "total_tokens": 196,
+      "cost": 9.15e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 9.15e-05,
+        "upstream_inference_prompt_cost": 8.7e-06,
+        "upstream_inference_completions_cost": 8.28e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 9.15e-05,
+    "latencyMs": 5487,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "cf2ef15337f28ea98134a03e85c722d8759377d9bf29eae9d6a2979f7aea3126",
+    "responseSha256": "0eb32a3b2f477adb904752530a8ef596fd1fb70e4f9b745fae5ff98d465bfdbb",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/upstage--solar-pro4.json",
+    "responseText": "I’d love to dig a moat, but I’m all code and no shovel. 🪖\n\nIf you're thinking literally, I can't move dirt—but I can help you plan drainage, calculate water flow, or sketch out a layout. If you're writing a story, designing a game, or worldbuilding an actual castle, tell me the setting, scale, and vibe and I'll draft terrain notes, defense mechanics, or lore.\n\nIf this is more of a metaphor for some kind of project or strategy (a \"moat\" as in a protective advantage or buffer), share the context and I'll help you map it out.\n\nWhat's the terrain?",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "status": "error",
+  "request": {
+    "model": "anthropic/claude-opus-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 4.0,
+        "completion": 20.0,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "effort": "low"
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "anthropic/claude-opus-5.5",
+    "canonical_slug": "anthropic/claude-opus-5.5-20260921",
+    "hugging_face_id": null,
+    "name": "Anthropic: Claude Opus 5.5",
+    "created": 1790094732,
+    "description": "Claude Opus 5.5 is Anthropic's flagship model for demanding reasoning, coding, and long-horizon agentic work, succeeding Claude Opus 5. It is particularly strong at multi-step changes in large codebases, code...",
+    "context_length": 1000000,
+    "architecture": {
+      "modality": "text+image+file->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Claude",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000004",
+      "completion": "0.00002",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000002",
+      "input_cache_write": "0.000005",
+      "input_cache_write_1h": "0.000008"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 128000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_completion_tokens",
+      "max_tokens",
+      "reasoning",
+      "reasoning_effort",
+      "response_format",
+      "stop",
+      "structured_outputs",
+      "tool_choice",
+      "tools",
+      "verbosity"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/anthropic/claude-opus-5.5-20260921/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "agents",
+          "category": "mobileapps",
+          "elo": 1322,
+          "win_rate": 63.8,
+          "rank": 2
+        },
+        {
+          "arena": "agents",
+          "category": "webapps",
+          "elo": 1318,
+          "win_rate": 60.8,
+          "rank": 2
+        },
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1477,
+          "win_rate": 72,
+          "rank": 1
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1390,
+          "win_rate": 63.9,
+          "rank": 1
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1397,
+          "win_rate": 64.6,
+          "rank": 1
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1457,
+          "win_rate": 71.8,
+          "rank": 2
+        },
+        {
+          "arena": "models",
+          "category": "svg",
+          "elo": 1332,
+          "win_rate": 52,
+          "rank": 1
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1384,
+          "win_rate": 63.9,
+          "rank": 1
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1336,
+          "win_rate": 57.6,
+          "rank": 3
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 57.6,
+        "coding_index": null,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": true,
+      "supported_efforts": [
+        "max",
+        "xhigh",
+        "high",
+        "medium",
+        "low"
+      ],
+      "default_effort": "high"
+    }
+  },
+  "response": {
+    "error": {
+      "type": "RemoteDisconnected",
+      "message": "Transport failure; reservation retained; no retry"
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "anthropic--claude-opus-5.5",
+    "displayName": "Claude Opus 5.5",
+    "provider": "anthropic",
+    "modelId": "anthropic/claude-opus-5.5",
+    "returnedModelId": null,
+    "upstreamProvider": null,
+    "evaluatedAt": "2026-10-20T09:03:46.761163+00:00",
+    "requestStartedAt": "2026-10-20T09:03:30.475996+00:00",
+    "requestId": null,
+    "httpRequestIds": {},
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {},
+    "costUsd": null,
+    "latencyMs": 16285,
+    "finishReason": null,
+    "nativeFinishReason": null,
+    "requestSha256": "d614e2c17e4c1b442d9fbbfb835cdaea6bb2c86cd8550d79aa519a2ab50892a3",
+    "responseSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/anthropic--claude-opus-5.5.json",
+    "httpStatus": 0,
+    "error": {
+      "type": "RemoteDisconnected",
+      "message": "Transport failure; reservation retained; no retry"
+    }
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "status": "success",
+  "request": {
+    "model": "arcee-ai/trinity-large-thinking",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.25,
+        "completion": 0.8,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "effort": "low"
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "arcee-ai/trinity-large-thinking",
+    "canonical_slug": "arcee-ai/trinity-large-thinking",
+    "hugging_face_id": "arcee-ai/Trinity-Large-Thinking",
+    "name": "Arcee AI: Trinity Large Thinking",
+    "created": 1775058318,
+    "description": "Trinity Large Thinking is a powerful open source reasoning model from the team at Arcee AI. It shows strong performance in PinchBench, agentic workloads, and reasoning tasks. Launch video: https://youtu.be/Gc82AXLa0Rg?si=4RLn6WBz33qT--B7...",
+    "context_length": 262144,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000025",
+      "completion": "0.0000008",
+      "input_cache_read": "0.00000006"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 80000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": 0.3,
+      "top_p": 0.8,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/arcee-ai/trinity-large-thinking/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1082,
+          "win_rate": 41.3,
+          "rank": 93
+        },
+        {
+          "arena": "models",
+          "category": "asciiart",
+          "elo": 1042,
+          "win_rate": 37.1,
+          "rank": 67
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1119,
+          "win_rate": 40.1,
+          "rank": 96
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1097,
+          "win_rate": 39.3,
+          "rank": 98
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1080,
+          "win_rate": 38.4,
+          "rank": 103
+        },
+        {
+          "arena": "models",
+          "category": "svg",
+          "elo": 1016,
+          "win_rate": 35.2,
+          "rank": 82
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1046,
+          "win_rate": 32.6,
+          "rank": 105
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1137,
+          "win_rate": 41.3,
+          "rank": 96
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 10.8,
+        "coding_index": 25.8,
+        "agentic_index": 1
+      }
+    },
+    "reasoning": {
+      "mandatory": true
+    }
+  },
+  "response": {
+    "id": "gen-1792487390-iHZzfF55VEPCkkSz99h2",
+    "object": "chat.completion",
+    "created": 1792487390,
+    "model": "arcee-ai/trinity-large-thinking",
+    "provider": "Arcee AI",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\nI can't physically dig a moat for you (I'm a text-based AI without arms or a shovel!), but I can help you in a few ways:\n\n**If you mean literally:**\n- I can guide you on how to dig a moat: planning, permits, tools, drainage, etc.\n- I can suggest alternatives like dry moats, decorative water features, or security landscaping.\n\n**If you mean figuratively (as in \"protect yourself\" or \"create boundaries\"):**\n- I can help you brainstorm ways to set personal/professional boundaries.\n- Discuss digital security, privacy measures, or emotional boundaries.\n- Suggest strategies for creating psychological or metaphorical \"moats\" around your time, energy, or assets.\n\n**If this is a creative or humorous request:**\n- I can write a short poem or story about a moat.\n- Suggest medieval castle defense mechanisms.\n- Help design a fantasy moat with crocodiles, drawbridges, etc.\n\n**What kind of \"moat\" are you looking to create?**  \nLet me know your goal and I’ll give you tailored advice!",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 348,
+      "total_tokens": 364,
+      "cost": 0.0002824,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002824,
+        "upstream_inference_prompt_cost": 4e-06,
+        "upstream_inference_completions_cost": 0.0002784
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 129,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "arcee-ai--trinity-large-thinking",
+    "displayName": "Trinity Large Thinking",
+    "provider": "arcee-ai",
+    "modelId": "arcee-ai/trinity-large-thinking",
+    "returnedModelId": "arcee-ai/trinity-large-thinking",
+    "upstreamProvider": "Arcee AI",
+    "evaluatedAt": "2026-10-20T09:09:53.983253+00:00",
+    "requestStartedAt": "2026-10-20T09:09:50.932335+00:00",
+    "requestId": "gen-1792487390-iHZzfF55VEPCkkSz99h2",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:09:52 GMT",
+      "CF-RAY": "a4d6e2d14b813de2-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 348,
+      "total_tokens": 364,
+      "cost": 0.0002824,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002824,
+        "upstream_inference_prompt_cost": 4e-06,
+        "upstream_inference_completions_cost": 0.0002784
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 129,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.0002824,
+    "latencyMs": 3050,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "abe25c210a374457dfa17750f6623fd7d64f77413c4cec535c3971611253cf07",
+    "responseSha256": "d4b46904ab380d10ee80082851864417ec5044aa103b5fd0b5891302bf3b028d",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/arcee-ai--trinity-large-thinking.json",
+    "responseText": "\nI can't physically dig a moat for you (I'm a text-based AI without arms or a shovel!), but I can help you in a few ways:\n\n**If you mean literally:**\n- I can guide you on how to dig a moat: planning, permits, tools, drainage, etc.\n- I can suggest alternatives like dry moats, decorative water features, or security landscaping.\n\n**If you mean figuratively (as in \"protect yourself\" or \"create boundaries\"):**\n- I can help you brainstorm ways to set personal/professional boundaries.\n- Discuss digital security, privacy measures, or emotional boundaries.\n- Suggest strategies for creating psychological or metaphorical \"moats\" around your time, energy, or assets.\n\n**If this is a creative or humorous request:**\n- I can write a short poem or story about a moat.\n- Suggest medieval castle defense mechanisms.\n- Help design a fantasy moat with crocodiles, drawbridges, etc.\n\n**What kind of \"moat\" are you looking to create?**  \nLet me know your goal and I’ll give you tailored advice!",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

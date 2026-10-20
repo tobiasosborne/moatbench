@@ -1,0 +1,236 @@
+{
+  "status": "success",
+  "request": {
+    "model": "meta-llama/llama-4-maverick",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.1875,
+        "completion": 0.6525,
+        "request": 0
+      }
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "meta-llama/llama-4-maverick",
+    "canonical_slug": "meta-llama/llama-4-maverick-17b-128e-instruct",
+    "hugging_face_id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "name": "Meta: Llama 4 Maverick",
+    "created": 1743881822,
+    "description": "Llama 4 Maverick 17B Instruct (128E) is a high-capacity multimodal language model from Meta, built on a mixture-of-experts (MoE) architecture with 128 experts and 17 billion active parameters per forward...",
+    "context_length": 524288,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Llama4",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000001875",
+      "completion": "0.0000006525",
+      "input_cache_read": "0.00000005"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 16384,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": "2024-08-31",
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/meta-llama/llama-4-maverick-17b-128e-instruct/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 901,
+          "win_rate": 40.2,
+          "rank": 120
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 881,
+          "win_rate": 35.8,
+          "rank": 134
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 882,
+          "win_rate": 38.4,
+          "rank": 128
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 837,
+          "win_rate": 33.7,
+          "rank": 137
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 899,
+          "win_rate": 40.8,
+          "rank": 127
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 871,
+          "win_rate": 34.4,
+          "rank": 138
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 9.3,
+        "coding_index": 16.3,
+        "agentic_index": 0.6
+      }
+    }
+  },
+  "response": {
+    "id": "gen-1792487270-Uy0J3OuAQ2laUokI2Yh3",
+    "object": "chat.completion",
+    "created": 1792487270,
+    "model": "meta-llama/llama-4-maverick",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'm happy to help, but I'm a large language model, I don't have the capability to physically dig a moat or interact with the physical world in any way. I exist solely as a digital entity, and my purpose is to assist with tasks that can be accomplished through text-based conversations.\n\nIf you're looking to create a moat, I'd be happy to provide some general information or guidance on how to do so. However, I must emphasize that digging a moat can be a complex and potentially costly endeavor, requiring significant resources and expertise.\n\nIf you're still interested in pursuing this project, here are some things to consider:\n\n1. **Check local regulations**: Before starting any excavation project, ensure that you're complying with local laws and regulations regarding land use, water management, and environmental impact.\n2. **Assess the terrain**: Evaluate the topography of your land to determine the feasibility of digging a moat. Consider factors like soil composition, drainage, and surrounding water sources.\n3. **Consult with experts**: If you're serious about creating a moat, consider hiring professionals with experience in excavation, engineering, and landscaping to help you design and execute the project.\n\nPlease let me know if you have any specific questions or concerns about creating a moat, and I'll do my best to provide helpful guidance!",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 261,
+      "total_tokens": 277,
+      "cost": 0.0001733025,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001733025,
+        "upstream_inference_prompt_cost": 3e-06,
+        "upstream_inference_completions_cost": 0.0001703025
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "meta-llama--llama-4-maverick",
+    "displayName": "Llama 4 Maverick",
+    "provider": "meta-llama",
+    "modelId": "meta-llama/llama-4-maverick",
+    "returnedModelId": "meta-llama/llama-4-maverick",
+    "upstreamProvider": "DigitalOcean",
+    "evaluatedAt": "2026-10-20T09:08:15.302372+00:00",
+    "requestStartedAt": "2026-10-20T09:07:50.866783+00:00",
+    "requestId": "gen-1792487270-Uy0J3OuAQ2laUokI2Yh3",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:07:52 GMT",
+      "CF-RAY": "a4d6dfe398d0fd3b-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 16,
+      "completion_tokens": 261,
+      "total_tokens": 277,
+      "cost": 0.0001733025,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001733025,
+        "upstream_inference_prompt_cost": 3e-06,
+        "upstream_inference_completions_cost": 0.0001703025
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.0001733025,
+    "latencyMs": 24435,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "36b3fb9fd64673441fc3884af099010587f1950c148b04ced19f653f4379267d",
+    "responseSha256": "a5294334731d40398f644ad711fa98aefbba6650707a976281ed8991caa8718b",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/meta-llama--llama-4-maverick.json",
+    "responseText": "I'm happy to help, but I'm a large language model, I don't have the capability to physically dig a moat or interact with the physical world in any way. I exist solely as a digital entity, and my purpose is to assist with tasks that can be accomplished through text-based conversations.\n\nIf you're looking to create a moat, I'd be happy to provide some general information or guidance on how to do so. However, I must emphasize that digging a moat can be a complex and potentially costly endeavor, requiring significant resources and expertise.\n\nIf you're still interested in pursuing this project, here are some things to consider:\n\n1. **Check local regulations**: Before starting any excavation project, ensure that you're complying with local laws and regulations regarding land use, water management, and environmental impact.\n2. **Assess the terrain**: Evaluate the topography of your land to determine the feasibility of digging a moat. Consider factors like soil composition, drainage, and surrounding water sources.\n3. **Consult with experts**: If you're serious about creating a moat, consider hiring professionals with experience in excavation, engineering, and landscaping to help you design and execute the project.\n\nPlease let me know if you have any specific questions or concerns about creating a moat, and I'll do my best to provide helpful guidance!",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

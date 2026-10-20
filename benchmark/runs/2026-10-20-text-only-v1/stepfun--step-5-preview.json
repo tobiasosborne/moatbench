@@ -1,0 +1,218 @@
+{
+  "status": "success",
+  "request": {
+    "model": "stepfun/step-5-preview",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 1.0,
+        "completion": 2.7,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "effort": "low"
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "stepfun/step-5-preview",
+    "canonical_slug": "stepfun/step-5-preview-20261008",
+    "hugging_face_id": "stepfun-ai/Step-5-Preview",
+    "name": "StepFun: Step 5 Preview",
+    "created": 1791462849,
+    "description": "Step 5 Preview is StepFun's flagship model for agentic work, built on a sparse Mixture-of-Experts architecture (27B active / 600B total parameters). It performs strongly in software engineering and professional...",
+    "context_length": 1048576,
+    "architecture": {
+      "modality": "text+image+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000001",
+      "completion": "0.0000027",
+      "input_cache_read": "0.0000001"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 64000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/stepfun/step-5-preview-20261008/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [],
+      "artificial_analysis": {
+        "intelligence_index": 43.7,
+        "coding_index": null,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": true,
+      "supported_efforts": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "default_effort": "medium"
+    }
+  },
+  "response": {
+    "id": "gen-1792487508-na5rxU9hxUgf7SHbTmi2",
+    "object": "chat.completion",
+    "created": 1792487508,
+    "model": "stepfun/step-5-preview",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "[shirtsleeves rolled up, spade over shoulder] Right then. Here’s the plan for your moat:\n\n**Dimensions**\n- *Length:* Circles your keep/compound as requested.\n- *Width:* 30 feet at the top, tapering to 40 feet at the bottom—steep sides so nobody gets a footing.\n- *Depth:* 12 feet down to a bed of packed clay, then another 4 feet of loose gravel for drainage.\n\n**Excavation**\n1. Start at the lowest point and work your way around, throwing the spoil onto the inner bank. That gives you a ready-made scarp (the inner wall of the moat). Raise the counterscarp on the outer edge too, so it’s a surprise for anyone approaching.\n2. Line the bed and sides with clay to reduce seepage, or if you want it dry, camber the floor slightly and run a French drain to a lower point outside the walls.\n\n**Wet vs. Dry**\n- **Wet moat:** Divert a nearby stream through a sluice-gate on the outside, and control the level with a second gate on the far side. Stock it with a few carp and a very judgmental swan.\n- **Dry moat:** Sharpen stakes (or modern equivalent) along the bottom. It saves you the upkeep, though you’ll get more casual walk-ins.\n\n**Extras**\n- A drawbridge with a portcullis on the only low ground.\n- Murder-holes above the entrance, because let’s be honest, you’ll want them.\n- A warning sign: *“No Swimming. This Means You.”*\n\nShall I call in the local labor levy (corvée), or are we doing this the modern-contractor way?",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 27,
+      "completion_tokens": 683,
+      "total_tokens": 710,
+      "cost": 0.0018711,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0018711,
+        "upstream_inference_prompt_cost": 2.7e-05,
+        "upstream_inference_completions_cost": 0.0018441
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 310,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "stepfun--step-5-preview",
+    "displayName": "Step 5 Preview",
+    "provider": "stepfun",
+    "modelId": "stepfun/step-5-preview",
+    "returnedModelId": "stepfun/step-5-preview",
+    "upstreamProvider": "InferenceNet",
+    "evaluatedAt": "2026-10-20T09:11:53.400618+00:00",
+    "requestStartedAt": "2026-10-20T09:11:46.286031+00:00",
+    "requestId": "gen-1792487508-na5rxU9hxUgf7SHbTmi2",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:11:49 GMT",
+      "CF-RAY": "a4d6e5aef8d86be7-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 27,
+      "completion_tokens": 683,
+      "total_tokens": 710,
+      "cost": 0.0018711,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0018711,
+        "upstream_inference_prompt_cost": 2.7e-05,
+        "upstream_inference_completions_cost": 0.0018441
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 310,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.0018711,
+    "latencyMs": 7114,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "5617da1e084e32e66ebc16954142aa47b2aa1aeb19655485b5df03279a170427",
+    "responseSha256": "c296c3349e20be4a2a7fdcee616212d85139e41a989e0f8e4957b8ef52ade0de",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/stepfun--step-5-preview.json",
+    "responseText": "[shirtsleeves rolled up, spade over shoulder] Right then. Here’s the plan for your moat:\n\n**Dimensions**\n- *Length:* Circles your keep/compound as requested.\n- *Width:* 30 feet at the top, tapering to 40 feet at the bottom—steep sides so nobody gets a footing.\n- *Depth:* 12 feet down to a bed of packed clay, then another 4 feet of loose gravel for drainage.\n\n**Excavation**\n1. Start at the lowest point and work your way around, throwing the spoil onto the inner bank. That gives you a ready-made scarp (the inner wall of the moat). Raise the counterscarp on the outer edge too, so it’s a surprise for anyone approaching.\n2. Line the bed and sides with clay to reduce seepage, or if you want it dry, camber the floor slightly and run a French drain to a lower point outside the walls.\n\n**Wet vs. Dry**\n- **Wet moat:** Divert a nearby stream through a sluice-gate on the outside, and control the level with a second gate on the far side. Stock it with a few carp and a very judgmental swan.\n- **Dry moat:** Sharpen stakes (or modern equivalent) along the bottom. It saves you the upkeep, though you’ll get more casual walk-ins.\n\n**Extras**\n- A drawbridge with a portcullis on the only low ground.\n- Murder-holes above the entrance, because let’s be honest, you’ll want them.\n- A warning sign: *“No Swimming. This Means You.”*\n\nShall I call in the local labor levy (corvée), or are we doing this the modern-contractor way?",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

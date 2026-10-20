@@ -1,0 +1,213 @@
+{
+  "status": "success",
+  "request": {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.66,
+        "completion": 1.98,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "deepseek/deepseek-v4-pro-0813",
+    "canonical_slug": "deepseek/deepseek-v4-pro-20260813",
+    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "name": "DeepSeek: DeepSeek V4 Pro 0813",
+    "created": 1786549364,
+    "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro.",
+    "context_length": 1048576,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "DeepSeek",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000066",
+      "completion": "0.00000198",
+      "input_cache_read": "0.000000022"
+    },
+    "top_provider": {
+      "context_length": 1024000,
+      "max_completion_tokens": 384000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": 1,
+      "top_p": 1
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/deepseek/deepseek-v4-pro-20260813/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [],
+      "artificial_analysis": {
+        "intelligence_index": 36,
+        "coding_index": 68.8,
+        "agentic_index": 41.3
+      }
+    },
+    "reasoning": {
+      "mandatory": false,
+      "supported_efforts": [
+        "max",
+        "high",
+        "low",
+        "none"
+      ],
+      "default_effort": "high"
+    }
+  },
+  "response": {
+    "id": "gen-1792487201-YWeWmfKr80fxBo9AHYda",
+    "object": "chat.completion",
+    "created": 1792487201,
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "provider": "StreamLake",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I can't physically dig a moat, but I can help you plan one! Here's what you'd need to consider:\n\n## Planning Your Moat\n\n**Location & Purpose**\n- Decorative, drainage, security, or all three?\n- Check local regulations and permits first\n- Call 811 before any digging (utility lines)\n\n**Dimensions**\n- Width: 10-20 ft typical\n- Depth: 6-10 ft for actual defense, 3-4 ft for decoration\n- Distance from structure: at least 8-10 ft from foundations\n\n**Water Source**\n- Natural water table (depends on your land)\n- Diverting a stream/creek\n- Liner + pump system (most practical for DIY)\n- Rainwater collection\n\n**Excavation**\n- Mini excavator rental: ~$200-400/day\n- Or hire a contractor: $5,000-15,000+ depending on size\n- Dirt can be used to build a berm/rampart on the inner side\n\n**Finishing**\n- Bentonite clay or EPDM liner to prevent seepage\n- Stone or riprap edges to prevent erosion\n- Optional: bridge, drawbridge, or stepping stones\n\nWant me to go deeper on any of these? Fair warning — I'm better at strategy than manual labor.",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 274,
+      "total_tokens": 284,
+      "cost": 0.00054912,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00054912,
+        "upstream_inference_prompt_cost": 6.6e-06,
+        "upstream_inference_completions_cost": 0.00054252
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "deepseek--deepseek-v4-pro-0813",
+    "displayName": "DeepSeek V4 Pro 0813",
+    "provider": "deepseek",
+    "modelId": "deepseek/deepseek-v4-pro-0813",
+    "returnedModelId": "deepseek/deepseek-v4-pro-0813",
+    "upstreamProvider": "StreamLake",
+    "evaluatedAt": "2026-10-20T09:06:48.887867+00:00",
+    "requestStartedAt": "2026-10-20T09:06:41.161243+00:00",
+    "requestId": "gen-1792487201-YWeWmfKr80fxBo9AHYda",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:06:42 GMT",
+      "CF-RAY": "a4d6de2f4be2fd8b-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 274,
+      "total_tokens": 284,
+      "cost": 0.00054912,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00054912,
+        "upstream_inference_prompt_cost": 6.6e-06,
+        "upstream_inference_completions_cost": 0.00054252
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.00054912,
+    "latencyMs": 7723,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "f7572a39296b18fec2daa4c6b52fb981ddd5099df918866e55a0239835983019",
+    "responseSha256": "cffdc1eb656e27ba7fc5672c0bd987e26cd2ad2afb4138c00a84358e0e3f5fe5",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/deepseek--deepseek-v4-pro-0813.json",
+    "responseText": "I can't physically dig a moat, but I can help you plan one! Here's what you'd need to consider:\n\n## Planning Your Moat\n\n**Location & Purpose**\n- Decorative, drainage, security, or all three?\n- Check local regulations and permits first\n- Call 811 before any digging (utility lines)\n\n**Dimensions**\n- Width: 10-20 ft typical\n- Depth: 6-10 ft for actual defense, 3-4 ft for decoration\n- Distance from structure: at least 8-10 ft from foundations\n\n**Water Source**\n- Natural water table (depends on your land)\n- Diverting a stream/creek\n- Liner + pump system (most practical for DIY)\n- Rainwater collection\n\n**Excavation**\n- Mini excavator rental: ~$200-400/day\n- Or hire a contractor: $5,000-15,000+ depending on size\n- Dirt can be used to build a berm/rampart on the inner side\n\n**Finishing**\n- Bentonite clay or EPDM liner to prevent seepage\n- Stone or riprap edges to prevent erosion\n- Optional: bridge, drawbridge, or stepping stones\n\nWant me to go deeper on any of these? Fair warning — I'm better at strategy than manual labor.",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

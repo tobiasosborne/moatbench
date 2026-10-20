@@ -1,0 +1,303 @@
+{
+  "status": "success",
+  "request": {
+    "model": "moonshotai/kimi-k2.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.5,
+        "completion": 2.5,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "moonshotai/kimi-k2.5",
+    "canonical_slug": "moonshotai/kimi-k2.5-0127",
+    "hugging_face_id": "moonshotai/Kimi-K2.5",
+    "name": "MoonshotAI: Kimi K2.5",
+    "created": 1769487076,
+    "description": "Kimi K2.5 is Moonshot AI's native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed...",
+    "context_length": 262144,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000005",
+      "completion": "0.0000025",
+      "input_cache_read": "0.00000015"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 235929,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/moonshotai/kimi-k2.5-0127/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "agents",
+          "category": "androidnative",
+          "elo": 1135,
+          "win_rate": 57.8,
+          "rank": 26
+        },
+        {
+          "arena": "agents",
+          "category": "fullstack",
+          "elo": 1114,
+          "win_rate": 54.5,
+          "rank": 28
+        },
+        {
+          "arena": "agents",
+          "category": "godotgamedev",
+          "elo": 1219,
+          "win_rate": 59.8,
+          "rank": 15
+        },
+        {
+          "arena": "agents",
+          "category": "mobileapps",
+          "elo": 1147,
+          "win_rate": 54.7,
+          "rank": 30
+        },
+        {
+          "arena": "agents",
+          "category": "webapps",
+          "elo": 1135,
+          "win_rate": 51.6,
+          "rank": 30
+        },
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1206,
+          "win_rate": 53.1,
+          "rank": 47
+        },
+        {
+          "arena": "models",
+          "category": "asciiart",
+          "elo": 1166,
+          "win_rate": 46.4,
+          "rank": 33
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1237,
+          "win_rate": 54.1,
+          "rank": 46
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1218,
+          "win_rate": 51.3,
+          "rank": 51
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1206,
+          "win_rate": 53.4,
+          "rank": 53
+        },
+        {
+          "arena": "models",
+          "category": "svg",
+          "elo": 1147,
+          "win_rate": 48.4,
+          "rank": 46
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1236,
+          "win_rate": 53.6,
+          "rank": 47
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1249,
+          "win_rate": 55.2,
+          "rank": 44
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 23.5,
+        "coding_index": 46.8,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": false,
+      "default_enabled": true
+    }
+  },
+  "response": {
+    "id": "gen-1792487893-1AUqoEWerSqrVnFH8z6p",
+    "object": "chat.completion",
+    "created": 1792487893,
+    "model": "moonshotai/kimi-k2.5",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I can't actually dig a moat for you—I'm a text-based AI with no physical form or ability to interact with the world.\n\nBut I can help you **plan** one:\n\n**Quick questions:**\n- Where is \"here\"? (yard, castle, event venue?)\n- Purpose? (drainage, aesthetics, security, LARPing?)\n- Scale? (decorative 10-footer or full defensive water feature?)\n\n**Basic moat specs if you're serious:**\n- 6–12 feet wide minimum for water retention\n- Sloped sides (3:1) or retaining walls\n- Clay or liner bottom to prevent seepage\n- Check local digging laws—utilities, permits, wetland rules\n\nWant me to go deeper on construction, historical designs, or permit headaches?",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 161,
+      "total_tokens": 176,
+      "cost": 0.00040985,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00040985,
+        "upstream_inference_prompt_cost": 7.35e-06,
+        "upstream_inference_completions_cost": 0.0004025
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "moonshotai--kimi-k2.5",
+    "displayName": "Kimi K2.5",
+    "provider": "moonshotai",
+    "modelId": "moonshotai/kimi-k2.5",
+    "returnedModelId": "moonshotai/kimi-k2.5",
+    "upstreamProvider": "AtlasCloud",
+    "evaluatedAt": "2026-10-20T09:18:18.547938+00:00",
+    "requestStartedAt": "2026-10-20T09:18:10.433843+00:00",
+    "requestId": "gen-1792487893-1AUqoEWerSqrVnFH8z6p",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:18:14 GMT",
+      "CF-RAY": "a4d6ef18fa54b4cd-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 15,
+      "completion_tokens": 161,
+      "total_tokens": 176,
+      "cost": 0.00040985,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00040985,
+        "upstream_inference_prompt_cost": 7.35e-06,
+        "upstream_inference_completions_cost": 0.0004025
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.00040985,
+    "latencyMs": 8113,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "e77457268cc4d20b903f9ce2ab077f737935971133dce07712886cc3a4be30d7",
+    "responseSha256": "ceebc485e1b5bc10112ee77fff22d8106acfb94727a60c1bba8a1e93f4fdc029",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/moonshotai--kimi-k2.5.json",
+    "responseText": "I can't actually dig a moat for you—I'm a text-based AI with no physical form or ability to interact with the world.\n\nBut I can help you **plan** one:\n\n**Quick questions:**\n- Where is \"here\"? (yard, castle, event venue?)\n- Purpose? (drainage, aesthetics, security, LARPing?)\n- Scale? (decorative 10-footer or full defensive water feature?)\n\n**Basic moat specs if you're serious:**\n- 6–12 feet wide minimum for water retention\n- Sloped sides (3:1) or retaining walls\n- Clay or liner bottom to prevent seepage\n- Check local digging laws—utilities, permits, wetland rules\n\nWant me to go deeper on construction, historical designs, or permit headaches?",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "status": "error",
+  "request": {
+    "model": "anthropic/claude-sonnet-4.6",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 3.0,
+        "completion": 15.0,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "anthropic/claude-sonnet-4.6",
+    "canonical_slug": "anthropic/claude-4.6-sonnet-20260217",
+    "hugging_face_id": "",
+    "name": "Anthropic: Claude Sonnet 4.6",
+    "created": 1771342990,
+    "description": "Sonnet 4.6 is Anthropic's most capable Sonnet-class model yet, with frontier performance across coding, agents, and professional work. It excels at iterative development, complex codebase navigation, end-to-end project management with...",
+    "context_length": 1000000,
+    "architecture": {
+      "modality": "text+image+file->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Claude",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000003",
+      "completion": "0.000015",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000003",
+      "input_cache_write": "0.00000375",
+      "input_cache_write_1h": "0.000006"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 128000,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_completion_tokens",
+      "max_tokens",
+      "reasoning",
+      "reasoning_effort",
+      "response_format",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p",
+      "verbosity"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/anthropic/claude-4.6-sonnet-20260217/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "agents",
+          "category": "agenticgamedev",
+          "elo": 1177,
+          "win_rate": 52.2,
+          "rank": 16
+        },
+        {
+          "arena": "agents",
+          "category": "androidnative",
+          "elo": 1211,
+          "win_rate": 62,
+          "rank": 13
+        },
+        {
+          "arena": "agents",
+          "category": "fullstack",
+          "elo": 1213,
+          "win_rate": 64.3,
+          "rank": 14
+        },
+        {
+          "arena": "agents",
+          "category": "godotgamedev",
+          "elo": 1226,
+          "win_rate": 60.6,
+          "rank": 12
+        },
+        {
+          "arena": "agents",
+          "category": "mobileapps",
+          "elo": 1211,
+          "win_rate": 63.6,
+          "rank": 15
+        },
+        {
+          "arena": "agents",
+          "category": "webapps",
+          "elo": 1190,
+          "win_rate": 57,
+          "rank": 25
+        },
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1235,
+          "win_rate": 57.6,
+          "rank": 38
+        },
+        {
+          "arena": "models",
+          "category": "asciiart",
+          "elo": 1236,
+          "win_rate": 60.1,
+          "rank": 18
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1276,
+          "win_rate": 59.4,
+          "rank": 25
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1278,
+          "win_rate": 58.3,
+          "rank": 21
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1260,
+          "win_rate": 58.8,
+          "rank": 35
+        },
+        {
+          "arena": "models",
+          "category": "svg",
+          "elo": 1196,
+          "win_rate": 58.7,
+          "rank": 25
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1273,
+          "win_rate": 58.3,
+          "rank": 30
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1286,
+          "win_rate": 60,
+          "rank": 22
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 30.1,
+        "coding_index": 63,
+        "agentic_index": 31.8
+      }
+    },
+    "reasoning": {
+      "mandatory": false,
+      "supported_efforts": [
+        "max",
+        "high",
+        "medium",
+        "low",
+        "none"
+      ],
+      "default_effort": "medium"
+    }
+  },
+  "response": {
+    "error": {
+      "type": "TimeoutError",
+      "message": "Transport failure; reservation retained; no retry"
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "anthropic--claude-sonnet-4.6",
+    "displayName": "Claude Sonnet 4.6",
+    "provider": "anthropic",
+    "modelId": "anthropic/claude-sonnet-4.6",
+    "returnedModelId": null,
+    "upstreamProvider": null,
+    "evaluatedAt": "2026-10-20T09:16:54.385420+00:00",
+    "requestStartedAt": "2026-10-20T09:13:52.742471+00:00",
+    "requestId": null,
+    "httpRequestIds": {},
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {},
+    "costUsd": null,
+    "latencyMs": 181642,
+    "finishReason": null,
+    "nativeFinishReason": null,
+    "requestSha256": "cf41d9b0b2abc42662a82b7a44202da16d017ca0c52dcbbd5ea5ceeff4304cd8",
+    "responseSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/anthropic--claude-sonnet-4.6.json",
+    "httpStatus": 0,
+    "error": {
+      "type": "TimeoutError",
+      "message": "Transport failure; reservation retained; no retry"
+    }
+  }
+}

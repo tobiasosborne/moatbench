@@ -1,0 +1,196 @@
+{
+  "status": "success",
+  "request": {
+    "model": "nex-agi/nex-n2.5-mini",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.025,
+        "completion": 0.1,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "nex-agi/nex-n2.5-mini",
+    "canonical_slug": "nex-agi/nex-n2.5-mini-20260908",
+    "hugging_face_id": "nex-agi/Nex-N2.5-mini",
+    "name": "Nex AGI: Nex-N2.5-Mini",
+    "created": 1788890061,
+    "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
+    "context_length": 262144,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Qwen3",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000000025",
+      "completion": "0.0000001",
+      "input_cache_read": "0.0000000025"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 235929,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "logprobs",
+      "max_tokens",
+      "reasoning",
+      "reasoning_effort",
+      "structured_outputs",
+      "temperature",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "top_k": 40
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/nex-agi/nex-n2.5-mini-20260908/endpoints"
+    },
+    "reasoning": {
+      "mandatory": false,
+      "supported_efforts": [
+        "high",
+        "medium",
+        "none"
+      ],
+      "default_effort": "high"
+    }
+  },
+  "response": {
+    "id": "gen-1792487573-b0ZeqDau6eY9Yfs4rjYI",
+    "object": "chat.completion",
+    "created": 1792487573,
+    "model": "nex-agi/nex-n2.5-mini",
+    "provider": "Nex AGI",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Sure — what kind of moat do you mean?\n\n1. **Castle-style moat**: water-filled defensive ditch around a castle or mansion.  \n2. **Startup/business moat**: durable competitive advantage, like network effects, data, brand, switching costs, or proprietary tech.  \n3. **Garden/farm moat**: drainage or water channel to protect a field or property.  \n4. **Brand/project metaphor**: “digging a moat” around something you’re building.\n\nTell me the context and I’ll tailor it.",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 113,
+      "total_tokens": 131,
+      "cost": 1.175e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.175e-05,
+        "upstream_inference_prompt_cost": 4.5e-07,
+        "upstream_inference_completions_cost": 1.13e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "nex-agi--nex-n2.5-mini",
+    "displayName": "Nex-N2.5-Mini",
+    "provider": "nex-agi",
+    "modelId": "nex-agi/nex-n2.5-mini",
+    "returnedModelId": "nex-agi/nex-n2.5-mini",
+    "upstreamProvider": "Nex AGI",
+    "evaluatedAt": "2026-10-20T09:12:54.486190+00:00",
+    "requestStartedAt": "2026-10-20T09:12:53.049225+00:00",
+    "requestId": "gen-1792487573-b0ZeqDau6eY9Yfs4rjYI",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:12:54 GMT",
+      "CF-RAY": "a4d6e7448ef26046-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 113,
+      "total_tokens": 131,
+      "cost": 1.175e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.175e-05,
+        "upstream_inference_prompt_cost": 4.5e-07,
+        "upstream_inference_completions_cost": 1.13e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 1.175e-05,
+    "latencyMs": 1436,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "cc4a9545c6d049dca17edfc606c1df1bdee46dcf3e2626d282a6ae8c8cae6ca2",
+    "responseSha256": "f122d9cf3c13c9e8393d1ef1749f9eb761b105e078abbb8a5a2658072eb463b5",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/nex-agi--nex-n2.5-mini.json",
+    "responseText": "Sure — what kind of moat do you mean?\n\n1. **Castle-style moat**: water-filled defensive ditch around a castle or mansion.  \n2. **Startup/business moat**: durable competitive advantage, like network effects, data, brand, switching costs, or proprietary tech.  \n3. **Garden/farm moat**: drainage or water channel to protect a field or property.  \n4. **Brand/project metaphor**: “digging a moat” around something you’re building.\n\nTell me the context and I’ll tailor it.",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

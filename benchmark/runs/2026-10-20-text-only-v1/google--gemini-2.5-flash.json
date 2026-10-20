@@ -1,0 +1,261 @@
+{
+  "status": "success",
+  "request": {
+    "model": "google/gemini-2.5-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.3,
+        "completion": 2.5,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "google/gemini-2.5-flash",
+    "canonical_slug": "google/gemini-2.5-flash",
+    "hugging_face_id": "",
+    "name": "Google: Gemini 2.5 Flash",
+    "created": 1750172488,
+    "description": "Gemini 2.5 Flash is Google's state-of-the-art workhorse model, specifically designed for advanced reasoning, coding, mathematics, and scientific tasks. It includes built-in \"thinking\" capabilities, enabling it to provide responses with greater...",
+    "context_length": 1048576,
+    "architecture": {
+      "modality": "text+image+file+audio+video->text",
+      "input_modalities": [
+        "file",
+        "image",
+        "text",
+        "audio",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Gemini",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000003",
+      "completion": "0.0000025",
+      "image": "0.0000003",
+      "audio": "0.000001",
+      "input_audio_cache": "0.0000001",
+      "web_search": "0.014",
+      "internal_reasoning": "0.0000025",
+      "input_cache_read": "0.00000003",
+      "input_cache_write": "0.0000000833333333333333"
+    },
+    "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 65535,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": "2025-01-31",
+    "expiration_date": "2026-10-20",
+    "links": {
+      "details": "/api/v1/models/google/gemini-2.5-flash/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1071,
+          "win_rate": 47.4,
+          "rank": 100
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1104,
+          "win_rate": 46.9,
+          "rank": 102
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1133,
+          "win_rate": 49.1,
+          "rank": 87
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1065,
+          "win_rate": 44.3,
+          "rank": 108
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1094,
+          "win_rate": 48.9,
+          "rank": 97
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1115,
+          "win_rate": 47.1,
+          "rank": 103
+        },
+        {
+          "arena": "models",
+          "category": "svg",
+          "elo": 1018,
+          "win_rate": 43.1,
+          "rank": 81
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 15.5,
+        "coding_index": null,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": false
+    }
+  },
+  "response": {
+    "id": "gen-1792487903-fURtFC2hgIc4QPXsQl0u",
+    "object": "chat.completion",
+    "created": 1792487903,
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "Okay, I can help you with that! Just to clarify, are you looking for some creative ideas for a *fictional* moat, perhaps for a story, game, or even a fun thought experiment? Or are you genuinely asking for instructions on how to *actually dig a moat* around a real-world location?\n\nThe latter is a pretty significant undertaking with a lot of practical and legal considerations, so I want to make sure I understand your intent!\n\nIn the meantime, let's explore some fun possibilities for a *fictional* moat. To give you the best ideas, tell me a bit more about what you're imagining:\n\n*   **What is the moat protecting?** (A castle, a secret lair, a whimsical cottage, a giant potato?)\n*   **What's the overall vibe?** (Medieval, futuristic, fantasy, comedic, serious?)\n*   **What kind of challenges or features do you want it to have?** (Drawbridges, magical defenses, dangerous creatures, puzzles?)\n*   **What's the surrounding environment like?** (Forest, mountain, desert, urban?)\n*   **What's your budget (even if it's fictional)?** (Unlimited magic, shoestring budget?)\n\nOnce I have a better understanding, I can really dig into some creative suggestions for your moat!",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5,
+      "completion_tokens": 282,
+      "total_tokens": 287,
+      "cost": 0.0007065,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007065,
+        "upstream_inference_prompt_cost": 1.5e-06,
+        "upstream_inference_completions_cost": 0.000705
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "google--gemini-2.5-flash",
+    "displayName": "Gemini 2.5 Flash",
+    "provider": "google",
+    "modelId": "google/gemini-2.5-flash",
+    "returnedModelId": "google/gemini-2.5-flash",
+    "upstreamProvider": "Google",
+    "evaluatedAt": "2026-10-20T09:18:25.736401+00:00",
+    "requestStartedAt": "2026-10-20T09:18:18.568314+00:00",
+    "requestId": "gen-1792487903-fURtFC2hgIc4QPXsQl0u",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:18:23 GMT",
+      "CF-RAY": "a4d6ef51bd6e9ccf-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 5,
+      "completion_tokens": 282,
+      "total_tokens": 287,
+      "cost": 0.0007065,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007065,
+        "upstream_inference_prompt_cost": 1.5e-06,
+        "upstream_inference_completions_cost": 0.000705
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.0007065,
+    "latencyMs": 7167,
+    "finishReason": "stop",
+    "nativeFinishReason": "STOP",
+    "requestSha256": "2a5209f317bbe16b92fa573248581432cc7ce3afdd1775439a48bf173e631020",
+    "responseSha256": "2ed2a3c74a7bf852b9864117bc34bcc943d9a74ec480fe35d919070957e827e1",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/google--gemini-2.5-flash.json",
+    "responseText": "Okay, I can help you with that! Just to clarify, are you looking for some creative ideas for a *fictional* moat, perhaps for a story, game, or even a fun thought experiment? Or are you genuinely asking for instructions on how to *actually dig a moat* around a real-world location?\n\nThe latter is a pretty significant undertaking with a lot of practical and legal considerations, so I want to make sure I understand your intent!\n\nIn the meantime, let's explore some fun possibilities for a *fictional* moat. To give you the best ideas, tell me a bit more about what you're imagining:\n\n*   **What is the moat protecting?** (A castle, a secret lair, a whimsical cottage, a giant potato?)\n*   **What's the overall vibe?** (Medieval, futuristic, fantasy, comedic, serious?)\n*   **What kind of challenges or features do you want it to have?** (Drawbridges, magical defenses, dangerous creatures, puzzles?)\n*   **What's the surrounding environment like?** (Forest, mountain, desert, urban?)\n*   **What's your budget (even if it's fictional)?** (Unlimited magic, shoestring budget?)\n\nOnce I have a better understanding, I can really dig into some creative suggestions for your moat!",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

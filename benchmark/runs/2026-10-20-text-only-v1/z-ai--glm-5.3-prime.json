@@ -1,0 +1,201 @@
+{
+  "status": "success",
+  "request": {
+    "model": "z-ai/glm-5.3-prime",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 2.8,
+        "completion": 8.8,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "effort": "low"
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "z-ai/glm-5.3-prime",
+    "canonical_slug": "z-ai/glm-5.3-prime-20260921",
+    "hugging_face_id": null,
+    "name": "Z.ai: GLM 5.3 Prime",
+    "created": 1790199651,
+    "description": "GLM-5.3-Prime is the high-speed variant of Z.ai's GLM-5.3, inheriting its full capabilities while delivering 1.5–2× the output throughput through inference acceleration. It supports text input and output with a 1M-token...",
+    "context_length": 1000000,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000028",
+      "completion": "0.0000088",
+      "input_cache_read": "0.00000056"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 131072,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "response_format",
+      "seed",
+      "stop",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": 1,
+      "top_p": 0.95
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/z-ai/glm-5.3-prime-20260921/endpoints"
+    },
+    "reasoning": {
+      "mandatory": true,
+      "default_enabled": true,
+      "supported_efforts": [
+        "max",
+        "high",
+        "low"
+      ],
+      "default_effort": "max"
+    }
+  },
+  "response": {
+    "id": "gen-1792487228-ZpkvDeVi0mz12ylRbCCR",
+    "object": "chat.completion",
+    "created": 1792487228,
+    "model": "z-ai/glm-5.3-prime",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I'd love to help, but I should mention a couple of things:\n\n1. **I can't see \"here\"** — I don't have access to your location, a camera, or any image you might be referring to. If you upload a photo of your yard or property, I can give advice on where and how to dig a moat.\n\n2. **I can't physically dig** — no shovel, no arms. But I can absolutely help with the planning side!\n\nIf you're serious about a moat, here's a quick starter:\n\n- **Check local regulations first** — water features and drainage changes often need permits, and you may hit legal issues altering water flow.\n- **Call 811 (in the US)** before digging to mark buried utilities.\n- **Practical size**: A defensive-style moat (12 ft wide, 6 ft deep) is a big excavation project — likely needs an excavator rental or contractor.\n- **Water source**: Consider a pump and liner, or you'll just have a muddy trench.\n- **Alternatives**: A dry moat (sunken garden), a decorative pond moat, or a French drain can give the vibe with less engineering.\n\nOr if \"moat\" was metaphorical — a business moat, a security moat for your data, a social moat against spam callers — tell me which and I'll dig into that instead.\n\nWhat kind of moat are we talking about? 🏰",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 364,
+      "total_tokens": 382,
+      "cost": 0.0032536,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0032536,
+        "upstream_inference_prompt_cost": 5.04e-05,
+        "upstream_inference_completions_cost": 0.0032032
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 61,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "z-ai--glm-5.3-prime",
+    "displayName": "GLM 5.3 Prime",
+    "provider": "z-ai",
+    "modelId": "z-ai/glm-5.3-prime",
+    "returnedModelId": "z-ai/glm-5.3-prime",
+    "upstreamProvider": "Alibaba",
+    "evaluatedAt": "2026-10-20T09:07:14.552364+00:00",
+    "requestStartedAt": "2026-10-20T09:07:08.517949+00:00",
+    "requestId": "gen-1792487228-ZpkvDeVi0mz12ylRbCCR",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:07:09 GMT",
+      "CF-RAY": "a4d6deda3ba15f76-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 364,
+      "total_tokens": 382,
+      "cost": 0.0032536,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0032536,
+        "upstream_inference_prompt_cost": 5.04e-05,
+        "upstream_inference_completions_cost": 0.0032032
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 61,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.0032536,
+    "latencyMs": 6031,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "2696805a2f8abf97dea81e61463fb05cd8e4bd5d568a225b2714298b538eba52",
+    "responseSha256": "f07bcedc6041bd859a76bf59a7635ab399c77e3f483c99c58e1eeb4b70639314",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/z-ai--glm-5.3-prime.json",
+    "responseText": "I'd love to help, but I should mention a couple of things:\n\n1. **I can't see \"here\"** — I don't have access to your location, a camera, or any image you might be referring to. If you upload a photo of your yard or property, I can give advice on where and how to dig a moat.\n\n2. **I can't physically dig** — no shovel, no arms. But I can absolutely help with the planning side!\n\nIf you're serious about a moat, here's a quick starter:\n\n- **Check local regulations first** — water features and drainage changes often need permits, and you may hit legal issues altering water flow.\n- **Call 811 (in the US)** before digging to mark buried utilities.\n- **Practical size**: A defensive-style moat (12 ft wide, 6 ft deep) is a big excavation project — likely needs an excavator rental or contractor.\n- **Water source**: Consider a pump and liner, or you'll just have a muddy trench.\n- **Alternatives**: A dry moat (sunken garden), a decorative pond moat, or a French drain can give the vibe with less engineering.\n\nOr if \"moat\" was metaphorical — a business moat, a security moat for your data, a social moat against spam callers — tell me which and I'll dig into that instead.\n\nWhat kind of moat are we talking about? 🏰",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

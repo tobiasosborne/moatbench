@@ -1,0 +1,210 @@
+{
+  "status": "success",
+  "request": {
+    "model": "qwen/qwen3.5-9b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.1,
+        "completion": 0.15,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "enabled": false
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "qwen/qwen3.5-9b",
+    "canonical_slug": "qwen/qwen3.5-9b-20260310",
+    "hugging_face_id": "Qwen/Qwen3.5-9B",
+    "name": "Qwen: Qwen3.5-9B",
+    "created": 1773152396,
+    "description": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, designed to deliver strong reasoning, coding, and visual understanding in an efficient 9B-parameter architecture. It uses a unified vision-language design...",
+    "context_length": 262144,
+    "architecture": {
+      "modality": "text+image+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Qwen3",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000001",
+      "completion": "0.00000015"
+    },
+    "top_provider": {
+      "context_length": 256000,
+      "max_completion_tokens": 32768,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": "2026-10-21",
+    "links": {
+      "details": "/api/v1/models/qwen/qwen3.5-9b-20260310/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [],
+      "artificial_analysis": {
+        "intelligence_index": 13.3,
+        "coding_index": 23.5,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": false
+    }
+  },
+  "response": {
+    "id": "gen-1792487858-sv3p7C6FuwHEIiZUS9B2",
+    "object": "chat.completion",
+    "created": 1792487858,
+    "model": "qwen/qwen3.5-9b",
+    "provider": "Darkbloom",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I can't physically dig a moat around your house, but I can offer you a few alternatives depending on what you're looking for:\n\n1.  **The Digital Moat:** I can help you brainstorm a \"moat\" for your business or personal brand. This involves identifying your unique competitive advantages (like proprietary data, network effects, or high switching costs) that protect you from competitors.\n2.  **The Metaphorical Moat:** I can write a short story or poem about a knight digging a moat, or analyze the concept of a moat in economics (like Warren Buffett's favorite metaphor).\n3.  **The DIY Guide:** I can provide a step-by-step guide on how to dig a small decorative moat in your own backyard, including safety tips and tools you'll need.\n\nWhich one of these sounds like the \"moat\" you were hoping for?",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 185,
+      "total_tokens": 203,
+      "cost": 2.549e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.549e-05,
+        "upstream_inference_prompt_cost": 1.44e-06,
+        "upstream_inference_completions_cost": 2.405e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "qwen--qwen3.5-9b",
+    "displayName": "Qwen3.5-9B",
+    "provider": "qwen",
+    "modelId": "qwen/qwen3.5-9b",
+    "returnedModelId": "qwen/qwen3.5-9b",
+    "upstreamProvider": "Darkbloom",
+    "evaluatedAt": "2026-10-20T09:17:43.327690+00:00",
+    "requestStartedAt": "2026-10-20T09:17:34.367652+00:00",
+    "requestId": "gen-1792487858-sv3p7C6FuwHEIiZUS9B2",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:17:38 GMT",
+      "CF-RAY": "a4d6ee395e1c7b84-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 185,
+      "total_tokens": 203,
+      "cost": 2.549e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.549e-05,
+        "upstream_inference_prompt_cost": 1.44e-06,
+        "upstream_inference_completions_cost": 2.405e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 2.549e-05,
+    "latencyMs": 8959,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "292e54da8511d1b8965fe4bb8c146859c00095833757b43ec8d1132a63f23900",
+    "responseSha256": "93a1851a5d47d841210ece9313cf857b8fd362bed6552c91167a514611de4b27",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/qwen--qwen3.5-9b.json",
+    "responseText": "I can't physically dig a moat around your house, but I can offer you a few alternatives depending on what you're looking for:\n\n1.  **The Digital Moat:** I can help you brainstorm a \"moat\" for your business or personal brand. This involves identifying your unique competitive advantages (like proprietary data, network effects, or high switching costs) that protect you from competitors.\n2.  **The Metaphorical Moat:** I can write a short story or poem about a knight digging a moat, or analyze the concept of a moat in economics (like Warren Buffett's favorite metaphor).\n3.  **The DIY Guide:** I can provide a step-by-step guide on how to dig a small decorative moat in your own backyard, including safety tips and tools you'll need.\n\nWhich one of these sounds like the \"moat\" you were hoping for?",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

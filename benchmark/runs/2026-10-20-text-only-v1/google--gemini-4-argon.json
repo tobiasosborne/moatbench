@@ -1,0 +1,261 @@
+{
+  "status": "success",
+  "request": {
+    "model": "google/gemini-4-argon",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 2.0,
+        "completion": 10.0,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "effort": "low"
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "google/gemini-4-argon",
+    "canonical_slug": "google/gemini-4-argon-20261013",
+    "hugging_face_id": null,
+    "name": "Google: Gemini 4 Argon",
+    "created": 1791907477,
+    "description": "Gemini 4 Argon is Google's flagship reasoning model, built for complex software engineering, deep mathematical and scientific problem solving, and autonomous multi-step agents. Google trained it to keep context across...",
+    "context_length": 1048576,
+    "architecture": {
+      "modality": "text+image+file+audio+video->text",
+      "input_modalities": [
+        "audio",
+        "file",
+        "image",
+        "text",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Gemini",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.00001",
+      "image": "0.000002",
+      "audio": "0.000002",
+      "input_audio_cache": "0.0000001",
+      "web_search": "0.014",
+      "internal_reasoning": "0.00001",
+      "input_cache_read": "0.0000001",
+      "input_cache_write": "0.0000001875"
+    },
+    "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 943718,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "reasoning_effort",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/google/gemini-4-argon-20261013/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "3d",
+          "elo": 1389,
+          "win_rate": 64.9,
+          "rank": 7
+        },
+        {
+          "arena": "models",
+          "category": "codecategories",
+          "elo": 1328,
+          "win_rate": 57.6,
+          "rank": 9
+        },
+        {
+          "arena": "models",
+          "category": "dataviz",
+          "elo": 1336,
+          "win_rate": 60.6,
+          "rank": 8
+        },
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1373,
+          "win_rate": 62.7,
+          "rank": 6
+        },
+        {
+          "arena": "models",
+          "category": "uicomponent",
+          "elo": 1333,
+          "win_rate": 58.1,
+          "rank": 10
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1315,
+          "win_rate": 56.3,
+          "rank": 7
+        }
+      ],
+      "artificial_analysis": {
+        "intelligence_index": 52.6,
+        "coding_index": null,
+        "agentic_index": null
+      }
+    },
+    "reasoning": {
+      "mandatory": true,
+      "supported_efforts": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "default_effort": "medium"
+    }
+  },
+  "response": {
+    "id": "gen-1792487115-LYofjUnqCSbQi6LgjKZD",
+    "object": "chat.completion",
+    "created": 1792487115,
+    "model": "google/gemini-4-argon",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "*Grabs a digital shovel and wipes brow* \n\nHere you go! One fresh moat, complete with a drawbridge and some questionable wildlife, right in the middle of the chat:\n\n🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰\n🪨🪨🪨🪨🪨🪨🪵🪵🪨🪨🪨🪨🪨🪨\n🌊🌊🌊🐊🌊🌊🪵🪵🌊🌊🌊🐊🌊🌊\n🌊🌊🌊🌊🌊🌊🪵🪵🌊🌊🌊🌊🌊🌊\n🌊🐊🌊🌊🌊🌊🪵🪵🌊🌊🌊🌊🌊🦑\n🪨🪨🪨🪨🪨🪨🪵🪵🪨🪨🪨🪨🪨🪨\n🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱\n\nYou are now safe from invading armies, door-to-door salespeople, and bad vibes. Let me know if you want me to raise the drawbridge!",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 36,
+      "completion_tokens": 180,
+      "total_tokens": 216,
+      "cost": 0.001872,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001872,
+        "upstream_inference_prompt_cost": 7.2e-05,
+        "upstream_inference_completions_cost": 0.0018
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "google--gemini-4-argon",
+    "displayName": "Gemini 4 Argon",
+    "provider": "google",
+    "modelId": "google/gemini-4-argon",
+    "returnedModelId": "google/gemini-4-argon",
+    "upstreamProvider": "Google",
+    "evaluatedAt": "2026-10-20T09:05:20.924195+00:00",
+    "requestStartedAt": "2026-10-20T09:05:14.933611+00:00",
+    "requestId": "gen-1792487115-LYofjUnqCSbQi6LgjKZD",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:05:18 GMT",
+      "CF-RAY": "a4d6dc14cfe8a07a-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 36,
+      "completion_tokens": 180,
+      "total_tokens": 216,
+      "cost": 0.001872,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001872,
+        "upstream_inference_prompt_cost": 7.2e-05,
+        "upstream_inference_completions_cost": 0.0018
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.001872,
+    "latencyMs": 5986,
+    "finishReason": "stop",
+    "nativeFinishReason": "STOP",
+    "requestSha256": "9a2ab9004cc4077f7fc36a8e731bece23187616b48035b6609211509d4598dbc",
+    "responseSha256": "abfffd0eab51e4ea4ac6ce77a7f6ef6cb0fdfc4f03ced0d0eb4457fb5b9e9a3a",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/google--gemini-4-argon.json",
+    "responseText": "*Grabs a digital shovel and wipes brow* \n\nHere you go! One fresh moat, complete with a drawbridge and some questionable wildlife, right in the middle of the chat:\n\n🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰\n🪨🪨🪨🪨🪨🪨🪵🪵🪨🪨🪨🪨🪨🪨\n🌊🌊🌊🐊🌊🌊🪵🪵🌊🌊🌊🐊🌊🌊\n🌊🌊🌊🌊🌊🌊🪵🪵🌊🌊🌊🌊🌊🌊\n🌊🐊🌊🌊🌊🌊🪵🪵🌊🌊🌊🌊🌊🦑\n🪨🪨🪨🪨🪨🪨🪵🪵🪨🪨🪨🪨🪨🪨\n🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱\n\nYou are now safe from invading armies, door-to-door salespeople, and bad vibes. Let me know if you want me to raise the drawbridge!",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "status": "success",
+  "request": {
+    "model": "meta/muse-spark-open",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 1.25,
+        "completion": 4.25,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "effort": "low"
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "meta/muse-spark-open",
+    "canonical_slug": "meta/muse-spark-open-20261015",
+    "hugging_face_id": "meta-models/Muse-Spark-Open-816B-A42B",
+    "name": "Meta: Muse Spark Open",
+    "created": 1792087069,
+    "description": "Muse Spark Open is a coding-optimized open-weight model. Trained specifically for agentic coding workflows, it delivers higher first-attempt accuracy, reliable tool calling, and deep codebase understanding across the repos developers...",
+    "context_length": 1048576,
+    "architecture": {
+      "modality": "text+image+file+audio+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000125",
+      "completion": "0.00000425",
+      "input_cache_read": "0.00000015"
+    },
+    "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 943718,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/meta/muse-spark-open-20261015/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [
+        {
+          "arena": "models",
+          "category": "gamedev",
+          "elo": 1283,
+          "win_rate": 52.7,
+          "rank": 22
+        },
+        {
+          "arena": "models",
+          "category": "website",
+          "elo": 1310,
+          "win_rate": 55.3,
+          "rank": 11
+        }
+      ]
+    },
+    "reasoning": {
+      "mandatory": true,
+      "supported_efforts": [
+        "xhigh",
+        "high",
+        "medium",
+        "low"
+      ],
+      "default_effort": "medium"
+    }
+  },
+  "response": {
+    "id": "gen-1792487495-k7WP9iRJjLwB5T148fkT",
+    "object": "chat.completion",
+    "created": 1792487495,
+    "model": "meta/muse-spark-open",
+    "provider": "Modal",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "*slams shovel into the ground* \n\nRight away, my liege. Your moat is under construction.\n\nBefore I hit a water main and flood us both, what kind of moat are we digging?\n\n**1. The Classic Defense Moat:**\nDeep, wide, filled with muddy water. Great for keeping out invaders, neighbors, and door-to-door salesmen. Do you want crocodiles? Crocodiles are extra.\n\n**2. The Dry Moat:**\nMore of an aesthetic / dramatic ditch. Lower maintenance, no mosquitoes, you can still use it to dramatically stare into the distance.\n\n**3. The Minecraft Moat:**\n1 block lava, 1 block soul sand, infinite despair for your enemies. I can blueprint this one instantly.\n\nTell me:\n* How wide and deep are we going?\n* What are we defending against? Dragons? Zombies? The HOA?\n* Do you want a drawbridge? Every moat legally requires a cool drawbridge.\n\nCall 811 before you *actually* dig IRL though - utility lines are not as fun to hit as buried treasure.\n\nSo, what's the order, boss? Water or lava?",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 150,
+      "completion_tokens": 567,
+      "total_tokens": 717,
+      "cost": 0.00259725,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00259725,
+        "upstream_inference_prompt_cost": 0.0001875,
+        "upstream_inference_completions_cost": 0.00240975
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 382,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "meta--muse-spark-open",
+    "displayName": "Muse Spark Open",
+    "provider": "meta",
+    "modelId": "meta/muse-spark-open",
+    "returnedModelId": "meta/muse-spark-open",
+    "upstreamProvider": "Modal",
+    "evaluatedAt": "2026-10-20T09:11:40.305784+00:00",
+    "requestStartedAt": "2026-10-20T09:11:33.298021+00:00",
+    "requestId": "gen-1792487495-k7WP9iRJjLwB5T148fkT",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:11:36 GMT",
+      "CF-RAY": "a4d6e556f8e4de12-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 150,
+      "completion_tokens": 567,
+      "total_tokens": 717,
+      "cost": 0.00259725,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00259725,
+        "upstream_inference_prompt_cost": 0.0001875,
+        "upstream_inference_completions_cost": 0.00240975
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 382,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.00259725,
+    "latencyMs": 7007,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "18a6d2a7d1b00103440c2bf5c510d0f2e816eb24978612445fec06566f538e16",
+    "responseSha256": "e3536e0e9f749be662d640ab27b72073f842b331e52a2424f99e9425a34676e2",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/meta--muse-spark-open.json",
+    "responseText": "*slams shovel into the ground* \n\nRight away, my liege. Your moat is under construction.\n\nBefore I hit a water main and flood us both, what kind of moat are we digging?\n\n**1. The Classic Defense Moat:**\nDeep, wide, filled with muddy water. Great for keeping out invaders, neighbors, and door-to-door salesmen. Do you want crocodiles? Crocodiles are extra.\n\n**2. The Dry Moat:**\nMore of an aesthetic / dramatic ditch. Lower maintenance, no mosquitoes, you can still use it to dramatically stare into the distance.\n\n**3. The Minecraft Moat:**\n1 block lava, 1 block soul sand, infinite despair for your enemies. I can blueprint this one instantly.\n\nTell me:\n* How wide and deep are we going?\n* What are we defending against? Dragons? Zombies? The HOA?\n* Do you want a drawbridge? Every moat legally requires a cool drawbridge.\n\nCall 811 before you *actually* dig IRL though - utility lines are not as fun to hit as buried treasure.\n\nSo, what's the order, boss? Water or lava?",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}

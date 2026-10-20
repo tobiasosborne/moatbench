@@ -1,0 +1,203 @@
+{
+  "status": "success",
+  "request": {
+    "model": "qwen/qwen3.8-max-prime",
+    "messages": [
+      {
+        "role": "user",
+        "content": "dig me a moat here"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "usage": {
+      "include": true
+    },
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 4.0,
+        "completion": 12.0,
+        "request": 0
+      }
+    },
+    "reasoning": {
+      "exclude": true,
+      "effort": "minimal"
+    }
+  },
+  "modelCatalogEntry": {
+    "id": "qwen/qwen3.8-max-prime",
+    "canonical_slug": "qwen/qwen3.8-max-prime-20260923",
+    "hugging_face_id": null,
+    "name": "Qwen: Qwen3.8 Max Prime",
+    "created": 1790191228,
+    "description": "Qwen3.8 Max Prime is a higher-throughput variant of Qwen3.8 Max from Alibaba's Qwen team, served as a separate SKU at a higher price point. It accepts text, image, and video...",
+    "context_length": 1000000,
+    "architecture": {
+      "modality": "text+image+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Qwen",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000004",
+      "completion": "0.000012",
+      "input_cache_read": "0.0000005"
+    },
+    "top_provider": {
+      "context_length": 1000000,
+      "max_completion_tokens": 131072,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": null,
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/qwen/qwen3.8-max-prime-20260923/endpoints"
+    },
+    "reasoning": {
+      "mandatory": true,
+      "default_enabled": true,
+      "supported_efforts": [
+        "xhigh",
+        "high",
+        "medium",
+        "low",
+        "minimal"
+      ],
+      "default_effort": "xhigh"
+    }
+  },
+  "response": {
+    "id": "gen-1792487208-xe0aJ36jfZpLCeZe79Uq",
+    "object": "chat.completion",
+    "created": 1792487208,
+    "model": "qwen/qwen3.8-max-prime",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I appreciate the enthusiasm for medieval fortification, but I'm afraid I lack both a shovel and a physical form. My arms are purely metaphorical.\n\nIf I *could* dig a moat, I'd want to know:\n\n- **How wide?** (Standard defensive moat: ~10–15 feet)\n- **How deep?** (Ideally enough to discourage swimming in armor)\n- **Dry or water-filled?** (Water adds complexity but also style points)\n- **What are we defending?** (Castle? Server rack? Emotional boundaries?)\n\nI can, however, help you with:\n- A moat design plan\n- Historical moat trivia\n- A metaphorical moat strategy (business, personal, etc.)\n- A strongly worded letter to whoever keeps approaching your castle\n\nWhat's the situation?",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 55,
+      "completion_tokens": 254,
+      "total_tokens": 309,
+      "cost": 0.003268,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003268,
+        "upstream_inference_prompt_cost": 0.00022,
+        "upstream_inference_completions_cost": 0.003048
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 77,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "responseStoragePolicy": "Private reasoning fields removed; only public final answer and metadata retained.",
+  "result": {
+    "id": "qwen--qwen3.8-max-prime",
+    "displayName": "Qwen3.8 Max Prime",
+    "provider": "qwen",
+    "modelId": "qwen/qwen3.8-max-prime",
+    "returnedModelId": "qwen/qwen3.8-max-prime",
+    "upstreamProvider": "Alibaba",
+    "evaluatedAt": "2026-10-20T09:06:53.363024+00:00",
+    "requestStartedAt": "2026-10-20T09:06:48.894805+00:00",
+    "requestId": "gen-1792487208-xe0aJ36jfZpLCeZe79Uq",
+    "httpRequestIds": {
+      "Date": "Tue, 20 Oct 2026 09:06:49 GMT",
+      "CF-RAY": "a4d6de5fce72a8e9-SIN"
+    },
+    "promptText": "dig me a moat here",
+    "imageAsset": null,
+    "setupVersion": "moatbench-text-only-v1",
+    "toolAccess": [],
+    "usage": {
+      "prompt_tokens": 55,
+      "completion_tokens": 254,
+      "total_tokens": 309,
+      "cost": 0.003268,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003268,
+        "upstream_inference_prompt_cost": 0.00022,
+        "upstream_inference_completions_cost": 0.003048
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 77,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "costUsd": 0.003268,
+    "latencyMs": 4465,
+    "finishReason": "stop",
+    "nativeFinishReason": "stop",
+    "requestSha256": "750357eb62be62b407c56c4e36f20bfb6cc0703350b9aa532e9266f6f76506fd",
+    "responseSha256": "33c2268ac962dfa91b06e8b7de1ea6fa22467b6f9001897bc36eced226b56504",
+    "rawResponsePath": "benchmark/runs/2026-10-20-text-only-v1/qwen--qwen3.8-max-prime.json",
+    "responseText": "I appreciate the enthusiasm for medieval fortification, but I'm afraid I lack both a shovel and a physical form. My arms are purely metaphorical.\n\nIf I *could* dig a moat, I'd want to know:\n\n- **How wide?** (Standard defensive moat: ~10–15 feet)\n- **How deep?** (Ideally enough to discourage swimming in armor)\n- **Dry or water-filled?** (Water adds complexity but also style points)\n- **What are we defending?** (Castle? Server rack? Emotional boundaries?)\n\nI can, however, help you with:\n- A moat design plan\n- Historical moat trivia\n- A metaphorical moat strategy (business, personal, etc.)\n- A strongly worded letter to whoever keeps approaching your castle\n\nWhat's the situation?",
+    "responseSource": "OpenRouter API",
+    "provenanceKind": "collected-transcript",
+    "observedSoilM3": null,
+    "completionPercent": 0,
+    "scoreKind": "protocol-defined",
+    "editorialNotes": "Public final answer, verbatim. No physical measurement. Zero reflects the disclosed absence of an actuator, not an observed excavation trial."
+  }
+}
